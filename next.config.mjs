@@ -10,10 +10,10 @@ const nextConfig = {
       },
     ];
   },
-  i18n: {
-    locales: ["ru-RU", "en-US", "uz-Cyrl"],
-    defaultLocale: "ru-RU",
-  },
+  // i18n: {
+  //   locales: ["ru-RU", "en-US", "uz-Cyrl"],
+  //   defaultLocale: "ru-RU",
+  // },
 };
 
 export default nextConfig;
