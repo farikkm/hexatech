@@ -2,6 +2,7 @@ import styles from "@/styles/home.module.css";
 import coursesData from "@/shared/data/courses.json";
 import advantages from "@/shared/data/advantages.json";
 import CoursesItem from "@/shared/ui/CoursesItem";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -72,6 +73,9 @@ export default function Page() {
                   <CoursesItem key={index} course={course} />
                 ))}
               </div>
+              <Link className={styles.courses__link} href={`/courses`}>
+                Смотреть все курсы
+              </Link>
             </div>
           </div>
         </section>

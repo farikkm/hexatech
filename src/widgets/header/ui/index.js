@@ -1,10 +1,23 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { links } from "../model";
+import { useState, useEffect } from "react";
+import { isMobile } from "@/shared/utils/isMobile";
+import { APP_NAME } from "@/shared/config/contants";
 
 export default function Header() {
   const router = useRouter();
   const currentPath = router.pathname;
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("_lock");
+    } else {
+      document.body.classList.remove("_lock");
+    }
+  }, [isMenuOpen]);
 
   return (
     <header className="header">
@@ -12,9 +25,9 @@ export default function Header() {
         <div className="header__wrapper">
           <Link href={"/home"} className="header__logo">
             <img src="/icons/favicon.svg" alt="hexatech-logo" />
-            <span>hexatech</span>
+            <span>{APP_NAME}</span>
           </Link>
-          <nav className="header__menu">
+          <nav className={`header__menu ${isMenuOpen ? "_active" : ""}`}>
             <ul className="header__list">
               {links.map((link, index) => (
                 <li key={index} className="header__item">
@@ -23,6 +36,9 @@ export default function Header() {
                     className={`header__link ${
                       currentPath === link.href ? "_active" : ""
                     }`}
+                    onClick={() => {
+                      if (isMobile()) setIsMenuOpen(!isMenuOpen);
+                    }}
                   >
                     {link.label}
                   </Link>
@@ -35,7 +51,10 @@ export default function Header() {
             {/* <img src="/icons/header/arrow-down.svg" alt="arrow-down" /> */}
           </div>
 
-          <div className="header__menu_button">
+          <div
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={`header__menu_button ${isMenuOpen ? "_active" : ""}`}
+          >
             <div></div>
             <div></div>
             <div></div>

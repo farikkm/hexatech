@@ -182,6 +182,17 @@
   text-align: center;
 }
 
+.courses__link {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses__items > *:nth-child(2) {
+  border: 3px solid var(--red-color);
+}
+
 @media (min-width: 1024px) {
   .courses__items {
     grid-template-columns: repeat(2, 1fr);
@@ -191,5 +202,13 @@
 @media (min-width: 1440px) {
   .courses__items {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .courses__items > *:nth-child(2) {
+    border: 3px solid var(--red-color);
+    transform: scale(1.05);
+  }
+  .courses__link {
+    margin-top: 40px;
   }
 }
