@@ -1,4 +1,4 @@
-import styles from "@/styles/home.module.css";
+import styles from "./home.module.css";
 import coursesData from "@/shared/data/courses.json";
 import advantages from "@/shared/data/advantages.json";
 import CoursesItem from "@/shared/ui/CoursesItem";

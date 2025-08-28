@@ -1,15 +1,4 @@
 /* =================> Hero <================= */
-
-.hero {
-  margin-top: 50px;
-}
-
-@media (min-width: 1440px) {
-  .hero {
-    margin-top: 50px;
-  }
-}
-
 .hero__title {
   text-transform: uppercase;
 }

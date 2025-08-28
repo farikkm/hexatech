@@ -59,6 +59,11 @@ h3 {
   font-size: var(--heading-3);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: var(--main-font);
   font-size: var(--body-text);
@@ -72,10 +77,13 @@ body._lock {
   overflow: hidden;
 }
 
-/* ====================> Main Classes <==================== */
+main {
+  margin-top: 50px;
+}
 
+/* ====================> Main Classes <==================== */
 .wrapper {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -132,6 +140,7 @@ body._lock {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 1;
 
   width: 100%;
   height: 100vh;
