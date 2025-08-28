@@ -1,16 +1,80 @@
-import Head from "next/head";
+import styles from "@/styles/home.module.css";
+import coursesData from "@/shared/data/courses.json";
+import advantages from "@/shared/data/advantages.json";
+import CoursesItem from "@/shared/ui/CoursesItem";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <div id="home-page">
-        <h1
-          style={{
-            textTransform: "uppercase",
-          }}
-        >
-          Home
-        </h1>
+        <section className={styles.hero}>
+          <div className="container">
+            <div className={styles.hero__wrapper}>
+              <div className={styles.hero__content}>
+                <h1 className={styles.hero__title}>
+                  HEXATECH - кибербезопасности и стань специалистом в этой
+                  области
+                </h1>
+                <p className={styles.hero__text}>
+                  Учитесь у действующих профессионалов международного масштаба и
+                  прокачивайте навыки в которых есть острая потребность на рынке
+                  труда во всем мире
+                </p>
+                <button className={styles.hero__button}>Оставить заявку</button>
+              </div>
+              <div className={styles.hero__img}>
+                <img
+                  className={styles.hero__globus}
+                  src="/images/home-page/hero/globus.png"
+                  alt="globus"
+                />
+                <img
+                  className={styles.hero__globus_big}
+                  src="/images/home-page/hero/globus-big.png"
+                  alt="globus"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.advantages}>
+          <div className="container">
+            <div className={styles.advantages__wrapper}>
+              <h2 className={styles.advantages__title}>
+                Преимуществами HEXATECH
+              </h2>
+
+              <div className={styles.advantages__items}>
+                {advantages.map((item, index) => (
+                  <div key={index} className={styles.advantages__item}>
+                    <div className={styles.advantages__item_img}>
+                      <img src={item.icon} alt="advantages-icon" />
+                    </div>
+                    <h4 className={styles.advantages__item_title}>
+                      {item.title}
+                    </h4>
+                    <p className={styles.advantages__item_text}>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.courses}>
+          <div className="container">
+            <div className={styles.courses__wrapper}>
+              <h2 className={styles.courses__title}>Популярные курсы</h2>
+              <p className={styles.courses__subtitle}>
+                Более 5 образовательных программ
+              </p>
+              <div className={styles.courses__items}>
+                {coursesData.slice(0, 3).map((course, index) => (
+                  <CoursesItem key={index} course={course} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

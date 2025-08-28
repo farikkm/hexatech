@@ -11,7 +11,8 @@ export default function Header() {
       <div className="container">
         <div className="header__wrapper">
           <Link href={"/home"} className="header__logo">
-            <img src="/icons/logo.png" alt="hexatech-logo" />
+            <img src="/icons/favicon.svg" alt="hexatech-logo" />
+            <span>hexatech</span>
           </Link>
           <nav className="header__menu">
             <ul className="header__list">
@@ -31,7 +32,13 @@ export default function Header() {
           </nav>
           <div className="header__lang">
             <span id="language">Ru</span>
-            <img src="/icons/header/arrow-down.svg" alt="arrow-down" />
+            {/* <img src="/icons/header/arrow-down.svg" alt="arrow-down" /> */}
+          </div>
+
+          <div className="header__menu_button">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>

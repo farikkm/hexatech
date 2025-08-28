@@ -1,5 +1,5 @@
 import Link from "next/link";
-import newsData from "../../../../../../public/data/news.json";
+import newsData from "@/shared/data/news.json";
 
 export default function Page({ newsItem }) {
   return (
@@ -14,18 +14,31 @@ export default function Page({ newsItem }) {
   );
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+  const paths = newsData.map((item) => ({
+    params: {
+      date: item.date,
+      slug: item.slug,
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
   const { date, slug } = params;
 
-  console.log(date, slug);
-
-  // имитация запроса в БД → фильтруем json
   const newsItem = newsData.find(
     (item) => item.date === date && item.slug === slug
   );
 
   if (!newsItem) {
-    return { notFound: true }; // вернет 404
+    return {
+      notFound: true,
+    };
   }
 
   return {

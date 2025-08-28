@@ -6,7 +6,7 @@
 
 :root {
   --main-font: "JetBrains Mono";
-  --reserve-font: "Work Sans";
+  --reserve-font: "worksans";
 
   --heading-1: 28px;
   --heading-2: 24px;
@@ -22,7 +22,7 @@
   --white-color: #ffffff;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 425px) {
   :root {
     --heading-1: 40px;
     --heading-2: 36px;
@@ -40,6 +40,11 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+button {
+  font-family: var(--main-font);
+  border: none;
 }
 
 h1 {
@@ -66,12 +71,22 @@ body {
 /* ====================> Main Classes <==================== */
 
 .wrapper {
+  padding-bottom: 40px;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+  .wrapper {
+    padding-bottom: 85px;
+  }
 }
 
 /* ====================> Header <==================== */
@@ -82,10 +97,23 @@ body {
 .header__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.header__logo > img {
+  width: 32px;
+  height: 32px;
+}
+
+.header__logo > span {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--heading-2);
 }
 
 .header__menu {
@@ -102,13 +130,44 @@ body {
   border-radius: 24px;
 
   cursor: pointer;
+
+  margin-left: auto;
 }
 
 .header__lang > #language {
   text-transform: uppercase;
 }
 
+.header__menu_button {
+  position: relative;
+  z-index: 2;
+
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  background-color: #000;
+  border-radius: 24px;
+
+  cursor: pointer;
+
+  margin-left: 15px;
+}
+
+.header__menu_button > div {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+
 @media (min-width: 1024px) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header__menu {
     display: block;
   }
@@ -122,5 +181,19 @@ body {
   }
   .header__link._active {
     color: var(--white-color);
+  }
+
+  .header__logo > img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .header__lang {
+    margin-left: 0px;
+  }
+
+  .header__menu_button {
+    display: none;
+    margin-left: none;
   }
 }

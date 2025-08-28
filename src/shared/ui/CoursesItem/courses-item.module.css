@@ -1,0 +1,33 @@
+.courses__item {
+  background-color: var(--coal-black-color);
+  padding: 25px 25px 40px 25px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 0 100%);
+}
+
+.courses__item__img {
+  margin-bottom: 40px;
+}
+
+.courses__item__badge {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.courses__item__title {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.courses__item__duration {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.courses__item__desc {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.courses__item__link {
+  text-decoration: underline;
+}
