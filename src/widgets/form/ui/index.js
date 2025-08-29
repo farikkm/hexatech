@@ -17,7 +17,6 @@ export default function Form() {
 
       <form className={styles.form}>
         <div className={styles.form__inputs}>
-          {" "}
           <FormInput required type="text" placeholder="ФИО" name="full-name" />
           <FormInput
             required

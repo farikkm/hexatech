@@ -55,6 +55,10 @@
   transform: translate(-95%, -15%);
 }
 
+.form__agreement {
+  margin-top: 20px;
+}
+
 .form__agreement > label {
   font-size: 12px;
   user-select: none;
@@ -68,26 +72,29 @@
   margin-bottom: 15px;
 }
 
-.form__agreement > input {
-  appearance: none;
+.form__agreement input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.form__agreement > input + label::before {
+.form__agreement label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form__agreement label::before {
   content: "";
-  display: block;
   min-width: 16px;
   height: 16px;
   border: 1px solid #ccc;
-  background-color: transparent;
-  margin-right: 5px;
-  cursor: pointer;
   border-radius: 2px;
+  background: transparent;
+  transition: 0.2s;
 }
 
-.form__agreement > input:checked + label::before {
-  background-color: var(--red-color); /* Цвет фона при выборе */
-  border-color: #ccc; /* Цвет границы при выборе */
-  /* Можно добавить иконку галочки с помощью псевдоэлемента, но это потребует более сложных стилей. */
+.form__agreement input:checked + label::before {
+  background: var(--red-color);
 }
 
 .form__button {
