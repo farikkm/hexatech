@@ -4,6 +4,7 @@ import advantages from "@/shared/data/advantages.json";
 import CoursesItem from "@/shared/ui/CoursesItem";
 import Link from "next/link";
 import VideoReviews from "@/widgets/video-reviews";
+import Form from "@/widgets/form/ui";
 
 export default function Page() {
   return (
@@ -88,6 +89,10 @@ export default function Page() {
               <VideoReviews />
             </div>
           </div>
+        </section>
+
+        <section className="sign-up-for-courses">
+          <Form />
         </section>
       </div>
     </>

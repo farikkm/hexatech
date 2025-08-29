@@ -1,0 +1,109 @@
+.form__title,
+.form__subtitle {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.form__title {
+  max-width: 850px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form__subtitle {
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.form {
+  position: relative;
+
+  max-width: 560px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  padding: 0 20px;
+}
+
+.form::before,
+.form::after {
+  content: "01001100 01101111 01100111 01101001 01101110 11010101 00110100 10101010 01101110 01101101 00101100 01010111 01100101 01100010 00100001 10100110 11101001 00011100 01101011 01110010 01010100 01100101 01100011 01101000 00100001 01101000 01100101 01111000 01100001 01110100 00110011 10101101 01001001 00110110 11100010 01001110 01100101 01110100 01110111 01101111 ";
+  position: absolute;
+
+  display: block;
+  min-width: 1030px;
+  color: #00ff406e;
+
+  line-height: 160%;
+  font-size: 36px;
+  text-shadow: 0 0 1px #00c69e9e, 0 0 8px #00c69ea7, 0 0 12px #00c69eb1;
+
+  user-select: none;
+}
+
+.form::after {
+  right: 0;
+  top: 0;
+  transform: translate(103%, -15%);
+}
+
+.form::before {
+  left: 0;
+  top: 0;
+  transform: translate(-95%, -15%);
+}
+
+.form__agreement > label {
+  font-size: 12px;
+  user-select: none;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.form__inputs > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form__agreement > input {
+  appearance: none;
+}
+
+.form__agreement > input + label::before {
+  content: "";
+  display: block;
+  min-width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.form__agreement > input:checked + label::before {
+  background-color: var(--red-color); /* Цвет фона при выборе */
+  border-color: #ccc; /* Цвет границы при выборе */
+  /* Можно добавить иконку галочки с помощью псевдоэлемента, но это потребует более сложных стилей. */
+}
+
+.form__button {
+  margin-top: 40px;
+
+  display: block;
+  width: 100%;
+
+  background-color: var(--red-color);
+
+  padding: 17px 0;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.form__button:disabled {
+  opacity: 0.8;
+}

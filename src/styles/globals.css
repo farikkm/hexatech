@@ -45,6 +45,8 @@ ol {
 button {
   font-family: var(--main-font);
   border: none;
+  background: none;
+  color: #fff;
 }
 
 h1 {
@@ -84,6 +86,7 @@ main {
 /* ====================> Main Classes <==================== */
 .wrapper {
   padding-bottom: 20px;
+  overflow-x: hidden;
 }
 
 .container {
