@@ -97,7 +97,19 @@ main {
     padding: 0 25px;
   }
   .wrapper {
-    padding-bottom: 85px;
+    padding-bottom: 60px;
+  }
+}
+
+/* ====================> Pages <==================== */
+
+#home-page > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  #home-page > *:not(:last-child) {
+    margin-bottom: 100px;
   }
 }
 
@@ -214,6 +226,9 @@ main {
 }
 
 @media (min-width: 1024px) {
+  .header {
+    padding: 25px 0;
+  }
   .header__wrapper {
     display: flex;
     justify-content: space-between;

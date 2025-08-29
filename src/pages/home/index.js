@@ -3,6 +3,7 @@ import coursesData from "@/shared/data/courses.json";
 import advantages from "@/shared/data/advantages.json";
 import CoursesItem from "@/shared/ui/CoursesItem";
 import Link from "next/link";
+import VideoReviews from "@/widgets/video-reviews";
 
 export default function Page() {
   return (
@@ -76,6 +77,15 @@ export default function Page() {
               <Link className={styles.courses__link} href={`/courses`}>
                 Смотреть все курсы
               </Link>
+            </div>
+          </div>
+        </section>
+        <section className={styles.reviews}>
+          <div className="container">
+            <div className={styles.reviews__wrapper}>
+              <h2 className={styles.reviews__title}>Видео отзывы</h2>
+
+              <VideoReviews />
             </div>
           </div>
         </section>

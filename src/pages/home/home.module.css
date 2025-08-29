@@ -18,6 +18,8 @@
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 20px;
+
+  cursor: pointer;
 }
 
 .hero__globus {
@@ -71,9 +73,6 @@
 }
 
 /* =================> Advantages <================= */
-.advantages {
-  margin-top: 50px;
-}
 
 .advantages__title {
   width: min-content;
@@ -154,9 +153,6 @@
 }
 
 /* ===============> Courses <=============== */
-.courses {
-  margin-top: 50px;
-}
 
 .courses__items {
   margin-top: 35px;
@@ -199,5 +195,21 @@
   }
   .courses__link {
     margin-top: 40px;
+  }
+}
+
+/* ===============> Reviews <=============== */
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1440px) {
+  .reviews {
+    margin-top: 100px;
+  }
+  .reviews__title {
+    margin-bottom: 70px;
   }
 }
