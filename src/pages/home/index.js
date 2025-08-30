@@ -7,6 +7,11 @@ import VideoReviews from "@/widgets/video-reviews";
 import Form from "@/widgets/form/ui";
 
 export default function Page() {
+  const scrollIntoApplicationForm = () => {
+    const applicationForm = document.getElementById("applicant-form");
+    applicationForm.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <>
       <div id="home-page">
@@ -23,7 +28,12 @@ export default function Page() {
                   прокачивайте навыки в которых есть острая потребность на рынке
                   труда во всем мире
                 </p>
-                <button className={styles.hero__button}>Оставить заявку</button>
+                <button
+                  onClick={scrollIntoApplicationForm}
+                  className={styles.hero__button}
+                >
+                  Оставить заявку
+                </button>
               </div>
               <div className={styles.hero__img}>
                 <img

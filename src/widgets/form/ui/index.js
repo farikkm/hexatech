@@ -1,12 +1,20 @@
 import { useState } from "react";
 import styles from "./form.module.css";
 import FormInput from "./FormInput";
+import { useForm } from "react-hook-form";
 
 export default function Form() {
   const [isUserAgreed, setIsUserAgreed] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
 
   return (
-    <div className={styles.form__wrapper}>
+    <div id="applicant-form" className={styles.form__wrapper}>
       <h2 className={styles.form__title}>
         Начни карьеру в кибербезопасности уже сегодня
       </h2>
@@ -15,26 +23,52 @@ export default function Form() {
         этой области
       </p>
 
-      <form className={styles.form}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <div className={styles.form__inputs}>
-          <FormInput required type="text" placeholder="ФИО" name="full-name" />
           <FormInput
-            required
+            type="text"
+            placeholder="ФИО"
+            name="full-name"
+            {...register("fullName", {
+              required: "Поле обязательно",
+              minLength: { value: 5, message: "Минимум 5 символов" },
+            })}
+            error={errors.fullName}
+          />
+          <FormInput
             type="tel"
             placeholder="Телефон"
             name="telephone"
+            {...register("telephone", {
+              required: "Поле обязательно",
+              pattern: {
+                value: /^\+?[0-9]{9,15}$/,
+                message: "Введите корректный номер",
+              },
+            })}
+            error={errors.telephone}
           />
           <FormInput
-            required
             type="email"
             placeholder="Эл. почта"
             name="email"
+            {...register("email", {
+              required: "Поле обязательно",
+              pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Введите корректный email",
+              },
+            })}
+            error={errors.email}
           />
           <FormInput
-            required
             type="text"
             placeholder="Username в ТГ"
             name="tg-username"
+            {...register("tgUsername", {
+              required: "Поле обязательно",
+            })}
+            error={errors.tgUsername}
           />
         </div>
 
