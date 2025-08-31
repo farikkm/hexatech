@@ -1,5 +1,6 @@
 import { APP_NAME } from "@/shared/config/contants";
 import { tabs } from "../model";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,9 +18,9 @@ export default function Footer() {
                   <h4 className="footer__list_title">{tab.title}</h4>
                   {tab.links.map((link, index) => (
                     <li key={index} className="footer__item">
-                      <a className="footer__link" href={link.href}>
+                      <Link className="footer__link" href={link.href}>
                         {link.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

@@ -5,13 +5,9 @@ import CoursesItem from "@/shared/ui/CoursesItem";
 import Link from "next/link";
 import VideoReviews from "@/widgets/video-reviews";
 import Form from "@/widgets/form/ui";
+import { scrollIntoApplicationForm } from "@/widgets/form/lib";
 
 export default function Page() {
-  const scrollIntoApplicationForm = () => {
-    const applicationForm = document.getElementById("applicant-form");
-    applicationForm.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <>
       <div id="home-page">

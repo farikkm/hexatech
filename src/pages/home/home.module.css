@@ -5,7 +5,7 @@
 
 .hero__text {
   margin-top: 20px;
-  font-family: var(--main-font);
+  font-family: var(--reserve-font);
 }
 
 .hero__button {
@@ -125,6 +125,10 @@
 
 .advantages__item_title {
   font-size: 24px;
+}
+
+.advantages__item_text {
+  font-family: var(--reserve-font);
 }
 
 @media (min-width: 1024px) {

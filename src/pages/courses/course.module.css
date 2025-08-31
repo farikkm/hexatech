@@ -1,15 +1,36 @@
 .course__page > div > *:not(:last-child) {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
+
+@media (min-width: 768px) {
+  .course__page > div > *:not(:last-child) {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .course__page > div > *:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
+
+/* =================> HERO <================= */
 
 .course__title {
   text-transform: uppercase;
   font-size: 64px;
   letter-spacing: 5px;
+
+  margin-top: -50px;
+}
+
+.course__aim,
+.course__description {
+  font-family: var(--reserve-font);
 }
 
 .course__description {
-  margin-top: 140px;
+  margin-top: 60px;
 }
 
 .course__aim {
@@ -20,14 +41,17 @@
   margin-top: 50px;
   padding: 10px 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   background-color: var(--coal-black-color);
   border-radius: 8px;
 }
 
 .course__info > div {
+  min-width: 245px;
+
   display: flex;
   align-items: center;
   gap: 10px;
@@ -42,4 +66,397 @@
   display: inline-block;
   font-size: 13px;
   max-width: 175px;
+  font-family: var(--reserve-font);
+}
+
+/* =================> TEACHERS <================= */
+
+.teachers__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.teachers__content_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers__imgs {
+  margin-bottom: 30px;
+}
+
+.teachers__imgs > img {
+  max-width: 100%;
+}
+
+.teachers__info h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.teachers__info h2 > span {
+  font-size: 16px;
+  color: var(--gray-color);
+}
+
+.teachers__info_name {
+  text-align: center;
+}
+
+.teachers__info_statistics {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.teachers__overview {
+  text-align: center;
+  margin-top: 30px;
+
+  font-family: var(--reserve-font);
+}
+
+.teachers__skills {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers__skills_title {
+  margin-bottom: 20px;
+}
+
+.teachers__skills_langs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.teachers__skills_langs > div {
+  width: fit-content;
+  padding: 10px 35px;
+  background-color: var(--coal-black-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (min-width: 1440px) {
+  .teachers__imgs > img {
+    max-width: 420px;
+    height: 440px;
+    object-fit: cover;
+  }
+
+  .teachers__content_wrapper {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .teachers__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .teachers__info h2 {
+    text-align: left;
+  }
+  .teachers__overview {
+    text-align: left;
+  }
+  .teachers__info_name {
+    max-width: 220px;
+  }
+  .teachers__info_statistics > h2:not(:last-child) {
+    margin-right: 77px;
+  }
+  .teachers__skills {
+    align-items: flex-start;
+  }
+  .teachers__skills_langs {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+/* =================> PRICES <================= */
+.prices__title {
+  margin-bottom: 30px;
+}
+
+.prices__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.prices__card {
+  padding: 40px 24px;
+  background-color: var(--coal-black-color);
+  border-radius: 8px;
+}
+
+.prices__card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.prices__card_title {
+  font-weight: 400;
+}
+
+.prices__card_conditions {
+  list-style-type: disc;
+}
+
+.prices__card_conditions > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.prices__card_conditions > h5 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.prices__card_conditions > li {
+  margin-left: 15px;
+  font-size: 16px;
+
+  font-family: var(--reserve-font);
+}
+
+.prices__card_button {
+  position: relative;
+
+  margin-top: 20px;
+
+  display: block;
+  width: 100%;
+
+  background-color: var(--red-color);
+
+  padding: 17px 20px;
+  border-radius: 4px;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024) {
+  .prices__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =================> RESUME <================= */
+.resume__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.resume__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.resume__preview,
+.resume__skills,
+.resume__tools {
+  padding: 20px;
+  background-color: var(--coal-black-color);
+  border-radius: 12px;
+}
+
+.resume__preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume__preview_job {
+  text-align: center;
+}
+
+.resume__tools_items {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resume__tools_item {
+  width: fit-content;
+  padding: 5px 15px;
+  background-color: #333333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume__tools_item > span {
+  font-size: 16px;
+}
+
+.resume__tools_item > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.resume__skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resume__skills > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.resume__skills > ul > h3 {
+  margin-bottom: 5px;
+}
+
+.resume__skills > ul > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.resume__skills > ul > li {
+  font-family: var(--reserve-font);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.resume__skills > ul > li::before {
+  content: "";
+  min-width: 15px;
+  height: 15px;
+  background: url("/icons/course/check_circle_fill.svg");
+}
+
+@media (min-width: 1440px) {
+  .resume__cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .resume__preview {
+    grid-column: 1 / 4;
+    justify-content: center;
+  }
+
+  .resume__skills {
+    grid-column: 4 / 7;
+  }
+
+  .resume__tools {
+    grid-column: 1 / 7;
+  }
+}
+
+/* =================> PORTFOLIO <================= */
+.portfolio__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.portfolio__card {
+  position: relative;
+
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--coal-black-color);
+}
+
+.portfolio__card::before {
+  content: "";
+
+  position: absolute;
+  left: 20px;
+  top: 0;
+
+  width: 180px;
+  height: 8px;
+
+  background-color: var(--red-color);
+  filter: blur(2px);
+}
+
+.portfolio__card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio__card_index {
+  font-size: 30px;
+}
+
+.portfolio__card:nth-child(2) .portfolio__card_index {
+  color: var(--red-color);
+}
+
+.portfolio__card_text {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .portfolio__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__card {
+    padding: 40px;
+  }
+
+  .portfolio__card_index {
+    font-size: 48px;
+  }
+}
+
+/* =================> CERTIFICATE <================= */
+.cetrificate {
+  padding-bottom: 80px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.cetrificate__img > img {
+  max-width: 100%;
+}
+
+.cetrificate__text {
+  margin-top: 20px;
+  font-family: var(--reserve-font);
+}
+
+@media (min-width: 1024px) {
+  .cetrificate {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .cetrificate__img > img {
+    max-width: none;
+    width: 520px;
+  }
 }

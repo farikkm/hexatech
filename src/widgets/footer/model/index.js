@@ -21,23 +21,23 @@ const tabs = [
     links: [
       {
         name: "Этичный хакинг",
-        href: "/",
+        href: "/courses/cybersecurity",
       },
       {
         name: "Корпоративные курсы",
-        href: "/",
+        href: "/courses/cooperative-courses",
       },
       {
         name: "PYsploit",
-        href: "/",
+        href: "/courses/pysploit",
       },
       {
         name: "SOC-аналитика",
-        href: "/",
+        href: "/courses/soc-analytics",
       },
       {
         name: "Forensics",
-        href: "/",
+        href: "/courses/forensics",
       },
     ],
   },
