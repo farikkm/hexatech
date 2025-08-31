@@ -1,17 +1,54 @@
 import { useState } from "react";
-import styles from "./form.module.css";
+import styles from "../styles/form.module.css";
 import FormInput from "./FormInput";
 import { useForm } from "react-hook-form";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import LoadingButton from "@/widgets/loading-button";
+import { sendEmail } from "../api";
 
 export default function Form() {
+  const [isLoading, setIsLoading] = useState(false);
   const [isUserAgreed, setIsUserAgreed] = useState(false);
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    setIsLoading(true);
+
+    const params = {
+      fullName: data.fullName,
+      email: data.email,
+      telephone: data.telephone,
+      tgUsername: data.tgUsername,
+    };
+
+    const { success } = await sendEmail(params);
+
+    if (success) {
+      toast.success("Сообщение успешно отправлено!", {
+        position: "top-right",
+        autoClose: 3000,
+        className: styles.custom__toast,
+        progressClassName: styles.custom__progress,
+      });
+      reset();
+      setIsUserAgreed(false);
+    } else {
+      toast.error("Ошибка при отправке!", {
+        position: "top-right",
+        autoClose: 3000,
+        className: styles.custom__toast,
+        progressClassName: styles.custom__progress,
+      });
+    }
+
+    setIsLoading(false);
+  };
 
   return (
     <div id="applicant-form" className={styles.form__wrapper}>
@@ -75,6 +112,7 @@ export default function Form() {
         <div className={styles.form__agreement}>
           <input
             onChange={() => setIsUserAgreed(!isUserAgreed)}
+            checked={isUserAgreed}
             name="agreement"
             id="agreement"
             type="checkbox"
@@ -84,13 +122,16 @@ export default function Form() {
             с Политикой конфиденциальности.
           </label>
         </div>
-        <button
-          disabled={!isUserAgreed}
+        <LoadingButton
           className={styles.form__button}
           type="submit"
+          isLoading={isLoading}
+          disabled={!isUserAgreed}
         >
           ЗАПИСАТЬСЯ
-        </button>
+        </LoadingButton>
+
+        <ToastContainer />
       </form>
     </div>
   );

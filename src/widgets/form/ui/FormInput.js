@@ -1,4 +1,4 @@
-import styles from "./form-input.module.css";
+import styles from "../styles/form-input.module.css";
 
 export default function FormInput({ type, placeholder, name, error, ...rest }) {
   return (
