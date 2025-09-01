@@ -7,7 +7,7 @@ import Head from "next/head";
 import { APP_NAME } from "@/shared/config/contants";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Loader from "@/shared/ui/loader";
+import Loader from "@/shared/ui/loader_temp";
 import Footer from "@/widgets/footer/ui";
 
 export default function App({ Component, pageProps }) {
