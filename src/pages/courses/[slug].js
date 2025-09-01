@@ -13,7 +13,7 @@ export default function Page({ course }) {
             src={course.background_url}
             alt="course_background"
           />
-          <h1 className={styles.course__title}>{course.name}</h1>
+          <h2 className={styles.course__title}>{course.name}</h2>
           <span className={styles.course__subtitle}>{course.subtitle}</span>
 
           <p className={styles.course__description}>{course.full_desc}</p>
@@ -21,40 +21,49 @@ export default function Page({ course }) {
 
           <div className={styles.course__info}>
             <div>
-              <img
-                src="/images/course/education-format.png"
-                alt="course-info-img"
-              />
+              <div className={`glass-icon ${styles.course__info_img}`}>
+                <img
+                  src="/images/course/education-format.svg"
+                  alt="course-info-img"
+                />
+              </div>
+
               <div className={styles.course__info_text}>
                 <h5>Формат обучения</h5>
                 <span>{course.education_format}</span>
               </div>
             </div>
             <div>
-              <img
-                src="/images/course/course-duration.png"
-                alt="course-info-img"
-              />
+              <div className={`glass-icon ${styles.course__info_img}`}>
+                <img
+                  src="/images/course/education-duration.svg"
+                  alt="course-info-img"
+                />
+              </div>
               <div className={styles.course__info_text}>
                 <h5>Длительность</h5>
                 <span>{course.full_duration}</span>
               </div>
             </div>
             <div>
-              <img
-                src="/images/course/courses-number.png"
-                alt="course-info-img"
-              />
+              <div className={`glass-icon ${styles.course__info_img}`}>
+                <img
+                  src="/images/course/education-number.svg"
+                  alt="course-info-img"
+                />
+              </div>
               <div className={styles.course__info_text}>
                 <h5>Количество занятий</h5>
                 <span>{course.courses_number}</span>
               </div>
             </div>
             <div>
-              <img
-                src="/images/course/portfolio-info.png"
-                alt="course-info-img"
-              />
+              <div className={`glass-icon ${styles.course__info_img}`}>
+                <img
+                  src="/images/course/portfolio-info.svg"
+                  alt="course-info-img"
+                />
+              </div>
               <div className={styles.course__info_text}>
                 <h5>Портфолио</h5>
                 <span>{course.portfolio_info}</span>
@@ -123,7 +132,7 @@ export default function Page({ course }) {
         </div>
 
         <div className={styles.prices}>
-          <h1 className={styles.prices__title}>Стоимость и условия</h1>
+          <h2 className={styles.prices__title}>Стоимость и условия</h2>
 
           <div className={styles.prices__cards}>
             <div className={styles.prices__card}>
@@ -170,7 +179,7 @@ export default function Page({ course }) {
         </div>
 
         <div className={styles.resume}>
-          <h1 className={styles.resume__title}>Ваше резюме после курса</h1>
+          <h2 className={styles.resume__title}>Ваше резюме после курса</h2>
           <div className={styles.resume__cards}>
             <div className={styles.resume__preview}>
               <img
@@ -212,7 +221,7 @@ export default function Page({ course }) {
               </ul>
             </div>
             <div className={styles.resume__tools}>
-              <h3 className={styles.resume__tools_title}>Инструменты</h3>
+              <h4 className={styles.resume__tools_title}>Инструменты</h4>
               <div className={styles.resume__tools_items}>
                 <div className={styles.resume__tools_item}>
                   <img
@@ -308,7 +317,7 @@ export default function Page({ course }) {
         </div>
 
         <div className={styles.portfolio}>
-          <h1 className={styles.portfolio__title}>Проекты для портфолио</h1>
+          <h2 className={styles.portfolio__title}>Проекты для портфолио</h2>
 
           <div className={styles.portfolio__cards}>
             <div className={styles.portfolio__card}>
@@ -346,9 +355,9 @@ export default function Page({ course }) {
             <img src="/images/course/certificate.png" alt="cetrificate__img" />
           </div>
           <div className={styles.cetrificate__content}>
-            <h1 className={styles.cetrificate__title}>
+            <h2 className={styles.cetrificate__title}>
               Сертефикат после окончания курса
-            </h1>
+            </h2>
             <p className={styles.cetrificate__text}>
               После завершения курса каждый участник получает именной
               сертификат, подтверждающий его знания и практические навыки в

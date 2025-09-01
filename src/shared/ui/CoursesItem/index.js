@@ -4,7 +4,7 @@ import styles from "./courses-item.module.css";
 export default function CoursesItem({ course }) {
   return (
     <div className={styles.courses__item}>
-      <div className={styles.courses__item__img}>
+      <div className={`glass-icon ${styles.courses__item__img}`}>
         <img src={course.icon} alt="course-icon" />
       </div>
       <span className={styles.courses__item__badge}>курс</span>

@@ -118,15 +118,6 @@
   margin-bottom: 10px;
 }
 
-.advantages__item_img > img {
-  width: 50px;
-  height: 50px;
-}
-
-.advantages__item_title {
-  font-size: 24px;
-}
-
 .advantages__item_text {
   font-family: var(--reserve-font);
 }
@@ -148,11 +139,6 @@
 
   .advantages__item {
     padding: 35px 35px 60px 35px;
-  }
-
-  .advantages__item_img > img {
-    width: 80px;
-    height: 80px;
   }
 }
 

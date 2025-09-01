@@ -69,6 +69,11 @@
   font-family: var(--reserve-font);
 }
 
+.course__info_img {
+  width: 60px !important;
+  height: 60px !important;
+}
+
 /* =================> TEACHERS <================= */
 
 .teachers__title {
@@ -146,6 +151,16 @@
   gap: 5px;
 }
 
+.teachers__skills_langs > div > img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.teachers__skills_langs > div > span {
+  font-size: 15px;
+}
+
 @media (min-width: 1440px) {
   .teachers__imgs > img {
     max-width: 420px;
@@ -207,7 +222,8 @@
   margin-bottom: 30px;
 }
 
-.prices__card_title {
+.prices__title {
+  text-align: center;
   font-weight: 400;
 }
 
@@ -306,12 +322,12 @@
 }
 
 .resume__tools_item > span {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .resume__tools_item > img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   object-fit: contain;
 }
 

@@ -11,8 +11,9 @@
   --heading-1: 28px;
   --heading-2: 24px;
   --heading-3: 20px;
+  --heading-4: 18px;
 
-  --body-text: 16px;
+  --body-text: 15px;
 
   /* Colors */
   --background-color: #111111;
@@ -26,9 +27,10 @@
   :root {
     --heading-1: 40px;
     --heading-2: 36px;
-    --heading-3: 32px;
+    --heading-3: 26px;
+    --heading-4: 20px;
 
-    --body-text: 20px;
+    --body-text: 16px;
   }
 }
 
@@ -49,6 +51,16 @@ button {
   color: #fff;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
 h1 {
   font-size: var(--heading-1);
 }
@@ -59,6 +71,10 @@ h2 {
 
 h3 {
   font-size: var(--heading-3);
+}
+
+h4 {
+  font-size: var(--heading-4);
 }
 
 html,
@@ -93,6 +109,29 @@ main {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.glass-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.6),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.glass-icon > img {
+  width: 50%;
+  height: 50%;
+  fill: white;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.7));
 }
 
 @media (min-width: 768px) {

@@ -56,12 +56,14 @@ export default function Page() {
               <div className={styles.advantages__items}>
                 {advantages.map((item, index) => (
                   <div key={index} className={styles.advantages__item}>
-                    <div className={styles.advantages__item_img}>
+                    <div
+                      className={`glass-icon ${styles.advantages__item_img}`}
+                    >
                       <img src={item.icon} alt="advantages-icon" />
                     </div>
-                    <h4 className={styles.advantages__item_title}>
+                    <h3 className={styles.advantages__item_title}>
                       {item.title}
-                    </h4>
+                    </h3>
                     <p className={styles.advantages__item_text}>{item.text}</p>
                   </div>
                 ))}

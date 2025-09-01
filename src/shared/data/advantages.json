@@ -1,31 +1,31 @@
 [
   {
-    "icon": "/images/home-page/advantages/01.png",
+    "icon": "/images/home-page/advantages/01.svg",
     "title": "100% Практики",
     "text": "каждый курс сопровождается интерактивными заданиями и лабораторными работами"
   },
   {
-    "icon": "/images/home-page/advantages/02.png",
+    "icon": "/images/home-page/advantages/02.svg",
     "title": "Экспертные наставники",
     "text": "обучение у действующих специалистов с реальным опытом как в локальных так и международных компаниях"
   },
   {
-    "icon": "/images/home-page/advantages/03.png",
+    "icon": "/images/home-page/advantages/03.svg",
     "title": "Гибкий формат",
     "text": "Онлайн и офлайн-курсы, удобное расписание и доступ к материалам 24/7 — учитесь в своём ритме"
   },
   {
-    "icon": "/images/home-page/advantages/04.png",
+    "icon": "/images/home-page/advantages/04.svg",
     "title": "Эффективное обучение ",
     "text": "более быстрое обучение с доступом к платным AI-инструментам"
   },
   {
-    "icon": "/images/home-page/advantages/05.png",
+    "icon": "/images/home-page/advantages/05.svg",
     "title": "Компенсация",
     "text": "помощь в получение"
   },
   {
-    "icon": "/images/home-page/advantages/06.png",
+    "icon": "/images/home-page/advantages/06.svg",
     "title": "Трудоустройство",
     "text": "сопровождение учащихся до трудоустройства в тесной связи с самими работодателями"
   }
