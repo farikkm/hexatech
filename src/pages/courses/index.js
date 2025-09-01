@@ -1,5 +1,5 @@
 import coursesData from "@/shared/data/courses.json";
-import CoursesItem from "@/shared/ui/CoursesItem";
+import CoursesItem from "@/shared/ui/courses-item";
 import styles from "./courses.module.css";
 
 export default function Page() {

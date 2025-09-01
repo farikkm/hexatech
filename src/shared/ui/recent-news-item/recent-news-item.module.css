@@ -1,0 +1,40 @@
+.card {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img {
+  width: 108px;
+  height: 104px;
+}
+
+.img > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  max-width: 284px;
+  margin-bottom: 18px;
+}
+
+.date {
+  color: #bdbdbd;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.date::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/icons/news/clock.svg");
+}

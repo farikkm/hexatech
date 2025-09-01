@@ -1,13 +1,13 @@
 import "@/styles/fonts.css";
 import "@/styles/globals.css";
-import Header from "@/widgets/header/ui";
+import Header from "@/widgets/header";
 import { links } from "@/widgets/header/model";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { APP_NAME } from "@/shared/config/contants";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Loader from "@/shared/ui/Loader";
+import Loader from "@/shared/ui/loader";
 import Footer from "@/widgets/footer/ui";
 
 export default function App({ Component, pageProps }) {
@@ -35,11 +35,11 @@ export default function App({ Component, pageProps }) {
         ) : (
           <main>
             <motion.div
-              key={router.route}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
+            // key={router.route}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+            // transition={{ duration: 0.2 }}
             >
               <Component {...pageProps} />
               <Footer />

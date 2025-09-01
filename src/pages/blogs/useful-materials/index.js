@@ -1,3 +1,12 @@
+import Layout from "@/widgets/blogs/layout";
+
 export default function Page() {
-  return <h1>Useful Materials Page</h1>;
+  return (
+    <Layout
+      title="ПОЛЕЗНЫЕ МАТЕРИАЛЫ из мира HEXATECH и кибербезопасности"
+      subtitle="Анонсы курсов, мероприятий, акций"
+    >
+      Hello, Usefule materials Page
+    </Layout>
+  );
 }

@@ -2,24 +2,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import reviews from "@/shared/data/reviews.json";
 import styles from "./video-reviews.module.css";
-import { isMobile } from "@/shared/utils/isMobile";
 
 export default function VideoReviews() {
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation]}
         spaceBetween={20}
         slidesPerView={3}
         navigation={{
           nextEl: `.${styles["custom-next"]}`,
           prevEl: `.${styles["custom-prev"]}`,
         }}
-        pagination={isMobile() ? true : false}
         loop
         centeredSlides
         breakpoints={{

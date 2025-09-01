@@ -1,0 +1,77 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content {
+  max-width: 390px;
+}
+
+.img {
+  width: 305px;
+  height: auto;
+}
+
+.img > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-family: var(--reserve-font);
+  letter-spacing: 0px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info > * {
+  color: #bdbdbd;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.info > *::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+}
+
+.date::before {
+  background-image: url("/icons/news/clock.svg");
+}
+
+.comments::before {
+  background-image: url("/icons/news/message.svg");
+}
+
+.replies::before {
+  background-image: url("/icons/news/share.svg");
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

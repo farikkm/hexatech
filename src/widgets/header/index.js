@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { links } from "../model";
+import { links } from "./model";
 import { useState, useEffect } from "react";
 import { isMobile } from "@/shared/utils/isMobile";
 import { APP_NAME } from "@/shared/config/contants";
