@@ -1,0 +1,28 @@
+.card {
+  max-width: 420px;
+
+  padding: 20px;
+  background-color: var(--coal-black-color);
+  border-radius: 10px;
+}
+
+.img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.img > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.text {
+  height: 110px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
