@@ -110,8 +110,11 @@
   display: inline-block;
   width: 7px;
   height: 80px;
-  background-color: var(--red-color);
-  filter: blur(2px);
+  background-color: #ff0000;
+  box-shadow: 0 0 5px 0.5px #ff0000;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .advantages__item > *:not(:last-child) {
