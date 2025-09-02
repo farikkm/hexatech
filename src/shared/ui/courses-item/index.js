@@ -4,6 +4,8 @@ import styles from "./courses-item.module.css";
 export default function CoursesItem({ course }) {
   return (
     <div className={styles.courses__item}>
+      <div className={`${styles.right__corner}`}></div>
+
       <div className={`glass-icon ${styles.courses__item__img}`}>
         <img src={course.icon} alt="course-icon" />
       </div>

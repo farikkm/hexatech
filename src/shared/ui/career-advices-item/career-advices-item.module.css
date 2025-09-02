@@ -26,3 +26,7 @@
   overflow: hidden;
   margin-bottom: 25px;
 }
+
+.link {
+  text-decoration: underline;
+}

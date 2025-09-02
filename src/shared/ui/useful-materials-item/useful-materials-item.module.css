@@ -1,0 +1,79 @@
+.card {
+  padding: 20px;
+  background-color: var(--coal-black-color);
+  border-radius: 10px;
+
+  height: 410px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.content {
+  flex: 1;
+}
+
+.text,
+.howToUse {
+  font-family: var(--reserve-font);
+  font-size: 13px;
+}
+
+.howToUse > strong {
+  font-size: 14px;
+  font-family: var(--main-font);
+}
+
+.text {
+  margin-bottom: 48px;
+}
+
+.img {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img > img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.button {
+  padding: 12px 0;
+  width: 100%;
+
+  background-color: var(--red-color);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("/icons/link.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

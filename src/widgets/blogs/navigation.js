@@ -18,6 +18,7 @@ export default function Navigation() {
         {links.map((link, index) => (
           <li key={index} className={styles.item}>
             <Link
+              scroll={false}
               href={link.href}
               className={`${styles.link} ${
                 currentPath === link.href ? styles._active : ""
