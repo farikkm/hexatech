@@ -21,6 +21,7 @@ export default function Form() {
     setIsLoading(true);
 
     const params = {
+      title: "Записаться на курс",
       fullName: data.fullName,
       email: data.email,
       telephone: data.telephone,

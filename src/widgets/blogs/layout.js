@@ -1,5 +1,6 @@
 import styles from "./layout.module.css";
 import Navigation from "./navigation";
+import SubscriptionForm from "./subscription-form";
 
 export default function Layout({ children, title, subtitle }) {
   return (
@@ -25,6 +26,7 @@ export default function Layout({ children, title, subtitle }) {
           {children}
         </div>
       </div>
+      <SubscriptionForm />
     </div>
   );
 }

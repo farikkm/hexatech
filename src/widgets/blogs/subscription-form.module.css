@@ -1,0 +1,85 @@
+.form__wrapper {
+  margin: 100px 0;
+  background-color: var(--coal-black-color);
+  padding: 30px 0 90px;
+  position: relative;
+}
+
+.form__inputs > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__inputs > * > input {
+  background-color: #333333;
+}
+
+.form__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form__title > span {
+  color: var(--red-color);
+}
+
+.form__button {
+  position: relative;
+
+  margin-top: 20px;
+
+  display: block;
+  width: 100%;
+
+  background-color: var(--red-color);
+
+  padding: 17px 20px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form__button:disabled {
+  opacity: 0.8;
+}
+
+.custom__toast {
+  background-color: var(--coal-black-color) !important;
+  color: #fff !important;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.custom__progress {
+  background: var(--red-color) !important;
+}
+
+.chart__img {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+
+  height: 120px;
+  width: 100%;
+
+  background-image: url("/images/subscription-form/chart.png");
+}
+
+@media (min-width: 1024px) {
+  .form__wrapper > div {
+    display: flex;
+    gap: 100px;
+  }
+
+  .form__title {
+    max-width: 520px;
+  }
+
+  .form {
+    flex: 1;
+    flex-shrink: 0;
+  }
+}
