@@ -46,7 +46,7 @@ const tabs = [
     links: [
       {
         name: "Выпускники",
-        href: "/",
+        href: "/community",
       },
     ],
   },
@@ -55,19 +55,15 @@ const tabs = [
     links: [
       {
         name: "Новости",
-        href: "/",
-      },
-      {
-        name: "Аналитика",
-        href: "/",
+        href: "/blogs/news",
       },
       {
         name: "Карьерные советы",
-        href: "/",
+        href: "/blogs/career-advices",
       },
       {
         name: "Полезные материалы",
-        href: "/",
+        href: "/blogs/useful-materials",
       },
     ],
   },
@@ -76,15 +72,15 @@ const tabs = [
     links: [
       {
         name: "Карта",
-        href: "/",
+        href: "/contacts",
       },
       {
         name: "Адрес",
-        href: "/",
+        href: "/contacts",
       },
       {
         name: "Телефон",
-        href: "/",
+        href: "/contacts",
       },
     ],
   },
