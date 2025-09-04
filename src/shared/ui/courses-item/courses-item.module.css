@@ -1,9 +1,21 @@
 .courses__item {
   position: relative;
-  background-color: var(--coal-black-color);
+  background: var(--coal-black-color);
   padding: 25px 25px 40px 25px;
   border-radius: 5px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 0 100%);
+  border: 2px solid var(--coal-black-color);
+
+  transition: all 0.4s linear;
+}
+
+.courses__item:hover {
+  background: linear-gradient(
+    325.52deg,
+    #da0000 -14.05%,
+    var(--coal-black-color) 57%
+  );
+  border: 2px solid #da0000;
 }
 
 .courses__item__img {
