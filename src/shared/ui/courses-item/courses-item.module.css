@@ -6,6 +6,9 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 0 100%);
   border: 2px solid var(--coal-black-color);
 
+  display: flex;
+  flex-direction: column;
+
   transition: all 0.4s linear;
 }
 
@@ -39,6 +42,7 @@
 
 .courses__item__desc {
   margin-bottom: 40px;
+  flex: 1;
 }
 
 .courses__item__link {

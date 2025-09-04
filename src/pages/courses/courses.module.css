@@ -28,10 +28,6 @@
   gap: 20px;
 }
 
-.courses__items > *:nth-child(2) {
-  border: 3px solid var(--red-color);
-}
-
 @media (min-width: 1024px) {
   .courses__items {
     grid-template-columns: repeat(2, 1fr);
