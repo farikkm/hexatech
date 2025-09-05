@@ -2,17 +2,19 @@ import Form from "@/widgets/form/ui";
 import styles from "./course.module.css";
 import coursesData from "@/shared/data/courses.json";
 import { scrollIntoApplicationForm } from "@/widgets/form/lib";
+import Loader from "@/shared/ui/pysploit-course-bg";
 
 export default function Page({ course }) {
   return (
     <div className={styles.course__page} id="course-page">
       <div className="container">
         <div className={styles.course__hero}>
-          <img
+          {/* <img
             className={styles.course__bg}
             src={course.background_url}
             alt="course_background"
-          />
+          /> */}
+          <Loader />
           <h2 className={styles.course__title}>{course.name}</h2>
           <span className={styles.course__subtitle}>{course.subtitle}</span>
 

@@ -25,9 +25,9 @@
 
 @media (min-width: 768px) {
   :root {
-    --heading-1: 40px;
-    --heading-2: 36px;
-    --heading-3: 26px;
+    --heading-1: 38px;
+    --heading-2: 32px;
+    --heading-3: 24px;
     --heading-4: 20px;
 
     --body-text: 15px;
@@ -106,9 +106,25 @@ main {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 .glass-icon {
@@ -144,6 +160,10 @@ main {
 }
 
 /* ====================> Pages <==================== */
+
+body {
+  background-color: #000;
+}
 
 #home-page > *:not(:last-child) {
   margin-bottom: 50px;
@@ -210,6 +230,103 @@ main {
 
 .header__menu._active .header__link {
   font-size: 30px;
+}
+
+.header__link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header__link::before,
+.header__link::after {
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header__link::before {
+  color: white;
+  z-index: -1;
+}
+.header__link::after {
+  color: white;
+  z-index: -2;
+}
+
+.header__link:hover {
+  color: transparent;
+}
+
+.header__link._active:hover {
+  color: transparent;
+}
+
+.header__link:hover::before,
+.header__link:hover::after {
+  opacity: 1;
+  animation: glitch 0.8s linear;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  10% {
+    transform: translate(-2px, -2px) skew(0.5deg);
+    clip-path: inset(10% 0 85% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  20% {
+    transform: translate(2px, 2px) skew(-0.3deg);
+    clip-path: inset(80% 0 5% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  30% {
+    transform: translate(-3px, -1px) scale(1.01);
+    clip-path: inset(40% 0 40% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  40% {
+    transform: translate(3px, 2px) skew(0.7deg);
+    clip-path: inset(20% 0 45% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  50% {
+    transform: translate(-1px, -2px);
+    clip-path: inset(40% 0 20% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  60% {
+    transform: translate(2px, -1px) scale(0.9);
+    clip-path: inset(15% 0 70% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  70% {
+    transform: translate(-2px, 3px) skew(-0.4deg);
+    clip-path: inset(70% 0 15% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  80% {
+    transform: translate(3px, -1px);
+    clip-path: inset(25% 0 60% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  90% {
+    transform: translate(-1px, 1px) scale(1.02);
+    clip-path: inset(5% 0 90% 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
+  100% {
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+    text-shadow: 2px 0 red, -2px 0 cyan;
+  }
 }
 
 .header__lang {

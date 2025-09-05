@@ -1,4 +1,8 @@
 /* =================> Hero <================= */
+.hero__wrapper {
+  position: relative;
+}
+
 .hero__title {
   text-transform: uppercase;
 }
@@ -32,11 +36,11 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .hero__globus {
-    display: none;
-  }
+.hero__media > video {
+  display: none;
+}
 
+@media (min-width: 768px) {
   .hero__globus_big {
     display: inline-block;
     max-width: 100%;
@@ -56,6 +60,8 @@
 
 @media (min-width: 1265px) {
   .hero__wrapper {
+    height: 700px;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,10 +71,29 @@
   .hero__content {
     text-align: left;
     max-width: 600px;
+    transform: translate(0, -50px);
+  }
+
+  .hero__globus {
+    display: none;
   }
 
   .hero__globus_big {
     transform: translate(30px, 0);
+  }
+
+  .hero__media {
+    width: 100%;
+    position: absolute;
+    transform: translate(70px, 0);
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .hero__media > video {
+    display: block;
+    width: 100%;
   }
 }
 

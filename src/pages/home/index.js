@@ -31,15 +31,17 @@ export default function Page() {
                   Оставить заявку
                 </button>
               </div>
-              <div className={styles.hero__img}>
+              <div className={styles.hero__media}>
+                <video
+                  src="/videos/main.webm"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
                 <img
                   className={styles.hero__globus}
                   src="/images/home-page/hero/globus.png"
-                  alt="globus"
-                />
-                <img
-                  className={styles.hero__globus_big}
-                  src="/images/home-page/hero/globus-big.png"
                   alt="globus"
                 />
               </div>
@@ -61,9 +63,9 @@ export default function Page() {
                     >
                       <img src={item.icon} alt="advantages-icon" />
                     </div>
-                    <h3 className={styles.advantages__item_title}>
+                    <h4 className={styles.advantages__item_title}>
                       {item.title}
-                    </h3>
+                    </h4>
                     <p className={styles.advantages__item_text}>{item.text}</p>
                   </div>
                 ))}
