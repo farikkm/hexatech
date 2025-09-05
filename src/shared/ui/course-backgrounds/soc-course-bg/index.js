@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import styles from "./pysploit-course-bg.module.css";
+import styles from "./soc-course-bg.module.css";
 import { isMobile } from "@/shared/utils/isMobile";
 
-const Loader = () => {
+const SocCourseBg = () => {
   const randomPosition = (index, total) => {
     const cols = Math.ceil(Math.sqrt(total));
     const rows = Math.ceil(total / cols);
@@ -22,10 +22,10 @@ const Loader = () => {
     };
   };
 
-  let numQuantity = isMobile() ? 5 : 15;
+  let numQuantity = isMobile() ? 7 : 22;
 
   return (
-    <StyledWrapper className={styles.wrapper}>
+    <StyledWrapper className={`${styles.wrapper} transition-mask`}>
       {Array.from({ length: numQuantity }).map((_, i) => (
         <div
           key={i}
@@ -144,4 +144,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default Loader;
+export default SocCourseBg;

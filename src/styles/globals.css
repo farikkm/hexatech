@@ -96,7 +96,7 @@ body._lock {
 }
 
 main {
-  margin-top: 50px;
+  /* padding-top: 50px; */
 }
 
 /* ====================> Main Classes <==================== */
@@ -150,6 +150,28 @@ main {
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.7));
 }
 
+.transition-mask {
+  background-color: #000;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 5%,
+    black 95%,
+    transparent
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 25px;
@@ -161,9 +183,9 @@ main {
 
 /* ====================> Pages <==================== */
 
-body {
+/* body {
   background-color: #000;
-}
+} */
 
 #home-page > *:not(:last-child) {
   margin-bottom: 50px;
@@ -178,6 +200,7 @@ body {
 /* ====================> Header <==================== */
 .header {
   padding: 10px 0;
+  /* background-color: #000; */
 }
 
 .header__wrapper {

@@ -16,12 +16,19 @@
 
 /* =================> HERO <================= */
 
+.course__title,
+.course__subtitle {
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
 .course__title {
   text-transform: uppercase;
-  font-size: 64px;
+  font-size: 54px;
   letter-spacing: 5px;
 
-  margin-top: -50px;
+  margin-top: -150px;
 }
 
 .course__aim,
@@ -72,6 +79,16 @@
 .course__info_img {
   width: 60px !important;
   height: 60px !important;
+}
+
+@media (min-width: 768px) {
+  .course__title {
+    text-transform: uppercase;
+    font-size: 64px;
+    letter-spacing: 5px;
+
+    margin-top: -150px;
+  }
 }
 
 /* =================> TEACHERS <================= */

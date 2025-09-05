@@ -2,19 +2,29 @@ import Form from "@/widgets/form/ui";
 import styles from "./course.module.css";
 import coursesData from "@/shared/data/courses.json";
 import { scrollIntoApplicationForm } from "@/widgets/form/lib";
-import Loader from "@/shared/ui/pysploit-course-bg";
+import SocCourseBg from "@/shared/ui/course-backgrounds/soc-course-bg";
+import PysploitCourseBg from "@/shared/ui/course-backgrounds/pysploit-course-bg";
+import { useRouter } from "next/router";
+
+const backgrounds = {
+  "pysploit": <PysploitCourseBg />,
+  "soc-analytics": <SocCourseBg />,
+  "cybersecurity": <PysploitCourseBg />,
+  "cooperative-courses": <PysploitCourseBg />,
+  "forensics": <PysploitCourseBg />,
+}
 
 export default function Page({ course }) {
+  const router = useRouter();
+  const pathname = router.asPath;
+
+  const courseName = pathname.split("/").pop()
+
   return (
     <div className={styles.course__page} id="course-page">
+      {backgrounds[courseName]}
       <div className="container">
         <div className={styles.course__hero}>
-          {/* <img
-            className={styles.course__bg}
-            src={course.background_url}
-            alt="course_background"
-          /> */}
-          <Loader />
           <h2 className={styles.course__title}>{course.name}</h2>
           <span className={styles.course__subtitle}>{course.subtitle}</span>
 
