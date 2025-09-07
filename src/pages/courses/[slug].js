@@ -33,51 +33,51 @@ export default function Page({ course }) {
 
           <div className={styles.course__info}>
             <div>
-              <div className={`glass-icon ${styles.course__info_img}`}>
+              <div style={{ "--icon": "url('/images/course/education-format.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
                 <img
-                  src="/images/course/education-format.svg"
+                  src="/images/course/education-format.svg"    
                   alt="course-info-img"
                 />
               </div>
 
               <div className={styles.course__info_text}>
-                <h5>Формат обучения</h5>
+                <h5 data-glitch="Ф%рмат обуче#ия">Формат обучения</h5>
                 <span>{course.education_format}</span>
               </div>
             </div>
             <div>
-              <div className={`glass-icon ${styles.course__info_img}`}>
+              <div style={{ "--icon": "url('/images/course/education-duration.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
                 <img
                   src="/images/course/education-duration.svg"
                   alt="course-info-img"
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5>Длительность</h5>
+                <h5 data-glitch="Дли%ель#ость">Длительность</h5>
                 <span>{course.full_duration}</span>
               </div>
             </div>
             <div>
-              <div className={`glass-icon ${styles.course__info_img}`}>
+              <div style={{ "--icon": "url('/images/course/education-number.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
                 <img
                   src="/images/course/education-number.svg"
                   alt="course-info-img"
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5>Количество занятий</h5>
+                <h5 data-glitch="Кол%честв& занятий ">Количество занятий</h5>
                 <span>{course.courses_number}</span>
               </div>
             </div>
             <div>
-              <div className={`glass-icon ${styles.course__info_img}`}>
+              <div style={{ "--icon": "url('/images/course/portfolio-info.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
                 <img
                   src="/images/course/portfolio-info.svg"
                   alt="course-info-img"
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5>Портфолио</h5>
+                <h5 data-glitch="П%ртфоли%">Портфолио</h5>
                 <span>{course.portfolio_info}</span>
               </div>
             </div>

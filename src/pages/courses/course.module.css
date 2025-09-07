@@ -77,8 +77,48 @@
 }
 
 .course__info_img {
+  position: relative;
+  z-index: 1;
+
   width: 60px !important;
   height: 60px !important;
+
+  cursor: pointer;
+}
+
+.course__info_img::after,
+.course__info_img::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+.course__info_img::after {
+  transform: translate(-30%, -60%) rotate(5deg);
+}
+
+.course__info_img::before {
+  transform: translate(-70%, -50%) rotate(-8deg);
+}
+
+.course__info_img::after {
+  background-color: #cf1925b6;
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+.course__info_img::before {
+  background-color: #ffffff50;
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+.course__info_img > img {
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -157,7 +197,6 @@
     margin-top: 50px;
   }
 }
-
 
 .teachers__skills_title {
   margin-bottom: 20px;
