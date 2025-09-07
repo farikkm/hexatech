@@ -1,7 +1,7 @@
 .courses__item {
   position: relative;
   background: var(--coal-black-color);
-  padding: 25px 25px 40px 25px;
+  padding: 20px 22px 30px 22px;
   border-radius: 5px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 0 100%);
   border: 2px solid var(--coal-black-color);
@@ -10,6 +10,12 @@
   flex-direction: column;
 
   transition: all 0.4s linear;
+}
+
+@media (min-width: 768px) {
+  .courses__item {
+    padding: 25px 25px 40px 25px;
+  }
 }
 
 .courses__item:hover {
