@@ -137,6 +137,8 @@
   text-align: center;
   margin-top: 30px;
 
+  max-width: 630px;
+
   font-family: var(--reserve-font);
 }
 
@@ -146,6 +148,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: 1024px) {
+  .teachers__overview {
+    font-size: 20px;
+  }
+  .teachers__skills {
+    margin-top: 50px;
+  }
+}
+
 
 .teachers__skills_title {
   margin-bottom: 20px;
