@@ -34,6 +34,8 @@
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 400;
+
+  white-space: nowrap;
 }
 
 .courses__item__duration {
@@ -43,6 +45,8 @@
 
 .courses__item__desc {
   margin-bottom: 40px;
+  font-family: var(--reserve-font);
+  font-size: 14px;
   flex: 1;
 }
 
@@ -63,5 +67,17 @@
 @media (min-width: 768px) {
   .courses__item {
     padding: 25px 25px 40px 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .courses__item__title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .courses__item__title {
+    font-size: 30px;
   }
 }

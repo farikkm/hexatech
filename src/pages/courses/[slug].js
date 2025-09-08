@@ -7,25 +7,28 @@ import PysploitCourseBg from "@/shared/ui/course-backgrounds/pysploit-course-bg"
 import { useRouter } from "next/router";
 
 const backgrounds = {
-  "pysploit": <PysploitCourseBg />,
+  pysploit: <PysploitCourseBg />,
   "soc-analytics": <SocCourseBg />,
-  "cybersecurity": <PysploitCourseBg />,
+  cybersecurity: <PysploitCourseBg />,
   "cooperative-courses": <PysploitCourseBg />,
-  "forensics": <PysploitCourseBg />,
-}
+  forensics: <PysploitCourseBg />,
+};
 
 export default function Page({ course }) {
   const router = useRouter();
   const pathname = router.asPath;
 
-  const courseName = pathname.split("/").pop()
+  const courseName = pathname.split("/").pop();
 
   return (
     <div className={styles.course__page} id="course-page">
       {backgrounds[courseName]}
       <div className="container">
         <div className={styles.course__hero}>
-          <h2 className={styles.course__title}>{course.name}</h2>
+          <h2
+            className={styles.course__title}
+            dangerouslySetInnerHTML={{ __html: course.name }}
+          ></h2>
           <span className={styles.course__subtitle}>{course.subtitle}</span>
 
           <p className={styles.course__description}>{course.full_desc}</p>
@@ -33,9 +36,14 @@ export default function Page({ course }) {
 
           <div className={styles.course__info}>
             <div>
-              <div style={{ "--icon": "url('/images/course/education-format.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
+              <div
+                style={{
+                  "--icon": "url('/images/course/education-format.svg')",
+                }}
+                className={`glass-icon ${styles.course__info_img}`}
+              >
                 <img
-                  src="/images/course/education-format.svg"    
+                  src="/images/course/education-format.svg"
                   alt="course-info-img"
                 />
               </div>
@@ -46,7 +54,12 @@ export default function Page({ course }) {
               </div>
             </div>
             <div>
-              <div style={{ "--icon": "url('/images/course/education-duration.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
+              <div
+                style={{
+                  "--icon": "url('/images/course/education-duration.svg')",
+                }}
+                className={`glass-icon ${styles.course__info_img}`}
+              >
                 <img
                   src="/images/course/education-duration.svg"
                   alt="course-info-img"
@@ -58,7 +71,12 @@ export default function Page({ course }) {
               </div>
             </div>
             <div>
-              <div style={{ "--icon": "url('/images/course/education-number.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
+              <div
+                style={{
+                  "--icon": "url('/images/course/education-number.svg')",
+                }}
+                className={`glass-icon ${styles.course__info_img}`}
+              >
                 <img
                   src="/images/course/education-number.svg"
                   alt="course-info-img"
@@ -70,7 +88,10 @@ export default function Page({ course }) {
               </div>
             </div>
             <div>
-              <div style={{ "--icon": "url('/images/course/portfolio-info.svg')" }} className={`glass-icon ${styles.course__info_img}`}>
+              <div
+                style={{ "--icon": "url('/images/course/portfolio-info.svg')" }}
+                className={`glass-icon ${styles.course__info_img}`}
+              >
                 <img
                   src="/images/course/portfolio-info.svg"
                   alt="course-info-img"

@@ -28,13 +28,7 @@
   font-size: 54px;
   letter-spacing: 5px;
 
-  margin-top: -220px;
-}
-
-@media (min-width: 425px) {
-  .course__title {
-    margin-top: -150px;
-  }
+  margin-top: -150px;
 }
 
 .course__aim,

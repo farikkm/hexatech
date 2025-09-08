@@ -4,7 +4,7 @@ import styles from "./courses.module.css";
 
 export default function Page() {
   return (
-    <div id="courses-page">
+    <div id="courses-page" className={styles.courses}>
       <div className="container">
         <h1 className={styles.courses__title}>
           Обучение Кибербезопасности Нового Поколения

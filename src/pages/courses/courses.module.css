@@ -1,5 +1,9 @@
+.courses {
+  margin-top: 30px;
+}
+
 .courses__wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .courses__title {
@@ -8,11 +12,6 @@
 
 .courses__text {
   margin-top: 20px;
-}
-
-.courses__title,
-.courses__text {
-  text-align: center;
 }
 
 .courses__img {
@@ -26,6 +25,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+@media (min-width: 425px) {
+  .courses,
+  .courses__wrapper {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 1024px) {
