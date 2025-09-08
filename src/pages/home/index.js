@@ -6,6 +6,7 @@ import Link from "next/link";
 import VideoReviews from "@/widgets/video-reviews";
 import Form from "@/widgets/form/ui";
 import { scrollIntoApplicationForm } from "@/widgets/form/lib";
+import { isMobile } from "@/shared/utils/isMobile";
 
 export default function Page() {
   return (
@@ -96,9 +97,10 @@ export default function Page() {
             <div className={styles.reviews__wrapper}>
               <h2 className={styles.reviews__title}>Видео отзывы</h2>
 
-              <VideoReviews />
+              {!isMobile() && <VideoReviews />}
             </div>
           </div>
+          {isMobile() && <VideoReviews />}
         </section>
 
         <section className="sign-up-for-courses">

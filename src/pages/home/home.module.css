@@ -265,11 +265,17 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: 425px) {
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: 1440px) {
   .reviews {
     margin-top: 100px;
   }
   .reviews__title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
