@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Loader from "@/shared/ui/loader_temp";
 import Footer from "@/widgets/footer/ui";
+import ScrollTopButton from "@/widgets/scroll-top-button";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ export default function App({ Component, pageProps }) {
             <motion.div>
               <Component {...pageProps} />
               <Footer />
+              <ScrollTopButton />
             </motion.div>
           </main>
         )}
