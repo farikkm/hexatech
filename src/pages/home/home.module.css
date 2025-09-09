@@ -39,6 +39,12 @@
   font-size: 20px;
 
   cursor: pointer;
+
+  transition: all 0.2s linear;
+}
+
+.hero__button:hover {
+  box-shadow: 0px 0px 8px 2px var(--red-color);
 }
 
 .hero__globus {

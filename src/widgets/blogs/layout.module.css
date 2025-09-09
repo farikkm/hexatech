@@ -29,7 +29,13 @@
   letter-spacing: 1px;
   margin: 0 auto;
 
+  transition: all 0.2s linear;
+
   cursor: pointer;
+}
+
+.hero__button:hover {
+  box-shadow: 0px 0px 8px 2px var(--red-color);
 }
 
 @media (min-width: 768px) {
