@@ -1,6 +1,6 @@
 import styles from "./layout.module.css";
-import Navigation from "./navigation";
-import SubscriptionForm from "./subscription-form";
+import Navigation from "../navigation/navigation";
+import SubscriptionForm from "../subscription-form/subscription-form";
 
 export default function Layout({ children, title, subtitle }) {
   return (
@@ -15,7 +15,16 @@ export default function Layout({ children, title, subtitle }) {
             Читайте актуальные статьи, исследования и рекомендации, которые
             помогут вам развиваться в профессии и быть в курсе всех событий
           </p>
-          <button className={styles.hero__button}>Подписаться на блог</button>
+          <button
+            onClick={() => {
+              const subscriptionForm =
+                document.getElementById("subscription-form");
+              subscriptionForm.scrollIntoView({ behavior: "smooth" });
+            }}
+            className={styles.hero__button}
+          >
+            Подписаться на блог
+          </button>
         </div>
         <div className="events">
           <h3 className={styles.events__title}>{title}</h3>

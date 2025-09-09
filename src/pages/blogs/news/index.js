@@ -1,5 +1,5 @@
 import NewsItem from "@/shared/ui/news-item";
-import Layout from "@/widgets/blogs/layout";
+import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./news.module.css";
 import RecentNewsItem from "@/shared/ui/recent-news-item";
 

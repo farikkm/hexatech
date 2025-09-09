@@ -1,4 +1,4 @@
-import Layout from "@/widgets/blogs/layout";
+import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./useful-materials.module.css";
 import UsefulMaterialsItem from "@/shared/ui/useful-materials-item";
 

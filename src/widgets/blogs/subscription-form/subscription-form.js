@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./subscription-form.module.css";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "../form/api";
+import { sendEmail } from "../../form/api";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LoadingButton from "@/widgets/loading-button";
-import FormInput from "../form/ui/FormInput";
+import FormInput from "../../form/ui/FormInput";
 
 export default function SubscriptionForm() {
   const [isLoading, setIsLoading] = useState(false);

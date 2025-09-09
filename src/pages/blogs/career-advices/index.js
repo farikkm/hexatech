@@ -1,5 +1,5 @@
 import CareerAdvicesItem from "@/shared/ui/career-advices-item";
-import Layout from "@/widgets/blogs/layout";
+import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./career-advices.module.css";
 
 const careerAdvices = [
