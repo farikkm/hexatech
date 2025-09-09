@@ -45,11 +45,14 @@
 
   display: block;
   min-width: 1030px;
-  color: #00ff406e;
+  color: #00ac2b;
+
+  font-family: var(--reserve-font);
+  font-weight: 300;
 
   line-height: 160%;
   font-size: 36px;
-  text-shadow: 0 0 1px #00c69e9e, 0 0 8px #00c69ea7, 0 0 12px #00c69eb1;
+  text-shadow: 0 0 0px #00ab2b, 0 0 0px #00ab2b, 0 0 6px #00ab2b;
 
   user-select: none;
 }
