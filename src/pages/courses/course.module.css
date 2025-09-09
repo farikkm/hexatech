@@ -310,6 +310,13 @@
   padding: 40px 24px;
   background-color: var(--coal-black-color);
   border-radius: 8px;
+  outline: 1px solid transparent;
+
+  transition: all 0.2s linear;
+}
+
+.prices__card:hover {
+  outline: 1px solid var(--red-color);
 }
 
 .prices__card_top {
