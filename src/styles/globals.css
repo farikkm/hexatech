@@ -98,10 +98,6 @@ body._lock {
   overflow: hidden;
 }
 
-main {
-  /* padding-top: 50px; */
-}
-
 /* ====================> Main Classes <==================== */
 .wrapper {
   padding-bottom: 20px;
@@ -272,7 +268,7 @@ main {
 
 .header__link::before,
 .header__link::after {
-  content: attr(data-glitch);
+  content: attr(data-label);
   position: absolute;
   top: 0;
   left: 0;
@@ -301,7 +297,7 @@ main {
 .header__link:hover::before,
 .header__link:hover::after {
   opacity: 1;
-  animation: glitch 0.8s linear;
+  animation: glitch 0.3s step-end;
 }
 
 @keyframes glitch {
@@ -309,6 +305,7 @@ main {
     transform: translate(0, 0);
     clip-path: inset(0 0 0 0);
     text-shadow: 2px 0 red, -2px 0 cyan;
+    content: attr(data-glitch);
   }
   10% {
     transform: translate(-2px, -2px) skew(0.5deg);
@@ -330,11 +327,6 @@ main {
     clip-path: inset(20% 0 45% 0);
     text-shadow: 2px 0 red, -2px 0 cyan;
   }
-  50% {
-    transform: translate(-1px, -2px);
-    clip-path: inset(40% 0 20% 0);
-    text-shadow: 2px 0 red, -2px 0 cyan;
-  }
   60% {
     transform: translate(2px, -1px) scale(0.9);
     clip-path: inset(15% 0 70% 0);
@@ -348,11 +340,6 @@ main {
   80% {
     transform: translate(3px, -1px);
     clip-path: inset(25% 0 60% 0);
-    text-shadow: 2px 0 red, -2px 0 cyan;
-  }
-  90% {
-    transform: translate(-1px, 1px) scale(1.02);
-    clip-path: inset(5% 0 90% 0);
     text-shadow: 2px 0 red, -2px 0 cyan;
   }
   100% {

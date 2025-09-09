@@ -33,6 +33,7 @@ export default function Header() {
                 <li key={index} className="header__item">
                   <Link
                     data-glitch={link.glitch}
+                    data-label={link.label}
                     href={link.href}
                     className={`header__link ${
                       currentPath === link.href ? "_active" : ""
