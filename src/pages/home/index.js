@@ -17,8 +17,8 @@ export default function Page() {
             <div className={styles.hero__wrapper}>
               <div className={styles.hero__content}>
                 <h1 className={styles.hero__title}>
-                  HEXATECH - кибербезопасности и стань специалистом в этой
-                  области
+                  HEXATECH - <br /> Обучайся кибербезопасности и стань
+                  специалистом в этой области
                 </h1>
                 <p className={styles.hero__text}>
                   Учитесь у действующих профессионалов международного масштаба и
