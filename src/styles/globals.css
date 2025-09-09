@@ -7,6 +7,7 @@
 :root {
   --main-font: "JetBrains Mono";
   --reserve-font: "IBM Plex Mono";
+  --footer-font: "Inter";
 
   --heading-1: 28px;
   --heading-2: 24px;
@@ -485,6 +486,9 @@ body._lock {
 
 .footer__link {
   font-size: 14px;
+
+  font-family: var(--footer-font);
+  font-weight: 400;
 }
 
 .footer__bottom {
@@ -499,6 +503,8 @@ body._lock {
 
 .footer__bottom > * {
   font-size: 14px;
+  font-family: var(--footer-font);
+  font-weight: 400;
 }
 
 .footer__socials {

@@ -16,9 +16,15 @@
 .hero__title {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 34px;
 }
 
 .hero__text {
+  display: block;
+  margin: 0 auto;
+
+  max-width: 840px;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
@@ -27,12 +33,14 @@
 
   text-transform: uppercase;
   background-color: var(--red-color);
-  padding: 17px 38px;
+  padding: 17px 70px;
   border-radius: 8px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   margin: 0 auto;
+
+  font-size: 16px;
 
   transition: all 0.2s linear;
 
