@@ -1,24 +1,63 @@
 .courses__item {
-  position: relative;
   background: var(--coal-black-color);
   padding: 20px 22px 30px 22px;
   border-radius: 5px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 100%, 0 100%);
-  border: 2px solid var(--coal-black-color);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 100px),
+    calc(100% - 100px) 100%,
+    0 100%
+  );
+  border: 2px solid transparent;
+  transition: border 0.3s;
+  position: relative;
 
   display: flex;
   flex-direction: column;
+}
 
-  transition: all 0.4s linear;
+.courses__item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  z-index: -1;
+
+  width: 414px;
+  height: 414px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s;
+}
+
+.courses__item::after {
+  content: "";
+  width: 2px;
+  height: 142px;
+  position: absolute;
+  bottom: -2px;
+  left: calc(100% - 100px);
+  transform: rotate(45deg);
+  transform-origin: bottom center;
+  transition: background-color 0.3s;
 }
 
 .courses__item:hover {
-  background: linear-gradient(
-    325.52deg,
-    #da0000 -14.05%,
-    var(--coal-black-color) 57%
-  );
   border: 2px solid #da0000;
+}
+
+.courses__item:hover:before {
+  background: linear-gradient(135deg, transparent 50%, #da0000 100%);
+  transform: scale(1);
+}
+
+.courses__item:hover:after {
+  background-color: #da0000;
+}
+
+.courses__item:hover::after {
+  border-left: 2px solid var(--red-color);
 }
 
 .courses__item__img {

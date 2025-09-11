@@ -14,11 +14,12 @@
   transition-duration: 0.3s;
   overflow: hidden;
   position: fixed;
+  z-index: 1000;
   bottom: 30px;
   right: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .button {
     bottom: 50px;
     right: 50px;

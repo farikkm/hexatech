@@ -445,6 +445,7 @@
 .resume__skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .resume__skills > *:not(:last-child) {
