@@ -6,13 +6,14 @@ import SocCourseBg from "@/shared/ui/course-backgrounds/soc-course-bg";
 import PysploitCourseBg from "@/shared/ui/course-backgrounds/pysploit-course-bg";
 import { useRouter } from "next/router";
 import CorporativeBg from "@/shared/ui/course-backgrounds/corporative-bg";
+import ForensicsBg from "@/shared/ui/course-backgrounds/forensics-bg";
 
 const backgrounds = {
   pysploit: <PysploitCourseBg />,
   "soc-analytics": <SocCourseBg />,
   cybersecurity: <PysploitCourseBg />,
   "cooperative-courses": <CorporativeBg />,
-  forensics: <PysploitCourseBg />,
+  forensics: <ForensicsBg />,
 };
 
 export default function Page({ course }) {
