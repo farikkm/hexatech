@@ -20,7 +20,7 @@
 .course__subtitle {
   width: fit-content;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .course__title {
