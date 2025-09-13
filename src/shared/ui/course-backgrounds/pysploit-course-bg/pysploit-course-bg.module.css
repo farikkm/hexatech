@@ -11,19 +11,19 @@
 }
 
 .pink {
-  color: #ff4eb3;
+  color: #df3079;
 }
 .green {
-  color: #00ff9f;
+  color: #048d6b;
 }
 .red {
-  color: #ff4444;
+  color: #ff0000;
 }
 .blue {
-  color: #4dc3ff;
+  color: #2b85bc;
 }
 .gray {
-  color: #666;
+  color: #3d3d3d;
 }
 .cyan {
   color: #00ffe5;
@@ -33,7 +33,7 @@
   color: #fff;
 }
 
-.wrapper:hover .pink {
+/* .wrapper:hover .pink {
   color: #ff4eb3;
   text-shadow: 0 0 5px #ff4eb3, 0 0 15px #ff1fa2;
 }
@@ -56,13 +56,12 @@
 .wrapper:hover .gray {
   color: #888;
   text-shadow: 0 0 5px #444;
-}
+} */
 
 /* Blocks */
 .wrapper {
   position: relative;
   height: 600px;
-  filter: blur(1.5px);
 
   transition: all 0.3s linear;
 }
@@ -79,9 +78,18 @@
 .code__block {
   position: absolute;
 
-  font-size: 12px;
-  line-height: 1.6;
-  white-space: pre; /* сохраняем переносы */
+  font-size: 14px;
+  font-family: var(--reserve-font);
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.code__block * {
+  font-size: 14px;
+}
+
+.code__block > p {
+  white-space: pre;
 }
 
 .wrapper > div > div:first-child {
@@ -97,9 +105,13 @@
   color: #00ff9f;
 }
 
-.wrapper:hover .code__block {
-  color: #00ff9f;
-  text-shadow: 0 0 5px #00ff9f, 0 0 15px #00cc7a;
+.code__block_white {
+  color: #ffffff;
+}
+
+.code__inner,
+.code__block_white {
+  display: inline-block;
 }
 
 .img {
@@ -109,6 +121,31 @@
   width: 100vw;
   height: 100%;
   object-fit: cover;
+}
+
+.caret {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  margin-left: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  animation: blink 1s steps(2, start) infinite;
+  transform-origin: center;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px) {

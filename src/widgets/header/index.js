@@ -24,8 +24,9 @@ export default function Header() {
       <div className="container">
         <div className="header__wrapper">
           <Link href={"/home"} className="header__logo">
-            <img src="/icons/favicon.svg" alt="hexatech-logo" />
-            <span>{APP_NAME}</span>
+            {/* <img src="/icons/favicon.svg" alt="hexatech-logo" />
+            <span>{APP_NAME}</span> */}
+            <img src="/icons/logo.svg" alt="hexatech-logo" />
           </Link>
           <nav className={`header__menu ${isMenuOpen ? "_active" : ""}`}>
             <ul className="header__list">

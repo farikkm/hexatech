@@ -215,21 +215,9 @@ body._lock {
   align-items: center;
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
 .header__logo > img {
-  width: 32px;
-  height: 32px;
-}
-
-.header__logo > span {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: var(--heading-2);
+  width: 150px;
+  height: auto;
 }
 
 .header__menu {
@@ -430,8 +418,8 @@ body._lock {
   }
 
   .header__logo > img {
-    width: 45px;
-    height: 45px;
+    width: 150px;
+    height: auto;
   }
 
   .header__lang {
