@@ -20,7 +20,6 @@ export default function ForensicsBg() {
   const [revealed, setRevealed] = useState({});
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
-  // генерируем сетку один раз и при ресайзе
   useEffect(() => {
     const generateGrid = () => {
       return Array.from({ length: lineQuantity }, () =>
@@ -109,7 +108,6 @@ export default function ForensicsBg() {
       const dist = Math.hypot(cx - cursorPos.x, cy - cursorPos.y);
 
       if (dist < radius) {
-        // круг "заходит" в ячейку
         const i = Math.floor(idx / cellQuantity);
         const j = idx % cellQuantity;
         const key = `${i}-${j}`;

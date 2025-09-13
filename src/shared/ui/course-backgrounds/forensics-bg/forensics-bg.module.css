@@ -1,4 +1,7 @@
 .wrapper {
+  position: relative;
+  z-index: 1000;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -52,7 +55,6 @@
   display: block;
 }
 
-/* Прозрачный центр и яркий край круга */
 .cursor__follower::before {
   content: "";
   position: absolute;
@@ -67,7 +69,6 @@
   filter: blur(var(--blur));
 }
 
-/* Обводка + свечение по внешнему радиусу */
 .cursor__follower::after {
   content: "";
   position: absolute;
