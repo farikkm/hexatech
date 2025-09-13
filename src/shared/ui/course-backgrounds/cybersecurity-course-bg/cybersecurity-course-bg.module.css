@@ -1,0 +1,214 @@
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  position: relative;
+  height: 600px;
+}
+
+.lines__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lines__wrapper > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(52, 199, 89);
+  text-shadow: rgb(52, 199, 89) 1px 0px 10px;
+  animation: glitch-flicker 2.5s infinite step-end;
+}
+
+.line > p {
+  display: inline-block;
+}
+
+.line__1 {
+  top: 40px;
+  right: 20px;
+}
+
+.line__2 {
+  top: 150px;
+  left: 20px;
+}
+
+.line__3 {
+  right: 30px;
+  bottom: 180px;
+}
+
+.line__4 {
+  bottom: 280px;
+  left: 50px;
+}
+
+@media (min-width: 1440px) {
+  .line__1 {
+    top: 100px;
+    right: 100px;
+  }
+
+  .line__2 {
+    top: 150px;
+    left: 50px;
+  }
+
+  .line__3 {
+    right: 30px;
+    bottom: 100px;
+  }
+
+  .line__4 {
+    bottom: 230px;
+    left: 100px;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  margin-left: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  animation: blink 1s steps(2, start) infinite;
+  transform-origin: center;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 6px;
+  }
+  10% {
+    opacity: 0.8;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 10px;
+  }
+  30% {
+    opacity: 0.7;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  40% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 4px;
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 3px #00ff55;
+  }
+  60% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 8px;
+  }
+  70% {
+    opacity: 0.9;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 10px;
+  }
+  90% {
+    opacity: 0.7;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: rgb(52, 199, 89) 1px 0px 6px;
+  }
+}
+
+@keyframes glitch-flicker {
+  0% {
+    opacity: 0.9;
+  }
+  5% {
+    opacity: 0.6;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  10% {
+    opacity: 0.8;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  15% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+  20% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  25% {
+    opacity: 0.5;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  30% {
+    opacity: 0.8;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  35% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  40% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  60% {
+    opacity: 0.5;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  70% {
+    opacity: 0.8;
+    text-shadow: 0 0 2px #00ff55;
+  }
+  80% {
+    opacity: 0.6;
+    text-shadow: 0 0 1px #00ff55;
+  }
+  90% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 0.9;
+    text-shadow: 0 0 2px #00ff55;
+  }
+}

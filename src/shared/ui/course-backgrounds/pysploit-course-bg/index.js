@@ -19,6 +19,7 @@ export default function PysploitCourseBg() {
     idxRef.current = 0;
     setBlock1("");
     setShowCursor1(true);
+    setShowCursor2(true);
 
     const t = setInterval(() => {
       idxRef.current += 1;
@@ -26,7 +27,6 @@ export default function PysploitCourseBg() {
       if (idxRef.current >= full.length) {
         clearInterval(t);
         setShowCursor1(false);
-        setTimeout(() => setShowCursor2(true), 300);
       }
     }, speed);
 
