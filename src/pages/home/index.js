@@ -7,6 +7,7 @@ import VideoReviews from "@/widgets/video-reviews";
 import Form from "@/widgets/form/ui";
 import { scrollIntoApplicationForm } from "@/widgets/form/lib";
 import { isMobile } from "@/shared/utils/isMobile";
+import { APP_NAME } from "@/shared/config/contants";
 
 export default function Page() {
   return (
@@ -21,9 +22,8 @@ export default function Page() {
                   специалистом в этой области
                 </h1>
                 <p className={styles.hero__text}>
-                  Учитесь у действующих профессионалов международного масштаба и
-                  прокачивайте навыки в которых есть острая потребность на рынке
-                  труда во всем мире
+                  Начните карьеру в кибербезопасности уже сегодня Оставьте
+                  заявку и получите бесплатную консультацию
                 </p>
                 <button
                   onClick={scrollIntoApplicationForm}
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="container">
             <div className={styles.advantages__wrapper}>
               <h2 className={styles.advantages__title}>
-                Преимуществами HEXATECH
+                Преимущества {APP_NAME}
               </h2>
 
               <div className={styles.advantages__items}>
