@@ -6,18 +6,24 @@ export default function Page() {
   return (
     <div id="courses-page" className={styles.courses}>
       <div className="container">
-        <h1 className={styles.courses__title}>
-          Обучение Кибербезопасности Нового Поколения
-        </h1>
-        <p className={styles.courses__text}>
-          Миссия HEXATECH — подготовить специалистов, которые смогут эффективно
-          противостоять киберугрозам и обеспечивать безопасность данных в любой
-          точке мира
-        </p>
-        <img
-          className={styles.courses__img}
-          src="/images/courses/semi-globus.png"
-          alt="globus"
+        <div className={styles.courses__content}>
+          <h1 className={styles.courses__title}>
+            Обучение Кибербезопасности Нового Поколения
+          </h1>
+          <p className={styles.courses__text}>
+            Миссия HEXATECH — подготовить специалистов, которые смогут
+            эффективно противостоять киберугрозам и обеспечивать безопасность
+            данных в любой точке мира
+          </p>
+        </div>
+
+        <video
+          className={`transition-mask ${styles.video}`}
+          src="/videos/courses.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
         <div className={styles.courses__wrapper}>
           <h2>Все нужные навыки в одном месте</h2>

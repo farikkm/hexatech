@@ -33,18 +33,23 @@ export default function Page() {
                 </button>
               </div>
               <div className={styles.hero__media}>
-                <video
-                  src="/videos/main.webm"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                />
-                <img
-                  className={styles.hero__globus}
-                  src="/images/home-page/hero/globus.png"
-                  alt="globus"
-                />
+                {isMobile() ? (
+                  <video
+                    src="/videos/main-mobile.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  <video
+                    src="/videos/main.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                )}
               </div>
             </div>
           </div>

@@ -1,5 +1,10 @@
 .courses {
   margin-top: 30px;
+  position: relative;
+}
+
+.courses__content {
+  height: 450px;
 }
 
 .courses__wrapper {
@@ -23,11 +28,6 @@
   font-family: var(--reserve-font);
 }
 
-.courses__img {
-  margin-top: 45px;
-  max-width: 100%;
-}
-
 .courses__items {
   margin-top: 35px;
 
@@ -36,10 +36,24 @@
   gap: 20px;
 }
 
+.video {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: -1;
+
+  width: 100%;
+  height: 750px;
+}
+
 @media (min-width: 425px) {
   .courses,
   .courses__wrapper {
     margin-top: 50px;
+  }
+
+  .courses__content {
+    height: 600px;
   }
 }
 
@@ -50,7 +64,19 @@
 }
 
 @media (min-width: 1024px) {
+  .courses__content {
+    height: 600px;
+  }
   .courses__items {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .video {
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: -1;
+
+    width: 100%;
+    height: 670px;
   }
 }
