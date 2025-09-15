@@ -519,14 +519,17 @@
 
   position: absolute;
   left: 20px;
-  top: -3px;
+  top: -4px;
 
   width: 180px;
-  height: 8px;
+  height: 4px;
 
+  display: inline-block;
   background-color: #ff0000;
   box-shadow: 0 0 5px 0.5px #ff0000;
-  filter: blur(2px);
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .portfolio__card_top {
@@ -542,7 +545,11 @@
 
 .portfolio__card:hover .portfolio__card_index {
   color: #ff0000;
-  text-shadow: #ff0000 1px 0px 6px;
+  text-shadow: #ff0000 0.5px 0px 6px;
+}
+
+.portfolio__card:hover::before {
+  box-shadow: 0 0 7px 0.5px #ff0000;
 }
 
 .portfolio__card_text {

@@ -443,19 +443,15 @@ body._lock {
 
 .footer__logo {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 2px;
-
-  font-weight: 700;
-  font-size: 20px;
+  align-items: center;
 
   margin-bottom: 25px;
 }
 
 .footer__logo > img {
-  width: 45px;
-  height: 45px;
+  width: 150px;
+  height: auto;
 }
 
 .footer__menu {

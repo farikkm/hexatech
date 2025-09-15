@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="footer__wrapper">
           <div className="footer__top">
             <div className="footer__logo">
-              <img src="/icons/favicon.svg" alt="hexatech-logo" />
-              <span>{APP_NAME}</span>
+              {/* <img src="/icons/favicon.svg" alt="hexatech-logo" />
+              <span>{APP_NAME}</span> */}
+              <img src="/icons/logo.svg" alt="hexatech-logo" />
             </div>
             <nav className="footer__menu">
               {tabs.map((tab) => (
