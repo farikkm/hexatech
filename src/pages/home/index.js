@@ -35,7 +35,7 @@ export default function Page() {
               <div className={styles.hero__media}>
                 {isMobile() ? (
                   <video
-                    src="/videos/main-mobile.mp4"
+                    src="/videos/main-mobile.webm"
                     autoPlay
                     loop
                     muted
@@ -43,7 +43,7 @@ export default function Page() {
                   />
                 ) : (
                   <video
-                    src="/videos/main.mp4"
+                    src="/videos/main.webm"
                     autoPlay
                     loop
                     muted

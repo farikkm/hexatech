@@ -19,7 +19,7 @@ export default function Page() {
 
         <video
           className={`transition-mask ${styles.video}`}
-          src="/videos/courses.mp4"
+          src="/videos/courses.webm"
           autoPlay
           loop
           muted
