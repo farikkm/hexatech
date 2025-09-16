@@ -494,6 +494,8 @@
   justify-content: center;
 
   background-color: #fff;
+
+  cursor: pointer;
 }
 
 @media (min-width: 1440px) {
