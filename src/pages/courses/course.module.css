@@ -479,6 +479,23 @@
   background: url("/icons/course/check_circle_fill.svg");
 }
 
+.resume__add {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  margin: 50px auto 0px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+}
+
 @media (min-width: 1440px) {
   .resume__cards {
     grid-template-columns: repeat(6, 1fr);

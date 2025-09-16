@@ -350,6 +350,9 @@ export default function Page({ course }) {
               </div>
             </div>
           </div>
+          <div className={styles.resume__add}>
+            <img src="/icons/course/plus.svg" alt="plus" />
+          </div>
         </div>
 
         <div className={styles.portfolio}>
