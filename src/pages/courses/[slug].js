@@ -34,8 +34,14 @@ export default function Page({ course }) {
           ></h2>
           <span className={styles.course__subtitle}>{course.subtitle}</span>
 
-          <p className={styles.course__description}>{course.full_desc}</p>
-          <p className={styles.course__aim}>{course.course_aim}</p>
+          <p
+            className={styles.course__description}
+            dangerouslySetInnerHTML={{ __html: course.full_desc }}
+          />
+          <p
+            className={styles.course__aim}
+            dangerouslySetInnerHTML={{ __html: course.course_aim }}
+          />
 
           <div className={styles.course__info}>
             <div>
