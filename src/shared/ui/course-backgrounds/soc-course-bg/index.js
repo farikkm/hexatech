@@ -11,7 +11,6 @@ const SocCourseBg = () => {
     const row = Math.floor(index / cols);
     const col = index % cols;
 
-    // немного «размазываем» внутри ячейки
     const top = (row + Math.random() * 0.8) * (100 / rows);
     const left = (col + Math.random() * 0.8) * (100 / cols);
 
@@ -22,7 +21,8 @@ const SocCourseBg = () => {
     };
   };
 
-  let numQuantity = isMobile() ? 7 : 22;
+  let numQuantity = isMobile() ? 12 : 22;
+  let maxQuantityInLine = isMobile() ? 4 : 6;
 
   return (
     <StyledWrapper className={`${styles.wrapper} transition-mask`}>
@@ -32,7 +32,7 @@ const SocCourseBg = () => {
           style={randomPosition(i, numQuantity)}
           className="ai-matrix-loader"
         >
-          {Array.from({ length: Math.floor(Math.random() * 6) + 1 }).map(
+          {Array.from({ length: Math.floor(Math.random() * maxQuantityInLine) + 1 }).map(
             (_, j) => (
               <div key={j} className="digit">
                 {Math.random().toFixed()}
