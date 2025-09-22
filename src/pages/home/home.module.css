@@ -23,8 +23,6 @@
 
 .hero__wrapper {
   padding-top: 30px;
-
-  margin-top: 30px;
   position: relative;
 }
 
@@ -246,13 +244,19 @@
   font-family: var(--reserve-font);
 }
 
+@media (min-width: 768px) {
+  .advantages__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 1024px) {
   .advantages__item:nth-child(odd) {
     display: block;
   }
 
   .advantages__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
