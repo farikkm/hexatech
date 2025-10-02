@@ -4,16 +4,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "/home",
+        source: "/home",
+        destination: "/",
         permanent: true,
       },
     ];
   },
-  // i18n: {
-  //   locales: ["ru-RU", "en-US", "uz-Cyrl"],
-  //   defaultLocale: "ru-RU",
-  // },
+  i18n: {
+    locales: ["ru", "en", "uz"],
+    defaultLocale: "ru",
+  },
 };
 
 export default nextConfig;

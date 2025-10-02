@@ -4,6 +4,7 @@ import { links } from "./model";
 import { useState, useEffect } from "react";
 import { isMobile } from "@/shared/utils/isMobile";
 import { APP_NAME } from "@/shared/config/contants";
+import LanguageSwitcher from "../language-switcher";
 
 export default function Header() {
   const router = useRouter();
@@ -49,10 +50,8 @@ export default function Header() {
               ))}
             </ul>
           </nav>
-          <div className="header__lang">
-            <span id="language">Ru</span>
-            {/* <img src="/icons/header/arrow-down.svg" alt="arrow-down" /> */}
-          </div>
+
+          <LanguageSwitcher />
 
           <div
             onClick={() => setIsMenuOpen(!isMenuOpen)}

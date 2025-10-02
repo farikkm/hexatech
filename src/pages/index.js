@@ -8,8 +8,11 @@ import Form from "@/widgets/form/ui";
 import { scrollIntoApplicationForm } from "@/widgets/form/lib";
 import { isMobile } from "@/shared/utils/isMobile";
 import { APP_NAME } from "@/shared/config/contants";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("Index");
+
   return (
     <>
       <div id="home-page">
@@ -20,6 +23,7 @@ export default function Page() {
                 <h1 className={styles.hero__title}>
                   HEXATECH - <br /> Обучайся кибербезопасности и стань
                   специалистом в этой области
+                  {t("title")}
                 </h1>
                 <p className={styles.hero__text}>
                   Начните карьеру в кибербезопасности уже сегодня Оставьте
@@ -114,4 +118,12 @@ export default function Page() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${context.locale}.json`)).default,
+    },
+  };
 }
