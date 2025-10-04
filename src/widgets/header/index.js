@@ -25,8 +25,6 @@ export default function Header() {
       <div className="container">
         <div className="header__wrapper">
           <Link href={"/home"} className="header__logo">
-            {/* <img src="/icons/favicon.svg" alt="hexatech-logo" />
-            <span>{APP_NAME}</span> */}
             <img src="/icons/logo.svg" alt="hexatech-logo" />
           </Link>
           <nav className={`header__menu ${isMenuOpen ? "_active" : ""}`}>
@@ -51,15 +49,17 @@ export default function Header() {
             </ul>
           </nav>
 
-          <LanguageSwitcher />
+          <div className="header__actions">
+            <LanguageSwitcher />
 
-          <div
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`header__menu_button ${isMenuOpen ? "_active" : ""}`}
-          >
-            <div></div>
-            <div></div>
-            <div></div>
+            <div
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={`header__menu_button ${isMenuOpen ? "_active" : ""}`}
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

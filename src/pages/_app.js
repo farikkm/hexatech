@@ -20,10 +20,7 @@ export default function App({ Component, pageProps }) {
         <title>{currentLink ? currentLink.label : APP_NAME}</title>
       </Head>
 
-      <NextIntlClientProvider
-        messages={pageProps.messages}
-        locale={router.locale}
-      >
+      <NextIntlClientProvider messages={pageProps.messages} locale={locale}>
         <AppLayout Component={Component} pageProps={pageProps} />
       </NextIntlClientProvider>
     </>
