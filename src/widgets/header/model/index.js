@@ -1,7 +1,7 @@
 const links = [
   {
     translationLabel: "home",
-    href: "/home",
+    href: "/",
   },
   {
     translationLabel: "courses",

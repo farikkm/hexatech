@@ -1,8 +1,12 @@
 import coursesData from "@/shared/data/courses.json";
 import CoursesItem from "@/shared/ui/courses-item";
 import styles from "./courses.module.css";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
 
-export default function Page() {
+function Page() {
   return (
     <div id="courses-page" className={styles.courses}>
       <div className="container">
@@ -41,3 +45,7 @@ export default function Page() {
     </div>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);
