@@ -9,8 +9,12 @@ import { scrollIntoApplicationForm } from "@/widgets/form/lib";
 import { isMobile } from "@/shared/utils/isMobile";
 import { APP_NAME } from "@/shared/config/contants";
 import { useTranslations } from "next-intl";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
 
-export default function Page() {
+function Page() {
   const t = useTranslations("Home-Page");
 
   return (
@@ -118,10 +122,6 @@ export default function Page() {
   );
 }
 
-export async function getStaticProps(context) {
-  return {
-    props: {
-      messages: (await import(`../../messages/${context.locale}.json`)).default,
-    },
-  };
-}
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);

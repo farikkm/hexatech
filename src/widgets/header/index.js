@@ -5,8 +5,12 @@ import { isMobile } from "@/shared/utils/isMobile";
 import LanguageSwitcher from "../language-switcher";
 import { links } from "./model";
 import { useTranslations } from "next-intl";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
 
-export default function Header() {
+function Header() {
   const t = useTranslations("Header");
 
   const router = useRouter();
@@ -69,11 +73,6 @@ export default function Header() {
   );
 }
 
-export async function getStaticProps(context) {
-  return {
-    props: {
-      messages: (await import(`../../../messages/${context.locale}.json`))
-        .default,
-    },
-  };
-}
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Header);
