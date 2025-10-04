@@ -11,7 +11,7 @@ import { APP_NAME } from "@/shared/config/contants";
 import { useTranslations } from "next-intl";
 
 export default function Page() {
-  const t = useTranslations("Index");
+  const t = useTranslations("Home-Page");
 
   return (
     <>
@@ -20,20 +20,18 @@ export default function Page() {
           <div className="container">
             <div className={styles.hero__wrapper}>
               <div className={styles.hero__content}>
-                <h1 className={styles.hero__title}>
-                  HEXATECH - <br /> Обучайся кибербезопасности и стань
-                  специалистом в этой области
-                  {t("title")}
-                </h1>
+                <h1
+                  className={styles.hero__title}
+                  dangerouslySetInnerHTML={{ __html: t("sections.hero.title") }}
+                />
                 <p className={styles.hero__text}>
-                  Начните карьеру в кибербезопасности уже сегодня Оставьте
-                  заявку и получите бесплатную консультацию
+                  {t("sections.hero.subtitle")}
                 </p>
                 <button
                   onClick={scrollIntoApplicationForm}
                   className={styles.hero__button}
                 >
-                  Оставить заявку
+                  {t("sections.hero.button")}
                 </button>
               </div>
               <div className={styles.hero__media}>

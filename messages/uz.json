@@ -8,5 +8,36 @@
   },
   "PageLayout": {
     "pageTitle": "next-intl"
+  },
+  "Header": {
+    "home": {
+      "label": "Bosh sahifa",
+      "glitchLabel": "BØSH S@HIF@"
+    },
+    "courses": {
+      "label": "Kurslar",
+      "glitchLabel": "KYP$|@R"
+    },
+    "community": {
+      "label": "Jamiyat",
+      "glitchLabel": "J@MIY@T"
+    },
+    "blog": {
+      "label": "Blog",
+      "glitchLabel": "B|_0¢"
+    },
+    "contacts": {
+      "label": "Aloqa",
+      "glitchLabel": "@LØQ@"
+    }
+  },
+  "Home-Page": {
+    "sections": {
+      "hero": {
+        "title": "HEXATECH – <br />Kiberxavfsizlikni o‘rganing va bu sohada mutaxassis bo‘ling",
+        "subtitle": "Kiberxavfsizlik bo‘yicha faoliyatingizni bugunoq boshlang. Ariza qoldiring va bepul maslahat oling.",
+        "button": "Ariza qoldirish"
+      }
+    }
   }
 }

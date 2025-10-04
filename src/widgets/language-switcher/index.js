@@ -16,29 +16,33 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div
-      className={styles.wrapper}
-      onClick={() => setOpenMenu((prev) => !prev)}
-    >
-      <span className={styles.active__option}>
-        {currentLocaleDisplay.toUpperCase()}
-      </span>
-      <div className={`${styles.menu} ${openMenu ? styles.menu__active : ""}`}>
-        <div className={styles.options}>
-          {locales
-            .filter((l) => l !== currentLocale)
-            .map((locale, index) => (
-              <span onClick={() => handleLocaleChange(locale)} key={index}>
-                {locale.toUpperCase()}
-              </span>
-            ))}
+    <div tabIndex={0} onBlur={() => setOpenMenu(false)}>
+      <div
+        className={styles.wrapper}
+        onClick={() => setOpenMenu((prev) => !prev)}
+      >
+        <span className={styles.active__option}>
+          {currentLocaleDisplay.toUpperCase()}
+        </span>
+        <div
+          className={`${styles.menu} ${openMenu ? styles.menu__active : ""}`}
+        >
+          <div className={styles.options}>
+            {locales
+              .filter((l) => l !== currentLocale)
+              .map((locale, index) => (
+                <span onClick={() => handleLocaleChange(locale)} key={index}>
+                  {locale.toUpperCase()}
+                </span>
+              ))}
+          </div>
         </div>
+        <img
+          className={styles.icon}
+          src="/icons/header/arrow-down.svg"
+          alt="arrow-down"
+        />
       </div>
-      <img
-        className={styles.icon}
-        src="/icons/header/arrow-down.svg"
-        alt="arrow-down"
-      />
     </div>
   );
 };

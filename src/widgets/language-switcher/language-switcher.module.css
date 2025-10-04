@@ -72,6 +72,10 @@
   border-radius: 14px;
 }
 
+.active__option {
+  user-select: none;
+}
+
 .options {
   display: flex;
   flex-direction: column;

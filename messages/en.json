@@ -8,5 +8,36 @@
   },
   "PageLayout": {
     "pageTitle": "next-intl"
+  },
+  "Header": {
+    "home": {
+      "label": "Home",
+      "glitchLabel": "HØME"
+    },
+    "courses": {
+      "label": "Courses",
+      "glitchLabel": "CØURSΣS"
+    },
+    "community": {
+      "label": "Community",
+      "glitchLabel": "CØMMUNITY"
+    },
+    "blog": {
+      "label": "Blog",
+      "glitchLabel": "B|_0¢"
+    },
+    "contacts": {
+      "label": "Contacts",
+      "glitchLabel": "CØNTACTS"
+    }
+  },
+  "Home-Page": {
+    "sections": {
+      "hero": {
+        "title": "HEXATECH – <br />Learn cybersecurity and become a specialist in this field",
+        "subtitle": "Start your cybersecurity career today. Submit an application and get a free consultation.",
+        "button": "Apply Now"
+      }
+    }
   }
 }

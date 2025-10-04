@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { links } from "./model";
 import { useState, useEffect } from "react";
 import { isMobile } from "@/shared/utils/isMobile";
-import { APP_NAME } from "@/shared/config/contants";
 import LanguageSwitcher from "../language-switcher";
+import { links } from "./model";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   const router = useRouter();
   const currentPath = router.pathname;
 
@@ -32,8 +34,8 @@ export default function Header() {
               {links.map((link, index) => (
                 <li key={index} className="header__item">
                   <Link
-                    data-glitch={link.glitch}
-                    data-label={link.label}
+                    data-glitch={t(`${link.translationLabel}.glitchLabel`)}
+                    data-label={t(`${link.translationLabel}.label`)}
                     href={link.href}
                     className={`header__link ${
                       currentPath === link.href ? "_active" : ""
@@ -42,7 +44,7 @@ export default function Header() {
                       if (isMobile()) setIsMenuOpen(!isMenuOpen);
                     }}
                   >
-                    {link.label}
+                    {t(`${link.translationLabel}.label`)}
                   </Link>
                 </li>
               ))}
@@ -65,4 +67,13 @@ export default function Header() {
       </div>
     </header>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../../../messages/${context.locale}.json`))
+        .default,
+    },
+  };
 }

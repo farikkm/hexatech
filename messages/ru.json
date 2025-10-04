@@ -8,5 +8,36 @@
   },
   "PageLayout": {
     "pageTitle": "next-intl"
+  },
+  "Header": {
+    "home": {
+      "label": "Главная",
+      "glitchLabel": "GL@VNΣA"
+    },
+    "courses": {
+      "label": "Курсы",
+      "glitchLabel": "KYP$Y"
+    },
+    "community": {
+      "label": "Сообщество",
+      "glitchLabel": "S0ØВЩΣСТВО"
+    },
+    "blog": {
+      "label": "Блоги",
+      "glitchLabel": "B|_0¢"
+    },
+    "contacts": {
+      "label": "Контакты",
+      "glitchLabel": "K0ИTΛK7У"
+    }
+  },
+  "Home-Page": {
+    "sections": {
+      "hero": {
+        "title": "HEXATECH – <br /> Обучайся кибербезопасности и стань специалистом в этой области",
+        "subtitle": "Начни карьеру в кибербезопасности уже сегодня. Оставь  заявку и получи бесплатную консультацию.",
+        "button": "Оставить заявку"
+      }
+    }
   }
 }
