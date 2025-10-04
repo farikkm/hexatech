@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { links } from "./model";
 import { useState, useEffect } from "react";
 import { isMobile } from "@/shared/utils/isMobile";
-import { APP_NAME } from "@/shared/config/contants";
+import LanguageSwitcher from "../language-switcher";
+import { links } from "./model";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   const router = useRouter();
   const currentPath = router.pathname;
 
@@ -24,8 +27,6 @@ export default function Header() {
       <div className="container">
         <div className="header__wrapper">
           <Link href={"/home"} className="header__logo">
-            {/* <img src="/icons/favicon.svg" alt="hexatech-logo" />
-            <span>{APP_NAME}</span> */}
             <img src="/icons/logo.svg" alt="hexatech-logo" />
           </Link>
           <nav className={`header__menu ${isMenuOpen ? "_active" : ""}`}>
@@ -33,8 +34,8 @@ export default function Header() {
               {links.map((link, index) => (
                 <li key={index} className="header__item">
                   <Link
-                    data-glitch={link.glitch}
-                    data-label={link.label}
+                    data-glitch={t(`${link.translationLabel}.glitchLabel`)}
+                    data-label={t(`${link.translationLabel}.label`)}
                     href={link.href}
                     className={`header__link ${
                       currentPath === link.href ? "_active" : ""
@@ -43,27 +44,36 @@ export default function Header() {
                       if (isMobile()) setIsMenuOpen(!isMenuOpen);
                     }}
                   >
-                    {link.label}
+                    {t(`${link.translationLabel}.label`)}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
-          <div className="header__lang">
-            <span id="language">Ru</span>
-            {/* <img src="/icons/header/arrow-down.svg" alt="arrow-down" /> */}
-          </div>
 
-          <div
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`header__menu_button ${isMenuOpen ? "_active" : ""}`}
-          >
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="header__actions">
+            <LanguageSwitcher />
+
+            <div
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={`header__menu_button ${isMenuOpen ? "_active" : ""}`}
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>
     </header>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../../../messages/${context.locale}.json`))
+        .default,
+    },
+  };
 }

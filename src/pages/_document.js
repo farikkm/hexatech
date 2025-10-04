@@ -9,8 +9,8 @@ export default function Document() {
       <body>
         <div className="wrapper">
           <Main />
-          <NextScript />
         </div>
+        <NextScript />
       </body>
     </Html>
   );
