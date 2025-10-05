@@ -2,6 +2,7 @@ import NewsItem from "@/shared/ui/news-item";
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./news.module.css";
 import RecentNewsItem from "@/shared/ui/recent-news-item";
+import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
 
 const news = [
   {
@@ -35,7 +36,7 @@ const recentNews = [
   },
 ];
 
-export default function Page() {
+function Page() {
   return (
     <Layout
       title="Свежие события из мира HEXATECH и кибербезопасности"
@@ -67,3 +68,7 @@ export default function Page() {
     </Layout>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);

@@ -1,6 +1,7 @@
 import CareerAdvicesItem from "@/shared/ui/career-advices-item";
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./career-advices.module.css";
+import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
 
 const careerAdvices = [
   {
@@ -25,7 +26,7 @@ const careerAdvices = [
   },
 ];
 
-export default function Page() {
+function Page() {
   return (
     <Layout
       title="Карьерные соВЕТЫ из мира HEXATECH и кибербезопасности"
@@ -44,3 +45,7 @@ export default function Page() {
     </Layout>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);

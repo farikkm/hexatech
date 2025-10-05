@@ -1,6 +1,7 @@
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./useful-materials.module.css";
 import UsefulMaterialsItem from "@/shared/ui/useful-materials-item";
+import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
 
 const usefulMaterials = [
   {
@@ -33,7 +34,7 @@ const usefulMaterials = [
   },
 ];
 
-export default function Page() {
+function Page() {
   return (
     <Layout
       title="ПОЛЕЗНЫЕ МАТЕРИАЛЫ из мира HEXATECH и кибербезопасности"
@@ -53,3 +54,7 @@ export default function Page() {
     </Layout>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);

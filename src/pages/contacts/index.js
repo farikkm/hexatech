@@ -1,6 +1,7 @@
+import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
 import styles from "./contacts.module.css";
 
-export default function Page() {
+function Page() {
   return (
     <div className={styles.wrapper}>
       <div className="container">
@@ -54,3 +55,7 @@ export default function Page() {
     </div>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Page);

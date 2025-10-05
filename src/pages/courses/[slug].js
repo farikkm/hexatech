@@ -8,6 +8,8 @@ import { useRouter } from "next/router";
 import CorporativeBg from "@/shared/ui/course-backgrounds/corporative-bg";
 import ForensicsBg from "@/shared/ui/course-backgrounds/forensics-bg";
 import CybersecurityCourseBg from "@/shared/ui/course-backgrounds/cybersecurity-course-bg";
+import { getMessages } from "@/shared/libs/getMessages";
+import { withMessages } from "@/shared/libs/withMessages";
 
 const backgrounds = {
   pysploit: <PysploitCourseBg />,
@@ -17,7 +19,7 @@ const backgrounds = {
   forensics: <ForensicsBg />,
 };
 
-export default function Page({ course }) {
+function Page({ course }) {
   const router = useRouter();
   const pathname = router.asPath;
 
@@ -423,15 +425,21 @@ export default function Page({ course }) {
 }
 
 export async function getStaticPaths() {
-  const paths = coursesData.map((item) => ({
-    params: {
-      slug: item.slug,
-    },
-  }));
+  const paths = [];
+  const locales = ["en", "ru", "uz"];
+
+  for (const locale of locales) {
+    for (const course of coursesData) {
+      paths.push({
+        locale,
+        params: { slug: course.slug },
+      });
+    }
+  }
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -447,6 +455,8 @@ export async function getStaticProps({ params, locale }) {
   }
 
   return {
-    props: { course },
+    props: { course, messages: await getMessages(locale) },
   };
 }
+
+export default Page;
