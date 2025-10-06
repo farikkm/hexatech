@@ -1,4 +1,7 @@
-import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
 import styles from "./community.module.css";
 
 function Page() {
@@ -13,7 +16,7 @@ function Page() {
         </p>
 
         <div className={styles.table__wrapper}>
-          <h4 className={styles.table__title}>НАША ГОРДОСТЬ</h4>
+          <h4 className={styles.table__title}>#HexaGraduate</h4>
           <table className={styles.table}>
             <thead className={styles.table__head}>
               <tr>
@@ -24,7 +27,10 @@ function Page() {
                 <th>Награды</th>
               </tr>
             </thead>
-            <tbody>
+
+            {/* Столбец с именами всех выпускников из списка пусть остается пустым */}
+
+            {/* <tbody>
               <tr className={styles.student}>
                 <td className={styles.student__photo}>
                   <div></div>
@@ -93,7 +99,7 @@ function Page() {
                 </td>
                 <td className={styles.student__awards}>Первый проект</td>
               </tr>
-            </tbody>
+            </tbody> */}
           </table>
         </div>
       </div>

@@ -103,7 +103,9 @@ function Page() {
             </div>
           </div>
         </section>
-        <section className={styles.reviews}>
+
+        {/* Убрать до появления реальных кейсов */}
+        {/* <section className={styles.reviews}>
           <div className="container">
             <div className={styles.reviews__wrapper}>
               <h2 className={styles.reviews__title}>Видео отзывы</h2>
@@ -112,7 +114,7 @@ function Page() {
             </div>
           </div>
           {isMobile() && <VideoReviews />}
-        </section>
+        </section> */}
 
         <section className="sign-up-for-courses">
           <Form />

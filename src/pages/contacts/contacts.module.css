@@ -55,12 +55,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   font-size: 32px;
-}
-
-.map::before {
-  content: "Карта";
 }
 
 @media (min-width: 425px) {

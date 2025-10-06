@@ -116,7 +116,9 @@ function Page({ course }) {
           </div>
         </div>
 
-        <div className={styles.teachers}>
+        {/*  Блок с информацией о преподавателях везде убираем */}
+
+        {/* <div className={styles.teachers}>
           <h2 className={styles.teachers__title}>Преподаватели</h2>
 
           <div className={styles.teachers__content_wrapper}>
@@ -173,7 +175,7 @@ function Page({ course }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.prices}>
           <h2 className={styles.prices__title}>Стоимость и условия</h2>
@@ -397,26 +399,28 @@ function Page({ course }) {
           </div>
         </div>
 
-        <div className={styles.cetrificate}>
-          <div className={styles.cetrificate__img}>
-            <img src="/images/course/certificate.png" alt="cetrificate__img" />
+        {course.certificate_url && (
+          <div className={styles.cetrificate}>
+            <div className={styles.cetrificate__img}>
+              <img src={course.certificate_url} alt="cetrificate__img" />
+            </div>
+            <div className={styles.cetrificate__content}>
+              <h2 className={styles.cetrificate__title}>
+                Сертефикат после окончания курса
+              </h2>
+              <p className={styles.cetrificate__text}>
+                После завершения курса каждый участник получает именной
+                сертификат, подтверждающий его знания и практические навыки в
+                области кибербезопасности. Документ можно использовать при
+                устройстве на работу, добавлять в портфолио и резюме, а также
+                прикладывать к профессиональным профилям в LinkedIn и других
+                платформах. Сертификат служит доказательством того, что вы не
+                только освоили теоретический материал, но и выполнили реальные
+                практические задания и кейсы.
+              </p>
+            </div>
           </div>
-          <div className={styles.cetrificate__content}>
-            <h2 className={styles.cetrificate__title}>
-              Сертефикат после окончания курса
-            </h2>
-            <p className={styles.cetrificate__text}>
-              После завершения курса каждый участник получает именной
-              сертификат, подтверждающий его знания и практические навыки в
-              области кибербезопасности. Документ можно использовать при
-              устройстве на работу, добавлять в портфолио и резюме, а также
-              прикладывать к профессиональным профилям в LinkedIn и других
-              платформах. Сертификат служит доказательством того, что вы не
-              только освоили теоретический материал, но и выполнили реальные
-              практические задания и кейсы.
-            </p>
-          </div>
-        </div>
+        )}
 
         <Form />
       </div>

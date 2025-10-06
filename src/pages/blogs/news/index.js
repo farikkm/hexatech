@@ -2,7 +2,10 @@ import NewsItem from "@/shared/ui/news-item";
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./news.module.css";
 import RecentNewsItem from "@/shared/ui/recent-news-item";
-import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
 
 const news = [
   {
@@ -17,12 +20,12 @@ const news = [
       "До конца месяца вы можете записаться на курс по сниженной цене и получить доступ ко всем материалам. Отличная возможность начать путь в кибербезопасность!",
     imageUrl: "/images/news/02.png",
   },
-  {
-    title: "Бонус для первых студентов",
-    subtitle:
-      "Первые 30 участников любого нового курса получают персональную консультацию с наставником.",
-    imageUrl: "/images/news/03.png",
-  },
+  // {
+  //   title: "Бонус для первых студентов",
+  //   subtitle:
+  //     "Первые 30 участников любого нового курса получают персональную консультацию с наставником.",
+  //   imageUrl: "/images/news/03.png",
+  // },
 ];
 
 const recentNews = [

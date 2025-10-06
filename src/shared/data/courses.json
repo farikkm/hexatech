@@ -12,7 +12,8 @@
     "full_duration": "22 модуля/10 месяцев",
     "courses_number": "120 занятий / 120  практических задач",
     "portfolio_info": "2 проекта в портфолио ",
-    "background_url": "/images/course/background.png"
+    "background_url": "/images/course/background.png",
+    "certificate_url": "/certificates/PYsploit.png"
   },
   {
     "icon": "/images/courses/cybersecurity.png",
@@ -27,7 +28,8 @@
     "full_duration": "22 модуля/10 месяцев",
     "courses_number": "120 занятий / 120  практических задач",
     "portfolio_info": "2 проекта в портфолио ",
-    "background_url": "/images/course/background.png"
+    "background_url": "/images/course/background.png",
+    "certificate_url": "/certificates/Ethical-Hacking.png"
   },
   {
     "icon": "/images/courses/soc-analytics.png",
@@ -42,7 +44,8 @@
     "full_duration": "22 модуля/10 месяцев",
     "courses_number": "120 занятий / 120  практических задач",
     "portfolio_info": "2 проекта в портфолио ",
-    "background_url": "/images/course/background.png"
+    "background_url": "/images/course/background.png",
+    "certificate_url": "/certificates/SOC.png"
   },
   {
     "icon": "/images/courses/cooperative.png",
@@ -57,7 +60,8 @@
     "full_duration": "22 модуля/10 месяцев",
     "courses_number": "120 занятий / 120  практических задач",
     "portfolio_info": "2 проекта в портфолио ",
-    "background_url": "/images/course/background.png"
+    "background_url": "/images/course/background.png",
+    "certificate_url": ""
   },
   {
     "icon": "/images/courses/forensics.png",
@@ -72,6 +76,7 @@
     "full_duration": "22 модуля/10 месяцев",
     "courses_number": "120 занятий / 120  практических задач",
     "portfolio_info": "2 проекта в портфолио ",
-    "background_url": "/images/course/background.png"
+    "background_url": "/images/course/background.png",
+    "certificate_url": "/certificates/Forensics.png"
   }
 ]
