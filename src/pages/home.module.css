@@ -194,7 +194,7 @@
 /* =================> Advantages <================= */
 
 .advantages__title {
-  width: min-content;
+  max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }

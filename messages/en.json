@@ -37,6 +37,35 @@
         "title": "HEXATECH – <br />Learn cybersecurity and become a specialist in this field",
         "subtitle": "Start your cybersecurity career today. Submit an application and get a free consultation.",
         "button": "Apply Now"
+      },
+      "advantages": {
+        "title": "Advantages of HEXATECH",
+        "items": {
+          "focus": {
+            "title": "Focus on practice",
+            "text": "Each course is accompanied by interactive tasks and lab work"
+          },
+          "expertise": {
+            "title": "Expertise",
+            "text": "Instructors are active specialists with real experience in both local and international companies"
+          },
+          "flexible": {
+            "title": "Flexibility",
+            "text": "Online and offline courses, convenient schedules, and 24/7 access to materials from anywhere in the world"
+          },
+          "effective": {
+            "title": "Effective learning",
+            "text": "Faster training with access to premium AI tools"
+          },
+          "financial": {
+            "title": "Financial benefit",
+            "text": "Opportunity to earn during training, support in covering certificate costs, and installment payment options"
+          },
+          "employment": {
+            "title": "Employment",
+            "text": "Guidance for students until employment in close collaboration with employers"
+          }
+        }
       }
     }
   }

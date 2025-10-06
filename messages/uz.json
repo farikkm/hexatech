@@ -37,6 +37,35 @@
         "title": "HEXATECH – <br />Kiberxavfsizlikni o‘rganing va bu sohada mutaxassis bo‘ling",
         "subtitle": "Kiberxavfsizlik bo‘yicha faoliyatingizni bugunoq boshlang. Ariza qoldiring va bepul maslahat oling.",
         "button": "Ariza qoldirish"
+      },
+      "advantages": {
+        "title": "HEXATECH afzalliklari",
+        "items": {
+          "focus": {
+            "title": "Amaliyotga e’tibor",
+            "text": "Har bir kurs interaktiv topshiriqlar va laboratoriya ishlari bilan birga olib boriladi"
+          },
+          "expertise": {
+            "title": "Mutaxassislik",
+            "text": "O‘qituvchilar amaldagi mahalliy va xalqaro kompaniyalarda tajribaga ega mutaxassislardan iborat"
+          },
+          "flexible": {
+            "title": "Moslashuvchan ta’lim",
+            "text": "Onlayn va oflayn kurslar, qulay jadval va materiallarga dunyoning istalgan nuqtasidan 24/7 kirish imkoniyati"
+          },
+          "effective": {
+            "title": "Samarali ta’lim",
+            "text": "Pullik AI vositalaridan foydalanish orqali tezroq o‘qish imkoniyati"
+          },
+          "financial": {
+            "title": "Moliyaviy foyda",
+            "text": "O‘qish jarayonida daromad topish, sertifikat xarajatlarini qoplashda yordam va to‘lovni bo‘lib to‘lash imkoniyati"
+          },
+          "employment": {
+            "title": "Ishga joylashish",
+            "text": "Talabalarni ishga joylashish jarayonigacha kuzatish va bevosita ish beruvchilar bilan hamkorlik"
+          }
+        }
       }
     }
   }

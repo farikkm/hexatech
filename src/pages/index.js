@@ -1,6 +1,6 @@
 import styles from "./home.module.css";
 import coursesData from "@/shared/data/courses.json";
-import advantages from "@/shared/data/advantages.json";
+// import advantages from "@/shared/data/advantages.json";
 import CoursesItem from "@/shared/ui/courses-item";
 import Link from "next/link";
 import VideoReviews from "@/widgets/video-reviews";
@@ -16,6 +16,7 @@ import {
 
 function Page() {
   const t = useTranslations("Home-Page");
+  const advantages = t.raw("sections.advantages");
 
   return (
     <>
@@ -63,17 +64,18 @@ function Page() {
         <section className={styles.advantages}>
           <div className="container">
             <div className={styles.advantages__wrapper}>
-              <h2 className={styles.advantages__title}>
-                Преимущества {APP_NAME}
-              </h2>
+              <h2 className={styles.advantages__title}>{advantages.title}</h2>
 
               <div className={styles.advantages__items}>
-                {advantages.map((item, index) => (
+                {Object.values(advantages.items).map((item, index) => (
                   <div key={index} className={styles.advantages__item}>
                     <div
                       className={`glass-icon ${styles.advantages__item_img}`}
                     >
-                      <img src={item.icon} alt="advantages-icon" />
+                      <img
+                        src={`/images/home-page/advantages/0${index + 1}.svg`}
+                        alt="advantages-icon"
+                      />
                     </div>
                     <h4 className={styles.advantages__item_title}>
                       {item.title}
