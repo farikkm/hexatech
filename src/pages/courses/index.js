@@ -21,14 +21,16 @@ function Page() {
           </p>
         </div>
 
-        <video
-          className={`transition-mask ${styles.video}`}
-          src="/videos/courses.webm"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        <div className={`transition-mask ${styles.video__wrapper}`}>
+          <video
+            className={`${styles.video}`}
+            src="/videos/courses.webm"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
         <div className={styles.courses__wrapper}>
           <h2>Все нужные навыки в одном месте</h2>
           <p>
