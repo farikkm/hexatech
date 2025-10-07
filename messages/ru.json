@@ -1,14 +1,4 @@
 {
-  "Index": {
-    "title": "Домой",
-    "description": "This is the home page."
-  },
-  "LocaleSwitcher": {
-    "switchLocale": "Switch to {locale, select, de {German} en {English} other {Unknown}}"
-  },
-  "PageLayout": {
-    "pageTitle": "next-intl"
-  },
   "Header": {
     "home": {
       "label": "Главная",
@@ -68,5 +58,23 @@
         }
       }
     }
+  },
+  "Form": {
+    "title": "Начни карьеру в кибербезопасности уже сегодня",
+    "subtitle": "Курсы Hexatech помогут тебе овладеть профессией и найти первую работу в этой области",
+    "placeholders": {
+      "full-name": "ФИО",
+      "telephone": "Телефон",
+      "email": "Эл. почта",
+      "tg": "Username в ТГ"
+    },
+    "errors": {
+      "required": "Поле обязательно",
+      "full-name": "Минимум 5 символов",
+      "telephone": "Введите корректный номер",
+      "email": "Введите корректный email"
+    },
+    "agreement": "Я даю согласие на обработку моих персональных данных в соответствии с Политикой конфиденциальности.",
+    "button": "ЗАПИСАТЬСЯ"
   }
 }

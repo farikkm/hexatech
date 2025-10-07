@@ -12,7 +12,12 @@ export default function FormInput({ type, placeholder, name, error, ...rest }) {
         {...rest}
       />
       {error && (
-        <p style={{ color: "red", fontSize: "14px" }}>{error.message}</p>
+        <p
+          className={styles.error__message}
+          style={{ color: "red", fontSize: "14px" }}
+        >
+          {error.message}
+        </p>
       )}
     </div>
   );

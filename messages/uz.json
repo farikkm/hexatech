@@ -1,14 +1,4 @@
 {
-  "Index": {
-    "title": "Uyga",
-    "description": "This is the home page."
-  },
-  "LocaleSwitcher": {
-    "switchLocale": "Switch to {locale, select, de {German} en {English} other {Unknown}}"
-  },
-  "PageLayout": {
-    "pageTitle": "next-intl"
-  },
   "Header": {
     "home": {
       "label": "Bosh sahifa",
@@ -68,5 +58,23 @@
         }
       }
     }
+  },
+  "Form": {
+    "title": "Bugunoq kiberxavfsizlik sohasida karyerangizni boshlang",
+    "subtitle": "Hexatech kurslari sizga kasbni egallash va ushbu sohada ilk ishni topishga yordam beradi",
+    "placeholders": {
+      "full-name": "F.I.Sh.",
+      "telephone": "Telefon",
+      "email": "Elektron pochta",
+      "tg": "TG dagi username"
+    },
+    "errors": {
+      "required": "Bu maydon to‘ldirilishi shart",
+      "full-name": "Kamida 5 ta belgi kiriting",
+      "telephone": "To‘g‘ri telefon raqamini kiriting",
+      "email": "To‘g‘ri elektron pochtani kiriting"
+    },
+    "agreement": "Shaxsiy ma’lumotlarimni Maxfiylik siyosatiga muvofiq qayta ishlashga roziman.",
+    "button": "RO‘YXATDAN O‘TISH"
   }
 }

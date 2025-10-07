@@ -14,3 +14,7 @@
 .input:focus {
   outline: 1px solid var(--gray-color);
 }
+
+.error__message {
+  margin-top: 3px;
+}
