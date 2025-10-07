@@ -107,7 +107,109 @@
             "text": "Guidance for students until employment in close collaboration with employers"
           }
         }
+      },
+      "courses": {
+        "title": "Popular courses",
+        "subtitle": "More than 5 educational programs",
+        "more": "View all courses"
       }
+    }
+  },
+  "Courses": {
+    "pysploit": {
+      "icon": "/images/courses/python.png",
+      "slug": "pysploit",
+      "name": "PYsploit",
+      "subtitle": "Автоматизация атак и тестов на Python",
+      "duration": "8 months",
+      "desc": "Learn Python from scratch and become a developer of cybersecurity tools. In this course, you will learn how to create vulnerability scanners, exploits, and scripts for network attacks. By the end, you will have your own toolkit…",
+      "full_desc": "<strong>PYsploit</strong> — практический курс по разработке инструментов для тестирования безопасности и автоматизации взлома на языке Python. Студенты изучают основы языка, создание скриптов для поиска уязвимостей, написание эксплойтов, работу с сетевыми протоколами и API. Особое внимание уделяется реальным кейсам: от сканирования портов до создания мини-фреймворков для пентестов.",
+      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
+      "education_format": "Офлайн / Онлайн",
+      "full_duration": "22 модуля/10 месяцев",
+      "courses_number": "120 занятий / 120  практических задач",
+      "portfolio_info": "2 проекта в портфолио ",
+      "background_url": "/images/course/background.png",
+      "certificate_url": "/certificates/PYsploit.png",
+      "more_info": " Learn more"
+    },
+    "cybersecurity": {
+      "icon": "/images/courses/cybersecurity.png",
+      "slug": "cybersecurity",
+      "name": "Ethical Hacking",
+      "subtitle": "Научись думать как хакер - действуй как защитник",
+      "duration": "10 months",
+      "desc": "Discover how hackers think and learn to use this knowledge for good. Hands-on training in penetration testing, vulnerability analysis, and system protection will help you become a cybersecurity professional.",
+      "full_desc": "<strong>Этичный хакинг</strong> — это уникальная возможность погрузиться в мир профессионального этичного хакинга и пентестинга. Студенты осваивают полный цикл безопасного тестирования систем: от сбора информации и анализа уязвимостей до их эксплуатации, повышения привилегий и работы с защищенными сетями. Курс построен на практике: реальные лабораторные задания и сценарии, максимально приближенные к реальным условиям, позволяют отточить навыки в безопасной среде. Итогом обучения становится проведение полноценного пентеста и составление профессионального отчета, что делает выпускника готовым к работе в Red Team и востребованным специалистом по кибербезопасности",
+      "course_aim": "<strong>Цель курса</strong> — После обучения вы сможете понимать виды атак и методы защиты, работать с инструментами пентестинга, проводить тесты на проникновение с отчётами и выстраивать стратегию безопасности для проектов и компаний",
+      "education_format": "Офлайн / Онлайн",
+      "full_duration": "22 модуля/10 месяцев",
+      "courses_number": "120 занятий / 120  практических задач",
+      "portfolio_info": "2 проекта в портфолио ",
+      "background_url": "/images/course/background.png",
+      "certificate_url": "/certificates/Ethical-Hacking.png",
+      "more_info": " Learn more"
+    },
+    "soc-analytics": {
+      "icon": "/images/courses/soc-analytics.png",
+      "slug": "soc-analytics",
+      "name": "SOC-analytics",
+      "subtitle": "Мониторинг, анализ и реагирование на киберугрозы",
+      "duration": "8 months",
+      "desc": "Immerse yourself in the work of a security operations center. The course covers SIEM systems, incident analysis, and response to cyber threats — perfect for those interested in team-based cyber defense.",
+      "full_desc": "<strong>Курс по SOC-аналитика</strong> —  курс о том, как работает Центр мониторинга информационной безопасности (Security Operation Center). Студенты погружаются в анализ логов, мониторинг событий SIEM-систем, выявление подозрительной активности, реагирование на инциденты и работу по стандартам SOC Tier 1–2. Практика включает разбор реальных атак, моделирование фишинга, DDoS и малваре-инцидентов.",
+      "course_aim": "<strong>Цель курса</strong> — Подготовить специалистов начального и среднего уровня, которые смогут работать в SOC, выявлять киберугрозы в реальном времени и обеспечивать непрерывную защиту инфраструктуры компании.",
+      "education_format": "Офлайн / Онлайн",
+      "full_duration": "22 модуля/10 месяцев",
+      "courses_number": "120 занятий / 120  практических задач",
+      "portfolio_info": "2 проекта в портфолио ",
+      "background_url": "/images/course/background.png",
+      "certificate_url": "/certificates/SOC.png",
+      "more_info": " Learn more"
+    },
+    "cooperative-courses": {
+      "icon": "/images/courses/cooperative.png",
+      "slug": "cooperative-courses",
+      "name": "Corporate <br /> courses",
+      "subtitle": "Индивидуальные программы под задачи вашей компании",
+      "duration": "",
+      "desc": "Individual program selection tailored to the needs of your company. Sign up for a consultation, and we’ll offer a solution that fits your needs.",
+      "full_desc": "<strong>Корпоротивные курсы</strong> — это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами. это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами",
+      "course_aim": "<strong>Цель курса</strong> — Предоставить компаниям персонализированное обучение по кибербезопасности, которое соответствует их бизнес-процессам и реальным угрозам, повысить уровень защищенности персонала и сократить риски утечек данных.",
+      "education_format": "Офлайн / Онлайн",
+      "full_duration": "22 модуля/10 месяцев",
+      "courses_number": "120 занятий / 120  практических задач",
+      "portfolio_info": "2 проекта в портфолио ",
+      "background_url": "/images/course/background.png",
+      "certificate_url": "",
+      "more_info": " Learn more"
+    },
+    "forensics": {
+      "icon": "/images/courses/forensics.png",
+      "slug": "forensics",
+      "name": "Forensics",
+      "subtitle": "Раскрывай цифровые преступления и находи следы атак",
+      "duration": "9 months",
+      "desc": "In this course, you will learn to work with pre built modules for vulnerability scanning, exploit generation, and network attacks. PySploit speeds up the practice of ethical hacking and helps automate penetration testing tasks.",
+      "full_desc": "<strong>Курс по Forensics</strong> — практико-ориентированный курс по цифровой криминалистике и расследованию инцидентов. На реальных кейсах вы научитесь корректно изымать и сохранять цифровые доказательства (chain of custody), восстанавливать удалённые данные, строить таймлайны событий, анализировать образы дисков и дампы памяти, разбирать сетевой трафик и оформлять результаты в виде понятного отчёта для бизнеса и юристов. ",
+      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
+      "education_format": "Офлайн / Онлайн",
+      "full_duration": "22 модуля/10 месяцев",
+      "courses_number": "120 занятий / 120  практических задач",
+      "portfolio_info": "2 проекта в портфолио ",
+      "background_url": "/images/course/background.png",
+      "certificate_url": "/certificates/Forensics.png",
+      "more_info": " Learn more"
+    }
+  },
+  "Courses-Page": {
+    "hero": {
+      "title": "NEW GENERATION CYBERSECURITY TRAINING",
+      "subtitle": "HEXATECH’s mission is to train specialists who can effectively counter cyber threats and ensure data security anywhere in the world"
+    },
+    "courses": {
+      "title": "All the skills you need in one place",
+      "subtitle": "Our courses are the path from beginner to expert in the world of digital security"
     }
   },
   "Form": {

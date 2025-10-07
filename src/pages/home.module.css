@@ -192,6 +192,9 @@
 }
 
 /* =================> Advantages <================= */
+.advantages {
+  margin-top: -40px;
+}
 
 .advantages__title {
   max-width: 400px;

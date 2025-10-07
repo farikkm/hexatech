@@ -17,6 +17,8 @@ import {
 function Page() {
   const t = useTranslations("Home-Page");
   const advantages = t.raw("sections.advantages");
+  const translator = useTranslations("");
+  const coursesValues = translator.raw("Courses");
 
   return (
     <>
@@ -80,17 +82,21 @@ function Page() {
         <section className={styles.courses}>
           <div className="container">
             <div className={styles.courses__wrapper}>
-              <h2 className={styles.courses__title}>Популярные курсы</h2>
+              <h2 className={styles.courses__title}>
+                {t("sections.courses.title")}
+              </h2>
               <p className={styles.courses__subtitle}>
-                Более 5 образовательных программ
+                {t("sections.courses.subtitle")}
               </p>
               <div className={styles.courses__items}>
-                {coursesData.slice(0, 3).map((course, index) => (
-                  <CoursesItem key={index} course={course} />
-                ))}
+                {Object.values(coursesValues)
+                  .slice(0, 3)
+                  .map((course, index) => (
+                    <CoursesItem key={index} course={course} />
+                  ))}
               </div>
               <Link className={styles.courses__link} href={`/courses`}>
-                Смотреть все курсы
+                {t("sections.courses.more")}
               </Link>
             </div>
           </div>

@@ -5,20 +5,19 @@ import {
   getStaticPropsWithMessages,
   withMessages,
 } from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
 function Page() {
+  const t = useTranslations("Courses-Page");
+  const translator = useTranslations("");
+  const coursesValues = translator.raw("Courses");
+
   return (
     <div id="courses-page" className={styles.courses}>
       <div className="container">
         <div className={styles.courses__content}>
-          <h1 className={styles.courses__title}>
-            Обучение Кибербезопасности Нового Поколения
-          </h1>
-          <p className={styles.courses__text}>
-            Миссия HEXATECH — подготовить специалистов, которые смогут
-            эффективно противостоять киберугрозам и обеспечивать безопасность
-            данных в любой точке мира
-          </p>
+          <h1 className={styles.courses__title}>{t("hero.title")}</h1>
+          <p className={styles.courses__text}>{t("hero.subtitle")}</p>
         </div>
 
         <div className={`transition-mask ${styles.video__wrapper}`}>
@@ -32,13 +31,10 @@ function Page() {
           />
         </div>
         <div className={styles.courses__wrapper}>
-          <h2>Все нужные навыки в одном месте</h2>
-          <p>
-            Наши курсы — это путь от новичка до эксперта в мире цифровой
-            безопасности
-          </p>
+          <h2>{t("courses.title")}</h2>
+          <p>{t("courses.subtitle")}</p>
           <div className={styles.courses__items}>
-            {coursesData.map((course, index) => (
+            {Object.values(coursesValues).map((course, index) => (
               <CoursesItem key={index} course={course} />
             ))}
           </div>

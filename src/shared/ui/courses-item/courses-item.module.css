@@ -78,7 +78,9 @@
   font-size: 30px;
   font-weight: 700;
 
-  white-space: nowrap;
+  max-width: 350px;
+
+  /* white-space: nowrap; */
 }
 
 .courses__item__duration {

@@ -20,7 +20,7 @@ export default function CoursesItem({ course }) {
         className={styles.courses__item__link}
         href={`/courses/${course.slug}`}
       >
-        Подробнее
+        {course.more_info}
       </Link>
     </div>
   );
