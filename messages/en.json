@@ -1,4 +1,13 @@
 {
+  "Head": {
+    "title": {
+      "/": "Главная",
+      "/courses": "Курсы",
+      "/community": "Сообщество",
+      "/blog": "Блоги",
+      "/contacts": "Контакты"
+    }
+  },
   "Header": {
     "home": {
       "label": "Home",
@@ -19,6 +28,48 @@
     "contacts": {
       "label": "Contacts",
       "glitchLabel": "CØNTACTS"
+    }
+  },
+  "Footer": {
+    "home": {
+      "title": "Home",
+      "links": {
+        "advantages": "Advantages",
+        "popular-courses": "Popular courses",
+        "video-reviews": "Video reviews"
+      }
+    },
+    "courses": {
+      "title": "Courses",
+      "links": {
+        "cybersecurity": "Ethical Hacking",
+        "cooperative-courses": "Corporate courses",
+        "pysploit": "PYsploit",
+        "soc-analytics": "SOC Analytics",
+        "forensics": "Forensics"
+      }
+    },
+    "community": {
+      "title": "Community",
+      "links": {
+        "graduates": "Alumni"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "links": {
+        "news": "News",
+        "career-advices": "Career tips",
+        "useful-materials": "Useful information"
+      }
+    },
+    "contacts": {
+      "title": "Contacts",
+      "links": {
+        "map": "Map",
+        "address": "Address",
+        "phone": "Phone"
+      }
     }
   },
   "Home-Page": {

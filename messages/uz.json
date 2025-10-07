@@ -1,4 +1,13 @@
 {
+  "Head": {
+    "title": {
+      "/": "Главная",
+      "/courses": "Курсы",
+      "/community": "Сообщество",
+      "/blog": "Блоги",
+      "/contacts": "Контакты"
+    }
+  },
   "Header": {
     "home": {
       "label": "Bosh sahifa",
@@ -19,6 +28,48 @@
     "contacts": {
       "label": "Aloqa",
       "glitchLabel": "@LØQ@"
+    }
+  },
+  "Footer": {
+    "home": {
+      "title": "Bosh sahifa",
+      "links": {
+        "advantages": "Afzalliklar",
+        "popular-courses": "Ommabop kurslar",
+        "video-reviews": "Video fikrlar"
+      }
+    },
+    "courses": {
+      "title": "Kurslar",
+      "links": {
+        "cybersecurity": "Etik xakerlik",
+        "cooperative-courses": "Korporativ kurslar",
+        "pysploit": "PYsploit",
+        "soc-analytics": "SOC-analitika",
+        "forensics": "Forensika"
+      }
+    },
+    "community": {
+      "title": "Jamiyat",
+      "links": {
+        "graduates": "Bitiruvchilar"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "links": {
+        "news": "Yangiliklar",
+        "career-advices": "Karyera bo‘yicha maslahatlar",
+        "useful-materials": "Foydali materiallar"
+      }
+    },
+    "contacts": {
+      "title": "Aloqa",
+      "links": {
+        "map": "Xarita",
+        "address": "Manzil",
+        "phone": "Telefon"
+      }
     }
   },
   "Home-Page": {

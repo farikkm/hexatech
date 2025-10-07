@@ -1,26 +1,32 @@
-import { APP_NAME } from "@/shared/config/contants";
 import { tabs } from "../model";
 import Link from "next/link";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
-export default function Footer() {
+function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__top">
             <div className="footer__logo">
-              {/* <img src="/icons/favicon.svg" alt="hexatech-logo" />
-              <span>{APP_NAME}</span> */}
               <img src="/icons/logo.svg" alt="hexatech-logo" />
             </div>
             <nav className="footer__menu">
               {tabs.map((tab) => (
                 <ul key={tab.title} className="footer__list">
-                  <h4 className="footer__list_title">{tab.title}</h4>
+                  <h4 className="footer__list_title">
+                    {t(`${tab.key}.title`)}
+                  </h4>
                   {tab.links.map((link, index) => (
                     <li key={index} className="footer__item">
                       <Link className="footer__link" href={link.href}>
-                        {link.name}
+                        {t(`${tab.key}.links.${link.key}`)}
                       </Link>
                     </li>
                   ))}
@@ -43,3 +49,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(Footer);

@@ -40,23 +40,13 @@ function Page() {
                 </button>
               </div>
               <div className={styles.hero__media}>
-                {isMobile() ? (
-                  <video
+                <video autoPlay loop muted playsInline>
+                  <source src="/videos/main.webm" media="(min-width: 1280px)" />
+                  <source
                     src="/videos/main-mobile.webm"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                    media="(max-width: 1279px)"
                   />
-                ) : (
-                  <video
-                    src="/videos/main.webm"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  />
-                )}
+                </video>
               </div>
             </div>
           </div>
