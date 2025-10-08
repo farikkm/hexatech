@@ -31,6 +31,8 @@ function Page() {
 
   const course = coursesValues[courseName];
 
+  console.log(course);
+
   return (
     <div className={styles.course__page} id="course-page">
       <div className="course-background">{backgrounds[courseName]}</div>

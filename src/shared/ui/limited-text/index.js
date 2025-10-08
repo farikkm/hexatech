@@ -17,12 +17,10 @@ const LimitedText = ({ text, classes, maxHeight = 140 }) => {
       <div
         ref={textRef}
         className={styles.content}
-        style={{ height: `${maxHeight}px` }}
+        style={{ maxHeight: `${maxHeight}px` }}
       >
         {text}
       </div>
-
-      {/* {isOverflowing && <span className={styles.ellipsis}>...</span>} */}
     </div>
   );
 };

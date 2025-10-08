@@ -1,11 +1,16 @@
+.courses__item {
+  max-width: 414px;
+}
+
 .courses__item:hover {
   box-shadow: 0 0 10px #da0000;
   border-radius: 0 0 170px 0;
 }
 
 .courses__inner {
-  width: 414px;
-  height: 510px;
+  width: 100%;
+  height: 100%;
+  padding: 25px 20px 40px;
   background: #1e1e1e;
   clip-path: polygon(
     0 0,
@@ -18,6 +23,9 @@
   transition: border 0.3s;
   position: relative;
   border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .courses__inner::before {
@@ -25,8 +33,9 @@
   position: absolute;
   bottom: -2px;
   right: -2px;
-  width: 414px;
-  height: 414px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   transform: scale(0);
   transform-origin: bottom right;
   transition: transform 0.5s;
@@ -92,6 +101,7 @@
 }
 
 .courses__item__link {
+  cursor: pointer;
   text-decoration: underline;
 }
 

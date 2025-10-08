@@ -210,15 +210,90 @@
       "icon": "/images/courses/cybersecurity.png",
       "slug": "cybersecurity",
       "name": "Axloqli Hakerlik",
-      "subtitle": "Научись думать как хакер - действуй как защитник",
+      "subtitle": "Xaker kabi o'ylashni o'rganing - himoyachi kabi harakat qiling",
       "duration": "10 oy",
-      "desc": "Xakerlar qanday fikrlashini bilib oling va bu bilimlarni foydali yo‘nalishda ishlatishni o‘rganing. Pentest, zaifliklarni tahlil qilish va tizimlarni himoya qilish bo‘yicha amaliy mashg‘ulotlar sizni kiberxavfsizlik sohasida mutaxassis bo‘lishingizga yordam beradi.",
-      "full_desc": "<strong>Этичный хакинг</strong> — это уникальная возможность погрузиться в мир профессионального этичного хакинга и пентестинга. Студенты осваивают полный цикл безопасного тестирования систем: от сбора информации и анализа уязвимостей до их эксплуатации, повышения привилегий и работы с защищенными сетями. Курс построен на практике: реальные лабораторные задания и сценарии, максимально приближенные к реальным условиям, позволяют отточить навыки в безопасной среде. Итогом обучения становится проведение полноценного пентеста и составление профессионального отчета, что делает выпускника готовым к работе в Red Team и востребованным специалистом по кибербезопасности",
-      "course_aim": "<strong>Цель курса</strong> — После обучения вы сможете понимать виды атак и методы защиты, работать с инструментами пентестинга, проводить тесты на проникновение с отчётами и выстраивать стратегию безопасности для проектов и компаний",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "desc": "Xakerlar qanday o‘ylashini bilib oling va bu bilimni ezgulik yo‘lida qo‘llang. Pentesting, zaifliklarni tahlil qilish va tizimlarni himoya qilish bo‘yicha amaliy mashg‘ulotlar sizni kiberxavfsizlik mutaxassisiga aylantiradi.",
+      "full_desc": "<strong>Axloqli Hakerlik</strong> — bu professional etik xakerlik va pentesting dunyosiga kirish uchun noyob imkoniyat. Talabalar tizimlarni xavfsiz testlashning to'liq jarayonini o'rganadilar: ma'lumot to'plashdan va zaifliklarni tahlil qilishdan tortib, ularni ekspluatatsiya qilish, privilegiyalarni oshirish va himoyalangan tarmoqlar bilan ishlashgacha. Kurs amaliyotga asoslangan: haqiqiy laboratoriya topshiriqlari va holatlar, real sharoitlarga eng yaqin qilib tuzilgan, xavfsiz muhitda ko'nikmalarni takomillashtirish imkonini beradi. O‘qish yakunida to‘liq pentest o‘tkazish va professional hisobot tayyorlash amalga oshiriladi, bu esa bitiruvchini Red Teamda ishlashga va kiberxavfsizlik bo‘yicha talabgir mutaxassisga aylantiradi.",
+      "course_aim": "<strong>Kurs maqsadi</strong> — o‘qishdan so‘ng siz hujum turlari va himoya usullarini tushunishingiz, pentesting vositalari bilan ishlashingiz, kirish testlarini hisobotlar bilan o‘tkazishingiz va loyihalar hamda kompaniyalar uchun xavfsizlik strategiyasini tuzishingiz mumkin bo‘ladi.",
+      "education_format_title": "Ta'lim formati",
+      "education_format": "Oflayn / Onlayn",
+      "full_duration_title": "Davomiyligi",
+      "full_duration": "22 modul / 10 oy",
+      "courses_number_title": "Darslar soni",
+      "courses_number": "120 dars",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "2 loyiha",
+      "pricing": {
+        "title": "Narx va shartlar",
+        "online": {
+          "title": "Onlayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "Ro'yxatdan o'tish"
+        },
+        "offline": {
+          "title": "Oflayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "Ro'yxatdan o'tish"
+        }
+      },
+      "resume": {
+        "title": "Kursdan keyingi rezyumeingiz",
+        "job": {
+          "title": "Lavozimi",
+          "subtitle": "Kiberxavfsizlik bo‘yicha mutaxassis"
+        },
+        "skills": {
+          "title": "Ko‘nikmalar",
+          "items": [
+            "Tarmoq texnologiyalarini tushunish: TCP/IP, DNS, HTTP/HTTPS, DHCP, VPN, marshrutizatsiya, xavfsizlik protokollari",
+            "Operatsion tizimlar va platformalarni tushunish: Windows, Linux, macOS, mobil OS’lar bilan ishlash",
+            "Tizim, tarmoq va ilova jurnallarini tahlil qilish ko‘nikmasi",
+            "SIEM tizimlari bilan ishlash ko‘nikmasi",
+            "Xavfsizlik qurilmalaridan foydalanish: IDS/IPS, firewall, proxy, WAF",
+            "Zararli fayllar va buzilish ko‘rsatkichlarini (IOC) aniqlash",
+            "Katta hajmdagi ma’lumotlarda naqshlarni topish qobiliyati",
+            "Soxta ijobiy ogohlantirishlar orasidan haqiqiy tahdidlarni aniqlash ko‘nikmasi",
+            "Hujum zanjirini qurish va MITRE ATT&CK doirasini tushunish",
+            "Hodisaga javob berish (Incident Response)",
+            "Tahdidlar razvedkasidan (Threat Intelligence) foydalanish — so‘nggi hujumlar va guruhlar haqida ma’lumot",
+            "Vaziyatlarni hujjatlashtirish va keyingi darajaga (L2/L3) uzatish ko‘nikmasi"
+          ]
+        },
+        "tools": {
+          "title": "Vositalar"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio uchun loyihalar",
+        "first": {
+          "title": "Pentest",
+          "text": "Zaifliklarni aniqlash uchun veb-ilovani kompleks sinovdan o‘tkazish. Loyiha OWASP metodologiyalari va maxsus vositalardan foydalangan. Aniqlangan zaifliklar ro‘yxati va ularni bartaraf etish bo‘yicha tavsiyalar berilgan hisobot tuzildi. Natija: mijoz xavflar ro‘yxatini va xavfsizlikni yaxshilash bo‘yicha harakatlar rejasini oldi."
+        },
+        "second": {
+          "title": "Red Teaming",
+          "text": "Keng qamrovli hujum stsenariysi amalga oshirildi, jumladan, ijtimoiy muhandislik, tarmoq infratuzilmasini sinovdan o‘tkazish va monitoring tizimlarini chetlab o‘tishga urinish. Natija: Zaifliklar aniqlandi va mijoz monitoring tizimi hamda kirish siyosatini kuchaytirishga muvaffaq bo‘ldi."
+        }
+      },
+      "certificate": {
+        "title": "Kursni tugatganingizdan so‘ng sertifikat",
+        "text": "Kursni tamomlagan har bir ishtirokchi kiberxavfsizlik sohasidagi bilimlarini va amaliy ko‘nikmalarini tasdiqlovchi imzoli sertifikat oladi. Ushbu hujjatni ishga joylashishda, portfolio va rezyumega qo‘shishda, shuningdek LinkedIn va boshqa platformalardagi professional profillarga ilova qilish mumkin. Sertifikat, nafaqat nazariy materialni o‘zlashtirganingizni, balki haqiqiy amaliy vazifalar va ishlarni bajarganingizni isbotlaydi."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Ethical-Hacking.png",
       "more_info": "Batafsil"
@@ -227,15 +302,95 @@
       "icon": "/images/courses/soc-analytics.png",
       "slug": "soc-analytics",
       "name": "SOC-analitika",
-      "subtitle": "Мониторинг, анализ и реагирование на киберугрозы",
-      "duration": "8 oy",
-      "desc": "Xavfsizlik monitoring markazi faoliyatiga sho‘ng‘ing. Kurs SIEM tizimlarini o‘rganishni, hodisalarni tahlil qilishni va kiberxavflarga javob berishni o‘z ichiga oladi. Bu jamoaviy kiberxavfsizlik bilan qiziqadiganlar uchun ideal.",
-      "full_desc": "<strong>Курс по SOC-аналитика</strong> —  курс о том, как работает Центр мониторинга информационной безопасности (Security Operation Center). Студенты погружаются в анализ логов, мониторинг событий SIEM-систем, выявление подозрительной активности, реагирование на инциденты и работу по стандартам SOC Tier 1–2. Практика включает разбор реальных атак, моделирование фишинга, DDoS и малваре-инцидентов.",
-      "course_aim": "<strong>Цель курса</strong> — Подготовить специалистов начального и среднего уровня, которые смогут работать в SOC, выявлять киберугрозы в реальном времени и обеспечивать непрерывную защиту инфраструктуры компании.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "subtitle": "Kiberxavf-xatarlarni monitoring qilish, tahlil qilish va ularga javob berish",
+      "duration": "10 oy",
+      "desc": "SOC-analitika kursi — bu kurs Axborot xavfsizligini monitoring qilish markazi (Security Operation Center) qanday ishlashini o‘rgatadi. Talabalar loglarni tahlil qilishni, SIEM tizimlarida hodisalarni kuzatishni, shubhali faollikni aniqlashni, insidentlarga javob berishni va SOC Tier 1–2 standartlari bo‘yicha ishlashni o‘rganadilar. Amaliyotga haqiqiy hujumlarni tahlil qilish, phishing, DDoS va zararli dastur (malware) holatlarini modellashtirish kiradi.",
+      "full_desc": "<strong>SOC-analitika</strong> — bu kurs Axborot xavfsizligini monitoring qilish markazi (Security Operation Center) qanday ishlashini chuqur o‘rgatadi. Talabalar loglarni tahlil qilishni, SIEM hodisalarini kuzatishni, shubhali faollikni aniqlashni va insidentlarga javob berishni o‘rganadilar. Kurs amaliyotga asoslangan bo‘lib, phishing, DDoS va zararli dastur (malware) holatlarining haqiqiy misollari bilan ishlashni o‘z ichiga oladi.",
+      "course_aim": "<strong>Kurs maqsadi</strong> — SOCda ishlay oladigan, kiberxavflarni real vaqt rejimida aniqlay oladigan va kompaniya infratuzilmasini uzluksiz himoya qilishni ta’minlay oladigan boshlang‘ich va o‘rta darajadagi mutaxassislarni tayyorlash.",
+      "education_format_title": "Ta'lim formati",
+      "education_format": "Oflayn / Onlayn",
+      "full_duration_title": "Davomiyligi",
+      "full_duration": "22 modul / 10 oy",
+      "courses_number_title": "Darslar soni",
+      "courses_number": "120 dars",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "Hamkor kompaniyalarda stajirovka",
+      "pricing": {
+        "title": "Narx va shartlar",
+        "online": {
+          "title": "Onlayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        },
+        "offline": {
+          "title": "Oflayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        }
+      },
+      "resume": {
+        "title": "Kursdan keyingi rezyumeingiz",
+        "job": {
+          "title": "Lavozimi",
+          "subtitle": "Kiberxavfsizlik bo‘yicha mutaxassis (SOC-analitik)"
+        },
+        "skills": {
+          "title": "Ko‘nikmalar",
+          "items": [
+            "Ma'lumotlar sxemasini loyihalash va optimallashtirish",
+            "Murakkab korrelyatsion qoidalarni ishlab chiqish",
+            "So‘rov tilidan foydalanib hodisalarni tergov qilish",
+            "SIEM ni boshqa ma'lumot manbalari bilan birlashtirish",
+            "Pleybuklarni ishlab chiqish va sozlash",
+            "Turli xil asboblarni bitta javob berish konturiga integratsiya qilish",
+            "Avtomatlashtirish samaradorligini baholash",
+            "Tarmoq trafigini tahlil qilish",
+            "Sessiyalar va protokollarni qayta qurish",
+            "Beaconing (mayaklar) va past tezlikdagi hujumlarni aniqlash",
+            "O‘zingizning aniqlash qoidalaringizni (Signature) yaratish va sinash",
+            "Ban tizimlari bilan ishlash",
+            "Xulq-atvor hisobotlarini izohlash",
+            "Tahlilga qarshi texnikalarni aylanib o‘tish",
+            "IOC (Buzilish ko‘rsatkichlari) ni ajratib olish va kontekstda tahlil qilish",
+            "Tahdidlar razvedkasi (Threat Intelligence) bilan ishlash",
+            "TI manbalarining ishonchliligi va dolzarbligini baholash"
+          ]
+        },
+        "tools": {
+          "title": "Asboblar"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolioga qo‘shimcha",
+        "first": {
+          "title": "Hamkor kompaniyalarda stajirovka",
+          "text": "Talabalar va bitiruvchilar uchun hamkor kompaniya bazasida amaliy kiberxavfsizlik olamiga sho‘ng‘ish uchun noyob imkoniyat. Siz bizning tajribali ekspertlarimiz bilan yonma-yon ishlaysiz, real loyihalarda ishtirok etasiz va portfelingizga katta yulduz bo‘lib qo‘shiladigan hamda karyerangizga kuchli start beradigan bebaho tajribaga ega bo‘lasiz."
+        },
+        "second": {
+          "title": "Hamkor kompaniyalarda stajirovka",
+          "text": "Talabalar va bitiruvchilar uchun hamkor kompaniya bazasida amaliy kiberxavfsizlik olamiga sho‘ng‘ish uchun noyob imkoniyat. Siz bizning tajribali ekspertlarimiz bilan yonma-yon ishlaysiz, real loyihalarda ishtirok etasiz va portfelingizga katta yulduz bo‘lib qo‘shiladigan hamda karyerangizga kuchli start beradigan bebaho tajribaga ega bo‘lasiz."
+        }
+      },
+      "certificate": {
+        "title": "Kursni tugatganingizdan so‘ng sertifikat",
+        "text": "Kursni tamomlagan har bir ishtirokchi kiberxavfsizlik sohasidagi bilimlarini va amaliy ko‘nikmalarini tasdiqlovchi imzoli sertifikat oladi. Ushbu hujjatni ishga joylashishda, portfolio va rezyumega qo‘shishda, shuningdek LinkedIn va boshqa platformalardagi professional profillarga ilova qilish mumkin. Sertifikat, nafaqat nazariy materialni o‘zlashtirganingizni, balki haqiqiy amaliy vazifalar va ishlarni bajarganingizni isbotlaydi."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/SOC.png",
       "more_info": "Batafsil"

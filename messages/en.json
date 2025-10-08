@@ -210,35 +210,190 @@
       "icon": "/images/courses/cybersecurity.png",
       "slug": "cybersecurity",
       "name": "Ethical Hacking",
-      "subtitle": "Научись думать как хакер - действуй как защитник",
+      "subtitle": "Learn to think like a hacker - act like a defender",
       "duration": "10 months",
       "desc": "Discover how hackers think and learn to use this knowledge for good. Hands-on training in penetration testing, vulnerability analysis, and system protection will help you become a cybersecurity professional.",
-      "full_desc": "<strong>Этичный хакинг</strong> — это уникальная возможность погрузиться в мир профессионального этичного хакинга и пентестинга. Студенты осваивают полный цикл безопасного тестирования систем: от сбора информации и анализа уязвимостей до их эксплуатации, повышения привилегий и работы с защищенными сетями. Курс построен на практике: реальные лабораторные задания и сценарии, максимально приближенные к реальным условиям, позволяют отточить навыки в безопасной среде. Итогом обучения становится проведение полноценного пентеста и составление профессионального отчета, что делает выпускника готовым к работе в Red Team и востребованным специалистом по кибербезопасности",
-      "course_aim": "<strong>Цель курса</strong> — После обучения вы сможете понимать виды атак и методы защиты, работать с инструментами пентестинга, проводить тесты на проникновение с отчётами и выстраивать стратегию безопасности для проектов и компаний",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "full_desc": "<strong>Ethical Hacking</strong> — a unique opportunity to dive into the world of professional ethical hacking and penetration testing. Students learn the full cycle of secure system testing: from information gathering and vulnerability analysis to exploitation, privilege escalation, and working with secured networks. The course is hands-on: real lab assignments and scenarios, closely simulating real-world conditions, allow students to hone their skills in a safe environment. The result of the course is conducting a full penetration test and creating a professional report, making graduates ready for Red Team work and highly sought-after cybersecurity professionals.",
+      "course_aim": "<strong>Course goal</strong> — after completing the course, you will be able to understand attack types and defense methods, work with penetration testing tools, conduct penetration tests with reports, and build security strategies for projects and companies.",
+      "education_format_title": "Training format",
+      "education_format": "Offline / Online",
+      "full_duration_title": "Duration",
+      "full_duration": "22 modules / 10 months",
+      "courses_number_title": "Number of classes",
+      "courses_number": "120 classes",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "2 projects in portfolio",
+      "pricing": {
+        "title": "Pricing and conditions",
+        "online": {
+          "title": "Online",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Recordings of lessons and materials in your personal account",
+            "Learn from anywhere in the world",
+            "Support in chat and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "Sign up"
+        },
+        "offline": {
+          "title": "Offline",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Recordings of lessons and materials in your personal account",
+            "Learn from anywhere in the world",
+            "Support in chat and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "Sign up"
+        }
+      },
+      "resume": {
+        "title": "Your CV after completing the course",
+        "job": {
+          "title": "Job",
+          "subtitle": "Cybersecurity Specialist"
+        },
+        "skills": {
+          "title": "Skills",
+          "items": [
+            "Understanding of network technologies: TCP/IP, DNS, HTTP/HTTPS, DHCP, VPN, routing, security protocols",
+            "Understanding of OS and platforms: working with Windows, Linux, macOS, mobile OS",
+            "Ability to analyze system, network and application logs",
+            "Ability to use SIEM systems",
+            "Using network security devices: IDS/IPS, firewall, proxy, WAF",
+            "Recognition of malicious files and indicators of compromise (IOC)",
+            "Ability to find patterns in large amounts of data",
+            "Ability to identify true threats among false positives",
+            "Building attack chains and understanding MITRE ATT&CK",
+            "Incident handling (Incident Response)",
+            "Using Threat Intelligence (data on current attacks and groups)",
+            "Ability to document and transfer cases to the next level (L2/L3)"
+          ]
+        },
+        "tools": {
+          "title": "Tools"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio projects",
+        "first": {
+          "title": "Pentest",
+          "text": "Conducting comprehensive testing of a web application to identify vulnerabilities. OWASP methodologies and specialized tools were used during the project. A report was compiled with identified vulnerabilities and recommendations for their remediation. Result: The client received a list of risks and an action plan for improving security."
+        },
+        "second": {
+          "title": "Red Teaming",
+          "text": "Implementing a comprehensive attack scenario, including social engineering, network infrastructure testing, and an attempt to bypass monitoring systems. Result: Vulnerabilities in security were identified, and the client was able to strengthen the monitoring system and access policy."
+        }
+      },
+      "certificate": {
+        "title": "Certificate upon completion of the course",
+        "text": "Upon completion of the course, each student receives a personalized certificate confirming their knowledge and practical skills in cybersecurity. This document can be used for job applications, added to portfolios and resumes, and attached to professional profiles on LinkedIn and other platforms. The certificate serves as proof that you have not only mastered theoretical material but also completed real-world practical tasks and cases."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Ethical-Hacking.png",
-      "more_info": " Learn more"
+      "more_info": "Learn more"
     },
     "soc-analytics": {
       "icon": "/images/courses/soc-analytics.png",
       "slug": "soc-analytics",
       "name": "SOC-analytics",
-      "subtitle": "Мониторинг, анализ и реагирование на киберугрозы",
-      "duration": "8 months",
-      "desc": "Immerse yourself in the work of a security operations center. The course covers SIEM systems, incident analysis, and response to cyber threats — perfect for those interested in team-based cyber defense.",
-      "full_desc": "<strong>Курс по SOC-аналитика</strong> —  курс о том, как работает Центр мониторинга информационной безопасности (Security Operation Center). Студенты погружаются в анализ логов, мониторинг событий SIEM-систем, выявление подозрительной активности, реагирование на инциденты и работу по стандартам SOC Tier 1–2. Практика включает разбор реальных атак, моделирование фишинга, DDoS и малваре-инцидентов.",
-      "course_aim": "<strong>Цель курса</strong> — Подготовить специалистов начального и среднего уровня, которые смогут работать в SOC, выявлять киберугрозы в реальном времени и обеспечивать непрерывную защиту инфраструктуры компании.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "subtitle": "Monitoring, analysis, and response to cyber threats",
+      "duration": "10 months",
+      "desc": "The SOC-analytics course explains how a Security Operations Center (SOC) works. Students dive into log analysis, event monitoring via SIEM systems, detecting suspicious activity, incident response, and working according to SOC Tier 1–2 standards. Practical exercises include analyzing real attacks and simulating phishing, DDoS, and malware incidents.",
+      "full_desc": "<strong>SOC-analytics</strong> — a course about how a Security Operations Center (SOC) functions. Students learn log analysis, SIEM event monitoring, detection of suspicious activity, incident response, and SOC Tier 1–2 standards. The training is practice-based: analyzing real attacks and simulating phishing, DDoS, and malware incidents helps develop reproducible, hands-on experience.",
+      "course_aim": "<strong>Course goal</strong> — to train entry-level and mid-level specialists capable of working in SOC, detecting cyber threats in real time, and ensuring continuous protection of a company's infrastructure.",
+      "education_format_title": "Training format",
+      "education_format": "Offline / Online",
+      "full_duration_title": "Duration",
+      "full_duration": "22 modules / 10 months",
+      "courses_number_title": "Number of classes",
+      "courses_number": "120 classes",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "Internship in partner companies",
+      "pricing": {
+        "title": "Pricing and conditions",
+        "online": {
+          "title": "Online",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Lesson recordings and materials in your personal account",
+            "Ability to study from anywhere in the world",
+            "Chat support and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "SIGN UP"
+        },
+        "offline": {
+          "title": "Offline",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Lesson recordings and materials in your personal account",
+            "Ability to study from anywhere in the world",
+            "Chat support and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "SIGN UP"
+        }
+      },
+      "resume": {
+        "title": "Your CV after completing the course",
+        "job": {
+          "title": "Position",
+          "subtitle": "Cybersecurity Specialist (SOC Analyst)"
+        },
+        "skills": {
+          "title": "Skills",
+          "items": [
+            "Design and optimize data schemas",
+            "Develop complex correlation rules",
+            "Conduct incident investigations using query language",
+            "Integrate SIEM with other data sources",
+            "Develop and customize playbooks",
+            "Integrate various tools into a unified response loop",
+            "Evaluate automation effectiveness",
+            "Analyze network traffic",
+            "Reconstruct sessions and protocols",
+            "Detect beaconing and low-speed attacks",
+            "Create and test custom detection rules (Signatures)",
+            "Work with banalization systems",
+            "Interpret behavioral reports",
+            "Bypass anti-analysis techniques",
+            "Extract and contextualize IoC (Indicators of Compromise)",
+            "Threat Intelligence management",
+            "Evaluate the reliability and relevance of TI sources"
+          ]
+        },
+        "tools": {
+          "title": "Tools"
+        }
+      },
+      "portfolio": {
+        "title": "Addition to the portfolio",
+        "first": {
+          "title": "Internship in partner companies",
+          "text": "A unique opportunity for students and graduates to immerse themselves in the world of practical cybersecurity within a partner company. You will work alongside our experienced experts, participate in real-world projects, and gain invaluable experience that will become a highlight of your portfolio and give your career a strong start."
+        },
+        "second": {
+          "title": "Internship in partner companies",
+          "text": "A unique opportunity for students and graduates to immerse themselves in the world of practical cybersecurity within a partner company. You will work alongside our experienced experts, participate in real-world projects, and gain invaluable experience that will become a highlight of your portfolio and give your career a strong start."
+        }
+      },
+      "certificate": {
+        "title": "Certificate upon course completion",
+        "text": "Upon completion of the course, each participant receives a personalized certificate confirming their knowledge and practical skills in cybersecurity. The document can be used for job applications, added to a portfolio and resume, and attached to professional profiles on LinkedIn and other platforms. The certificate proves that you have not only mastered theoretical material but also completed real-world practical tasks and cases."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/SOC.png",
-      "more_info": " Learn more"
+      "more_info": "Learn more"
     },
     "cooperative-courses": {
       "icon": "/images/courses/cooperative.png",
