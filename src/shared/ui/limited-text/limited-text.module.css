@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+}
+
+.content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* line-height: 20px;  */
+  text-overflow: ellipsis;
+  /* -webkit-line-clamp: 5; */
+}
+
+.ellipsis {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  padding-left: 4px;
+}

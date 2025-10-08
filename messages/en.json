@@ -122,7 +122,7 @@
       "name": "PYsploit",
       "subtitle": "Автоматизация атак и тестов на Python",
       "duration": "8 months",
-      "desc": "Learn Python from scratch and become a developer of cybersecurity tools. In this course, you will learn how to create vulnerability scanners, exploits, and scripts for network attacks. By the end, you will have your own toolkit…",
+      "desc": "Learn Python from scratch and become a developer of cybersecurity tools. In this course, you will learn how to create vulnerability scanners, exploits, and scripts for network attacks. By the end, you will have your own toolkit",
       "full_desc": "<strong>PYsploit</strong> — практический курс по разработке инструментов для тестирования безопасности и автоматизации взлома на языке Python. Студенты изучают основы языка, создание скриптов для поиска уязвимостей, написание эксплойтов, работу с сетевыми протоколами и API. Особое внимание уделяется реальным кейсам: от сканирования портов до создания мини-фреймворков для пентестов.",
       "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
       "education_format": "Офлайн / Онлайн",

@@ -602,8 +602,15 @@
   gap: 20px;
 }
 
+.cetrificate__img {
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 .cetrificate__img > img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .cetrificate__text {
