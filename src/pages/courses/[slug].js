@@ -10,6 +10,7 @@ import ForensicsBg from "@/shared/ui/course-backgrounds/forensics-bg";
 import CybersecurityCourseBg from "@/shared/ui/course-backgrounds/cybersecurity-course-bg";
 import { getMessages } from "@/shared/libs/getMessages";
 import { withMessages } from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
 const backgrounds = {
   pysploit: <PysploitCourseBg />,
@@ -19,15 +20,20 @@ const backgrounds = {
   forensics: <ForensicsBg />,
 };
 
-function Page({ course }) {
+function Page() {
   const router = useRouter();
   const pathname = router.asPath;
 
   const courseName = pathname.split("/").pop();
 
+  const translator = useTranslations("");
+  const coursesValues = translator.raw("Courses");
+
+  const course = coursesValues[courseName];
+
   return (
     <div className={styles.course__page} id="course-page">
-      {backgrounds[courseName]}
+      <div className="course-background">{backgrounds[courseName]}</div>
       <div className="container">
         <div className={styles.course__hero}>
           <h2
@@ -60,7 +66,9 @@ function Page({ course }) {
               </div>
 
               <div className={styles.course__info_text}>
-                <h5 data-glitch="Ф%рмат обуче#ия">Формат обучения</h5>
+                <h5 data-glitch="Ф%рмат обуче#ия">
+                  {course.education_format_title}
+                </h5>
                 <span>{course.education_format}</span>
               </div>
             </div>
@@ -77,7 +85,7 @@ function Page({ course }) {
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5 data-glitch="Дли%ель#ость">Длительность</h5>
+                <h5 data-glitch="Дли%ель#ость">{course.full_duration_title}</h5>
                 <span>{course.full_duration}</span>
               </div>
             </div>
@@ -94,7 +102,9 @@ function Page({ course }) {
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5 data-glitch="Кол%честв& занятий ">Количество занятий</h5>
+                <h5 data-glitch="Кол%честв& занятий ">
+                  {course.courses_number_title}
+                </h5>
                 <span>{course.courses_number}</span>
               </div>
             </div>
@@ -109,7 +119,7 @@ function Page({ course }) {
                 />
               </div>
               <div className={styles.course__info_text}>
-                <h5 data-glitch="П%ртфоли%">Портфолио</h5>
+                <h5 data-glitch="П%ртфоли%">{course.portfolio_info_title}</h5>
                 <span>{course.portfolio_info}</span>
               </div>
             </div>
@@ -178,54 +188,58 @@ function Page({ course }) {
         </div> */}
 
         <div className={styles.prices}>
-          <h2 className={styles.prices__title}>Стоимость и условия</h2>
+          <h2 className={styles.prices__title}>{course.pricing.title}</h2>
 
           <div className={styles.prices__cards}>
             <div className={styles.prices__card}>
               <div className={styles.prices__card_top}>
-                <h3 className={styles.prices__card_title}>Онлайн</h3>
-                <span className={styles.prices__card_duration}>8 недель</span>
+                <h3 className={styles.prices__card_title}>
+                  {course.pricing.online.title}
+                </h3>
+                <span className={styles.prices__card_duration}>
+                  {course.pricing.online.duration}
+                </span>
               </div>
               <ul className={styles.prices__card_conditions}>
-                <h5>Условия: </h5>
-                <li>Доступ к платформе 24/7</li>
-                <li>Записи занятий и материалы в личном кабинете</li>
-                <li>Возможность учиться из любой точки мира</li>
-                <li>Поддержка в чате и регулярные консультации</li>
-                <li>Гибкий график — занимайся в удобное время</li>
+                <h5>{course.pricing.online.condition}: </h5>
+                {course.pricing.online.list?.map((label, index) => (
+                  <li key={index}>{label}</li>
+                ))}
               </ul>
               <button
                 onClick={scrollIntoApplicationForm}
                 className={styles.prices__card_button}
               >
-                ЗАПИСАТЬСЯ
+                {course.pricing.online.button}
               </button>
             </div>
             <div className={styles.prices__card}>
               <div className={styles.prices__card_top}>
-                <h3 className={styles.prices__card_title}>Оффлайн</h3>
-                <span className={styles.prices__card_duration}>8 недель</span>
+                <h3 className={styles.prices__card_title}>
+                  {course.pricing.offline.title}
+                </h3>
+                <span className={styles.prices__card_duration}>
+                  {course.pricing.offline.duration}
+                </span>
               </div>
               <ul className={styles.prices__card_conditions}>
-                <h5>Условия: </h5>
-                <li>Доступ к платформе 24/7</li>
-                <li>Записи занятий и материалы в личном кабинете</li>
-                <li>Возможность учиться из любой точки мира</li>
-                <li>Поддержка в чате и регулярные консультации</li>
-                <li>Гибкий график — занимайся в удобное время</li>
+                <h5>{course.pricing.offline.condition}: </h5>
+                {course.pricing.offline.list?.map((label, index) => (
+                  <li key={index}>{label}</li>
+                ))}
               </ul>
               <button
                 onClick={scrollIntoApplicationForm}
                 className={styles.prices__card_button}
               >
-                ЗАПИСАТЬСЯ
+                {course.pricing.offline.button}
               </button>
             </div>
           </div>
         </div>
 
         <div className={styles.resume}>
-          <h2 className={styles.resume__title}>Ваше резюме после курса</h2>
+          <h2 className={styles.resume__title}>{course.resume.title}</h2>
           <div className={styles.resume__cards}>
             <div className={styles.resume__preview}>
               <img
@@ -233,28 +247,19 @@ function Page({ course }) {
                 src="/images/resume/student.png"
                 alt="student-image"
               />
-              <span>Должность</span>
+              <span>{course.resume.job.title}</span>
               <h3 className={styles.resume__preview_job}>
-                Специалист по кибербезопастности
+                {course.resume.job.subtitle}
               </h3>
             </div>
             <div className={styles.resume__skills}>
               <ul>
-                <h4>Навыки</h4>
-                <li>Оценка защищённости взлом веб-приложений</li>
-                <li>Оценка защищённости и взлом беспроводных сетей</li>
-                <li>Оценка защищённости и взлом сетевых устройств</li>
-                <li>Анализ вредоносного ПО</li>
-                <li>Анализ сетевого трафика</li>
-                <li>Поиск уязвимостей ОС</li>
-                <li>Администрирование операционных систем</li>
-                <li>Red Teaming - проведение атак нулевого дня</li>
-                <li>
-                  Написание отчётов соответствующим стандартам международных
-                  компаний
-                </li>
+                <h4>{course.resume.skills.title}</h4>
+                {course.resume.skills.items?.map((label, index) => (
+                  <li key={index}>{label}</li>
+                ))}
               </ul>
-              <ul>
+              {/* <ul>
                 <h4>Владение Python и скриптовыми языками</h4>
                 <li>Написание собственных инструментов</li>
                 <li>Корректировка существующих инструментов под себя</li>
@@ -264,10 +269,12 @@ function Page({ course }) {
                 <li>Многозадачность</li>
                 <li>Внимательность к деталям</li>
                 <li>Аналитические способности</li>
-              </ul>
+              </ul> */}
             </div>
             <div className={styles.resume__tools}>
-              <h4 className={styles.resume__tools_title}>Инструменты</h4>
+              <h4 className={styles.resume__tools_title}>
+                {course.resume.tools.title}
+              </h4>
               <div className={styles.resume__tools_items}>
                 <div className={styles.resume__tools_item}>
                   <img
@@ -366,34 +373,29 @@ function Page({ course }) {
         </div>
 
         <div className={styles.portfolio}>
-          <h2 className={styles.portfolio__title}>Проекты для портфолио</h2>
+          <h2 className={styles.portfolio__title}>{course.portfolio.title}</h2>
 
           <div className={styles.portfolio__cards}>
             <div className={styles.portfolio__card}>
               <div className={styles.portfolio__card_top}>
-                <h3 className={styles.portfolio__card_title}>Pentest</h3>
+                <h3 className={styles.portfolio__card_title}>
+                  {course.portfolio.first.title}
+                </h3>
                 <span className={styles.portfolio__card_index}>01</span>
               </div>
               <p className={styles.portfolio__card_text}>
-                Проведение комплексного тестирования веб-приложения с целью
-                выявления уязвимостей. В рамках проекта использовались
-                OWASP-методологии и специализированные инструменты (Burp Suite,
-                Nmap, Metasploit). Составлен отчёт с найденными уязвимостями и
-                рекомендациями по их устранению.Результат: заказчик получил
-                список рисков и план действий по повышению уровня защиты
+                {course.portfolio.first.text}
               </p>
             </div>
             <div className={styles.portfolio__card}>
               <div className={styles.portfolio__card_top}>
-                <h3 className={styles.portfolio__card_title}>Red Teaming</h3>
+                <h3 className={styles.portfolio__card_title}>
+                  {course.portfolio.second.title}
+                </h3>
                 <span className={styles.portfolio__card_index}>02</span>
               </div>
               <p className={styles.portfolio__card_text}>
-                Реализован комплексный сценарий атаки, включающий социальную
-                инженерию, тестирование сетевой инфраструктуры и попытку обхода
-                систем мониторинга.Использованные инструменты: Cobalt Strike,
-                BloodHound, Mimikatz.Результат: выявлены слабые места в защите,
-                заказчик смог усилить систему мониторинга и политику доступа
+                {course.portfolio.second.text}
               </p>
             </div>
           </div>
@@ -406,17 +408,10 @@ function Page({ course }) {
             </div>
             <div className={styles.cetrificate__content}>
               <h2 className={styles.cetrificate__title}>
-                Сертефикат после окончания курса
+                {course.certificate.title}
               </h2>
               <p className={styles.cetrificate__text}>
-                После завершения курса каждый участник получает именной
-                сертификат, подтверждающий его знания и практические навыки в
-                области кибербезопасности. Документ можно использовать при
-                устройстве на работу, добавлять в портфолио и резюме, а также
-                прикладывать к профессиональным профилям в LinkedIn и других
-                платформах. Сертификат служит доказательством того, что вы не
-                только освоили теоретический материал, но и выполнили реальные
-                практические задания и кейсы.
+                {course.certificate.text}
               </p>
             </div>
           </div>
@@ -463,4 +458,4 @@ export async function getStaticProps({ params, locale }) {
   };
 }
 
-export default Page;
+export default withMessages(Page);

@@ -120,15 +120,88 @@
       "icon": "/images/courses/python.png",
       "slug": "pysploit",
       "name": "PYsploit",
-      "subtitle": "Автоматизация атак и тестов на Python",
+      "subtitle": "Python yordamida hujumlar va testlarni avtomatlashtirish",
       "duration": "8 oy",
       "desc": "Pythonni noldan o‘rganing va kiberxavfsizlik vositalari ishlab chiquvchisiga aylaning. Kurs davomida siz zaifliklarni skanerlashni, eksploitlar va tarmoqqa hujum qilish skriptlarini yaratishni o‘rganasiz. Kurs yakunida sizning o‘z to‘plamingiz bo‘ladi ",
-      "full_desc": "<strong>PYsploit</strong> — практический курс по разработке инструментов для тестирования безопасности и автоматизации взлома на языке Python. Студенты изучают основы языка, создание скриптов для поиска уязвимостей, написание эксплойтов, работу с сетевыми протоколами и API. Особое внимание уделяется реальным кейсам: от сканирования портов до создания мини-фреймворков для пентестов.",
-      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "full_desc": "<strong>PYsploit</strong> — xavfsizlikni test qilish va xakerlikni avtomatlashtirish uchun Python dasturlash tilida vositalar ishlab chiqish bo'yicha amaliy kurs. Talabalar til asoslarini o'rganishni, zaifliklarni aniqlash uchun skriptlar yaratishni, eksploitlar yozishni, tarmoq protokollari va API bilan ishlashni o'rganadilar. Ayniqsa haqiqiy holatlarga e'tibor qaratiladi: portlarni skaner qilishdan tortib, pentestlar uchun mini frameworklar yaratishga qadar.",
+      "course_aim": "<strong>Kurs maqsadi</strong> — talabalarga Python dasturini etik xakerlik va kiberxavfsizlikda asosiy vosita sifatida ishlatishni o'rgatish, o'z utilitalarini yozish va tayyor yechimlarni kompaniya yoki pentest ehtiyojlariga moslashtirishni o'rgatish.",
+      "education_format_title": "Ta'lim formati",
+      "education_format": "Oflayn / Onlayn ",
+      "full_duration_title": "Davomiyligi",
+      "full_duration": "18 modul / 8 oy",
+      "courses_number_title": "Darslar soni",
+      "courses_number": "98 dars",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "2 loyiha",
+      "pricing": {
+        "title": "Narx va shartlar",
+        "online": {
+          "title": "Onlayn",
+          "condition": "Shartlar",
+          "duration": "8 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "Ro‘yxatdan o‘tish"
+        },
+        "offline": {
+          "title": "Oflayn",
+          "condition": "Shartlar",
+          "duration": "8 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "Ro‘yxatdan o‘tish"
+        }
+      },
+      "resume": {
+        "title": "Kursdan keyingi rezyumeingiz",
+        "job": {
+          "title": "Lavozimi",
+          "subtitle": "Kiberxavfsizlik bo'yicha mutaxassis"
+        },
+        "skills": {
+          "title": "Ko'nikmalar",
+          "items": [
+            "Kiberxavfsizlik asoslarini tushunish",
+            "Python asoslarini bilish",
+            "Penetratsion testlarni o'tkazish ko'nikmasi",
+            "Tarmoq xavfsizligi bo'yicha bilim",
+            "Port va zaifliklar skanerlarini yaratish ko'nikmasi",
+            "SSH va FTP hujumlari uchun dasturiy ta'minot ishlab chiqish",
+            "Parollarni buzish jarayonlarini avtomatlashtirish",
+            "Trafikni yashirish, yo'naltirish va ushlab qolish jarayonlarini o'tkazish va avtomatlashtirish",
+            "Tizimlarni haddan tashqari yuklash jarayonlarini o'tkazish va avtomatlashtirish",
+            "Tarmoq tahlilini avtomatlashtirish"
+          ]
+        },
+        "tools": {
+          "title": "Pysploit Asboblari"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio uchun loyihalar",
+        "first": {
+          "title": "Tahlil dasturi",
+          "text": "Katta darajadagi dasturchilar darajasida o'zingizning kuchli funksionallikka ega bo'lgan, zaifliklarni aniqlash va to'liq tahlil qilish uchun shaxsiy vositangizni ishlab chiqish. Bu sizning portfoliongizga katta \"orttirma\" bo'ladi. Bu oddiy o'quv loyihasi emas, balki sizning karyerangiz bilan birga rivojlanib boradigan tizim."
+        },
+        "second": {
+          "title": "Pentest dasturi",
+          "text": "Ushbu loyiha sizning portfoliongizning markaziy elementi bo'lib, har qanday ish beruvchi uchun sizning ekspertizingizning shubhasiz isboti bo'ladi. Siz o'zingizning algoritmlaringizni, zaifliklardan foydalanish modullarini va oddiy vazifalarni avtomatlashtirish tizimini amalga oshirishingiz mumkin. Bu rezyumingizdagi oddiy qator emas, balki zamonaviy kiberxavfsizlik mutaxassisi arsenalidagi shaxsiy hissangiz."
+        }
+      },
+      "certificate": {
+        "title": "Kursni tugatganingizdan so'ng sertifikat",
+        "text": "Kursni tamomlagan har bir ishtirokchi kiberxavfsizlik sohasidagi bilimlarini va amaliy ko'nikmalarini tasdiqlovchi imzoli sertifikat oladi. Ushbu hujjatni ishga joylashishda, portfolio va rezyumega qo'shishda, shuningdek LinkedIn va boshqa platformalardagi professional profillarga ilova qilish mumkin. Sertifikat, nafaqat nazariy materialni o'zlashtirganingizni, balki haqiqiy amaliy vazifalar va ishlarni bajarganingizni isbotlaydi."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/PYsploit.png",
       "more_info": "Batafsil"

@@ -120,15 +120,88 @@
       "icon": "/images/courses/python.png",
       "slug": "pysploit",
       "name": "PYsploit",
-      "subtitle": "Автоматизация атак и тестов на Python",
+      "subtitle": "Automating attacks and tests with Python",
       "duration": "8 months",
       "desc": "Learn Python from scratch and become a developer of cybersecurity tools. In this course, you will learn how to create vulnerability scanners, exploits, and scripts for network attacks. By the end, you will have your own toolkit",
-      "full_desc": "<strong>PYsploit</strong> — практический курс по разработке инструментов для тестирования безопасности и автоматизации взлома на языке Python. Студенты изучают основы языка, создание скриптов для поиска уязвимостей, написание эксплойтов, работу с сетевыми протоколами и API. Особое внимание уделяется реальным кейсам: от сканирования портов до создания мини-фреймворков для пентестов.",
-      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "full_desc": "<strong>PYsploit</strong> — a practical course on developing tools for security testing and automation of hacking using Python. Students will learn the basics of the language, creating scripts for vulnerability scanning, writing exploits, working with network protocols and APIs. Special focus is given to real-world cases: from port scanning to creating mini frameworks for penetration tests.",
+      "course_aim": "<strong>Course goal</strong> — to teach students to use Python as the primary tool for ethical hacking and cybersecurity, to write their own utilities, and adapt ready-made solutions for company or pentesting needs.",
+      "education_format_title": "Training format",
+      "education_format": "Offline / Online ",
+      "full_duration_title": "Duration",
+      "full_duration": "18 modules / 8 months",
+      "courses_number_title": "Number of classes",
+      "courses_number": "98 classes ",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "2 projects in portfolio",
+      "pricing": {
+        "title": "Pricing and conditions",
+        "online": {
+          "title": "Online",
+          "condition": "Conditions",
+          "duration": "8 months",
+          "list": [
+            "24/7 access to the platform",
+            "Recordings of lessons and materials in your personal account",
+            "Learn from anywhere in the world",
+            "Support in chat and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "Sign up"
+        },
+        "offline": {
+          "title": "Offline",
+          "condition": "Conditions",
+          "duration": "8 months",
+          "list": [
+            "24/7 access to the platform",
+            "Recordings of lessons and materials in your personal account",
+            "Learn from anywhere in the world",
+            "Support in chat and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "Sign up"
+        }
+      },
+      "resume": {
+        "title": "Your CV after completing the course",
+        "job": {
+          "title": "Job",
+          "subtitle": "Cybersecurity Specialist"
+        },
+        "skills": {
+          "title": "Skills",
+          "items": [
+            "Understanding of cybersecurity fundamentals",
+            "Basic knowledge of Python",
+            "Ability to conduct penetration testing",
+            "Knowledge of network security",
+            "Ability to create port and vulnerability scanners",
+            "Develop software for SSH and FTP attacks",
+            "Automation of password cracking processes",
+            "Ability to conduct and automate masking processes, traffic interception",
+            "Ability to conduct and automate system overload processes",
+            "Automation of network analysis"
+          ]
+        },
+        "tools": {
+          "title": "Tools"
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio projects",
+        "first": {
+          "title": "Analysis Software",
+          "text": "Develop your own Senior-level tool with powerful functionality for detecting and fully analyzing vulnerabilities, which will be a huge asset to your portfolio. This isn't just a training project, but a living system that will evolve along with your career."
+        },
+        "second": {
+          "title": "Penetration Testing Software",
+          "text": "This project will become the centerpiece of your portfolio, undeniable proof of your expertise for any employer. You'll be able to implement your own algorithms, vulnerability exploitation modules, and a system for automating routine tasks. This isn't just a line on your resume, but your personal contribution to the arsenal of a modern cybersecurity specialist."
+        }
+      },
+      "certificate": {
+        "title": "Certificate upon completion of the course",
+        "text": " Upon completion of the course, each student receives a personalized certificate confirming their knowledge and practical skills in cybersecurity. This document can be used for job applications, added to portfolios and resumes, and attached to professional profiles on LinkedIn and other platforms. The certificate serves as proof that you have not only mastered theoretical material but also completed real-world practical tasks and cases."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/PYsploit.png",
       "more_info": " Learn more"

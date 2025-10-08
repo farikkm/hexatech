@@ -1,7 +1,12 @@
-.courses__item {
-  background: var(--coal-black-color);
-  padding: 15px 10px 30px 17px;
-  border-radius: 5px;
+.courses__item:hover {
+  box-shadow: 0 0 10px #da0000;
+  border-radius: 0 0 170px 0;
+}
+
+.courses__inner {
+  width: 414px;
+  height: 510px;
+  background: #1e1e1e;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -12,18 +17,14 @@
   border: 2px solid transparent;
   transition: border 0.3s;
   position: relative;
-
-  display: flex;
-  flex-direction: column;
+  border-radius: 5px;
 }
 
-.courses__item::before {
+.courses__inner::before {
   content: "";
   position: absolute;
   bottom: -2px;
   right: -2px;
-  z-index: -1;
-
   width: 414px;
   height: 414px;
   transform: scale(0);
@@ -31,7 +32,7 @@
   transition: transform 0.5s;
 }
 
-.courses__item::after {
+.courses__inner::after {
   content: "";
   width: 2px;
   height: 142px;
@@ -43,25 +44,20 @@
   transition: background-color 0.3s;
 }
 
-.courses__item:hover {
+.courses__inner:hover {
   border: 2px solid #da0000;
-  background: radial-gradient(transparent, rgba(199, 0, 0, 0) 50%, transparent);
-  background-repeat: no-repeat;
-  background-position: -100vw -75vh;
-  background-size: 300vw 100vh;
+  background: #131313;
+  box-shadow: 0 0 10px #da0000;
 }
 
-.courses__item:hover:before {
+.courses__inner:hover:before {
   background: linear-gradient(135deg, transparent 50%, #da0000 100%);
   transform: scale(1);
 }
 
-.courses__item:hover:after {
+.courses__inner:hover:after {
   background-color: #da0000;
-}
-
-.courses__item:hover::after {
-  border-left: 2px solid var(--red-color);
+  box-shadow: 0 0 10px #da0000;
 }
 
 .courses__item__img {
@@ -110,7 +106,7 @@
 }
 
 @media (min-width: 768px) {
-  .courses__item {
+  .courses__inner {
     padding: 25px 25px 40px 25px;
   }
 }
