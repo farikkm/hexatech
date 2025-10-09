@@ -1,7 +1,11 @@
 import CareerAdvicesItem from "@/shared/ui/career-advices-item";
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./career-advices.module.css";
-import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
 const careerAdvices = [
   {
@@ -27,8 +31,11 @@ const careerAdvices = [
 ];
 
 function Page() {
+  const t = useTranslations("Blog");
+
   return (
     <Layout
+      t={t}
       title="Карьерные соВЕТЫ из мира HEXATECH и кибербезопасности"
       subtitle="Пошаговые рекомендации для тех, кто строит карьеру в сфере кибербезопасности"
     >

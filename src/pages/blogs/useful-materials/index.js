@@ -1,7 +1,11 @@
 import Layout from "@/widgets/blogs/layout/layout";
 import styles from "./useful-materials.module.css";
 import UsefulMaterialsItem from "@/shared/ui/useful-materials-item";
-import { getStaticPropsWithMessages, withMessages } from "@/shared/libs/withMessages";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
 const usefulMaterials = [
   {
@@ -35,8 +39,11 @@ const usefulMaterials = [
 ];
 
 function Page() {
+  const t = useTranslations("Blog");
+
   return (
     <Layout
+      t={t}
       title="ПОЛЕЗНЫЕ МАТЕРИАЛЫ из мира HEXATECH и кибербезопасности"
       subtitle="Анонсы курсов, мероприятий, акций"
     >

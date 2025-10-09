@@ -2,13 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./navigation.module.css";
 
-const links = [
-  { href: "/blogs/news", label: "Новости" },
-  { href: "/blogs/career-advices", label: "Карьерные советы" },
-  { href: "/blogs/useful-materials", label: "Полезные материалы" },
-];
-
-export default function Navigation() {
+export default function Navigation({ links }) {
   const router = useRouter();
   const currentPath = router.asPath;
 

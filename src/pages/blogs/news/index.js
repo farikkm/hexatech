@@ -6,6 +6,7 @@ import {
   getStaticPropsWithMessages,
   withMessages,
 } from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
 const news = [
   {
@@ -40,8 +41,11 @@ const recentNews = [
 ];
 
 function Page() {
+  const t = useTranslations("Blog");
+
   return (
     <Layout
+      t={t}
       title="Свежие события из мира HEXATECH и кибербезопасности"
       subtitle="Анонсы курсов, мероприятий, акций"
     >

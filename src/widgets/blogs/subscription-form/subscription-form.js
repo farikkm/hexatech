@@ -6,8 +6,15 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LoadingButton from "@/widgets/loading-button";
 import FormInput from "../../form/ui/FormInput";
+import {
+  getStaticPropsWithMessages,
+  withMessages,
+} from "@/shared/libs/withMessages";
+import { useTranslations } from "next-intl";
 
-export default function SubscriptionForm() {
+function SubscriptionForm() {
+  const t = useTranslations("Form");
+
   const [isLoading, setIsLoading] = useState(false);
   const {
     reset,
@@ -54,40 +61,41 @@ export default function SubscriptionForm() {
     <div id="subscription-form" className={styles.form__wrapper}>
       <div className="container">
         <h2 className={styles.form__title}>
-          Получайте свежие статьи, новости и советы из мира
-          <span> кибербезопасности</span> прямо на почту
+          {t.rich("subscription-title", {
+            span: (chunks) => <span>{chunks}</span>,
+          })}
         </h2>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           <div className={styles.form__inputs}>
             <FormInput
               type="text"
-              placeholder="ФИО"
+              placeholder={t("placeholders.full-name")}
               name="full-name"
               {...register("fullName", {
-                required: "Поле обязательно",
-                minLength: { value: 5, message: "Минимум 5 символов" },
+                required: t("errors.required"),
+                minLength: { value: 5, message: t("errors.full-name") },
               })}
               error={errors.fullName}
             />
             <FormInput
               type="email"
-              placeholder="Эл. почта"
+              placeholder={t("placeholders.email")}
               name="email"
               {...register("email", {
-                required: "Поле обязательно",
+                required: t("errors.required"),
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Введите корректный email",
+                  message: t("errors.email"),
                 },
               })}
               error={errors.email}
             />
             <FormInput
               type="text"
-              placeholder="Username в ТГ"
+              placeholder={t("placeholders.tg")}
               name="tg-username"
               {...register("tgUsername", {
-                required: "Поле обязательно",
+                required: t("errors.required"),
               })}
               error={errors.tgUsername}
             />
@@ -99,7 +107,7 @@ export default function SubscriptionForm() {
             isLoading={isLoading}
             disabled={!isValid || isLoading}
           >
-            Подписаться
+            {t("button")}
           </LoadingButton>
 
           <ToastContainer />
@@ -110,3 +118,7 @@ export default function SubscriptionForm() {
     </div>
   );
 }
+
+export const getStaticProps = getStaticPropsWithMessages;
+
+export default withMessages(SubscriptionForm);

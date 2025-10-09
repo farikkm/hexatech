@@ -3,28 +3,27 @@ import {
   withMessages,
 } from "@/shared/libs/withMessages";
 import styles from "./community.module.css";
+import { useTranslations } from "next-intl";
 
 function Page() {
+  const t = useTranslations("Community");
+
   return (
     <div className={styles.wrapper}>
       <div className="container">
-        <h2 className={styles.title}>Наши выпускники</h2>
-        <p className={styles.subtitle}>
-          Здесь собраны лучшие студенты и специалисты, которые прошли наши
-          курсы. Вы можете узнать их достижения и успехи, а также вдохновиться
-          их примером
-        </p>
+        <h2 className={styles.title}>{t("title")}</h2>
+        <p className={styles.subtitle}>{t("subtitle")}</p>
 
         <div className={styles.table__wrapper}>
-          <h4 className={styles.table__title}>#HexaGraduate</h4>
+          <h4 className={styles.table__title}>{t("table.title")}</h4>
           <table className={styles.table}>
             <thead className={styles.table__head}>
               <tr>
-                <th>Фото</th>
-                <th>Фио</th>
-                <th>Направление</th>
-                <th>Оценка</th>
-                <th>Награды</th>
+                <th>{t("table.photo")}</th>
+                <th>{t("table.fio")}</th>
+                <th>{t("table.direction")}</th>
+                <th>{t("table.mark")}</th>
+                <th>{t("table.awards")}</th>
               </tr>
             </thead>
 

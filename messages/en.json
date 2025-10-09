@@ -442,6 +442,7 @@
   },
   "Form": {
     "title": "Start your cybersecurity career today",
+    "subscription-title": "Get the latest articles, news, and tips from the world of <span>cybersecurity</span> straight to your inbox",
     "subtitle": "Hexatech courses will help you master the profession and land your first job in this field",
     "placeholders": {
       "full-name": "Full Name",
@@ -457,5 +458,44 @@
     },
     "agreement": "I consent to the processing of my personal data in accordance with the Privacy Policy.",
     "button": "APPLY"
+  },
+  "Community": {
+    "title": "OUR ALUMNI",
+    "subtitle": "Here are the best students and professionals who have completed our courses. You can learn about their achievements and successes, and also get inspired by their example.",
+    "table": {
+      "title": "#HexaGraduate",
+      "photo": "Photo",
+      "fio": "Full Name",
+      "direction": "Direction",
+      "mark": "Rating",
+      "awards": "Awards"
+    }
+  },
+  "Blog": {
+    "title": "HEXATECH Blog — news, analytics, and tips from the world of cybersecurity",
+    "subtitle": "Read up-to-date articles, research, and recommendations that will help you grow in your profession and stay informed about all events",
+    "button": "Subscribe to the blog",
+    "events": {
+      "title": "Latest Events in the World of HEXATECH and Cybersecurity",
+      "subtitle": "Announcements of courses, events, promotions",
+      "links": {
+        "news": {
+          "label": "News",
+          "href": "/blogs/news"
+        },
+        "career-advices": {
+          "label": "Career Advices",
+          "href": "/blogs/career-advices"
+        },
+        "useful-materials": {
+          "label": "Useful Resources",
+          "href": "/blogs/useful-materials"
+        }
+      }
+    }
+  },
+  "Contacts": {
+    "contact-way": "Contact us in the way that's most convenient for you",
+    "address": "Address: "
   }
 }

@@ -442,6 +442,7 @@
   },
   "Form": {
     "title": "Bugunoq kiberxavfsizlik sohasida karyerangizni boshlang",
+    "subscription-title": "<span>Kiberxavfsizlik</span> olamidagi eng so‘nggi maqolalar, yangiliklar va maslahatlarni to‘g‘ridan-to‘g‘ri pochtangizga oling",
     "subtitle": "Hexatech kurslari sizga kasbni egallash va ushbu sohada ilk ishni topishga yordam beradi",
     "placeholders": {
       "full-name": "F.I.Sh.",
@@ -457,5 +458,44 @@
     },
     "agreement": "Shaxsiy ma’lumotlarimni Maxfiylik siyosatiga muvofiq qayta ishlashga roziman.",
     "button": "RO‘YXATDAN O‘TISH"
+  },
+  "Community": {
+    "title": "BIZNING BITIRUVCHILAR",
+    "subtitle": "Bu yerda kurslarimizni tamomlagan eng yaxshi talabalar va mutaxassislar jamlangan. Siz ularning yutuqlari va muvaffaqiyatlari bilan tanishishingiz, shuningdek ularning namunasi orqali ilhomlanishingiz mumkin.",
+    "table": {
+      "title": "#HexaGraduate",
+      "photo": "Surat",
+      "fio": "F.I.Sh.",
+      "direction": "Yo'nalish",
+      "mark": "Reyting",
+      "awards": "Mukofotlar"
+    }
+  },
+  "Blog": {
+    "title": "HEXATECH blogi — kiberxavfsizlik olamidagi yangiliklar, tahlillar va maslahatlar",
+    "subtitle": "Kasbingizda rivojlanishingiz va barcha voqealardan xabardor bo‘lishingizga yordam beradigan dolzarb maqolalar, tadqiqotlar va tavsiyalarni o‘qing ",
+    "button": " Blogga obuna bo‘lish",
+    "events": {
+      "title": "HEXATECH va kiberxavfsizlik dunyosidagi yangiliklar",
+      "subtitle": "Kurslar, tadbirlar, aksiyalar haqidagi e'lonlar",
+      "links": {
+        "news": {
+          "label": "Yangiliklar",
+          "href": "/blogs/news"
+        },
+        "career-advices": {
+          "label": "Karera bo'yicha maslahatlar ",
+          "href": "/blogs/career-advices"
+        },
+        "useful-materials": {
+          "label": "Foydali materiallar",
+          "href": "/blogs/useful-materials"
+        }
+      }
+    }
+  },
+  "Contacts": {
+    "contact-way": "Biz bilan sizga qulay usulda bog‘laning",
+    "address": "Manzil: "
   }
 }
