@@ -31,8 +31,6 @@ function Page() {
 
   const course = coursesValues[courseName];
 
-  console.log(course);
-
   return (
     <div className={styles.course__page} id="course-page">
       <div className="course-background">{backgrounds[courseName]}</div>
@@ -189,79 +187,82 @@ function Page() {
           </div>
         </div> */}
 
-        <div className={styles.prices}>
-          <h2 className={styles.prices__title}>{course.pricing.title}</h2>
+        {course.pricing && (
+          <div className={styles.prices}>
+            <h2 className={styles.prices__title}>{course.pricing.title}</h2>
 
-          <div className={styles.prices__cards}>
-            <div className={styles.prices__card}>
-              <div className={styles.prices__card_top}>
-                <h3 className={styles.prices__card_title}>
-                  {course.pricing.online.title}
-                </h3>
-                <span className={styles.prices__card_duration}>
-                  {course.pricing.online.duration}
-                </span>
+            <div className={styles.prices__cards}>
+              <div className={styles.prices__card}>
+                <div className={styles.prices__card_top}>
+                  <h3 className={styles.prices__card_title}>
+                    {course.pricing.online.title}
+                  </h3>
+                  <span className={styles.prices__card_duration}>
+                    {course.pricing.online.duration}
+                  </span>
+                </div>
+                <ul className={styles.prices__card_conditions}>
+                  <h5>{course.pricing.online.condition}: </h5>
+                  {course.pricing.online.list?.map((label, index) => (
+                    <li key={index}>{label}</li>
+                  ))}
+                </ul>
+                <button
+                  onClick={scrollIntoApplicationForm}
+                  className={styles.prices__card_button}
+                >
+                  {course.pricing.online.button}
+                </button>
               </div>
-              <ul className={styles.prices__card_conditions}>
-                <h5>{course.pricing.online.condition}: </h5>
-                {course.pricing.online.list?.map((label, index) => (
-                  <li key={index}>{label}</li>
-                ))}
-              </ul>
-              <button
-                onClick={scrollIntoApplicationForm}
-                className={styles.prices__card_button}
-              >
-                {course.pricing.online.button}
-              </button>
-            </div>
-            <div className={styles.prices__card}>
-              <div className={styles.prices__card_top}>
-                <h3 className={styles.prices__card_title}>
-                  {course.pricing.offline.title}
-                </h3>
-                <span className={styles.prices__card_duration}>
-                  {course.pricing.offline.duration}
-                </span>
+              <div className={styles.prices__card}>
+                <div className={styles.prices__card_top}>
+                  <h3 className={styles.prices__card_title}>
+                    {course.pricing.offline.title}
+                  </h3>
+                  <span className={styles.prices__card_duration}>
+                    {course.pricing.offline.duration}
+                  </span>
+                </div>
+                <ul className={styles.prices__card_conditions}>
+                  <h5>{course.pricing.offline.condition}: </h5>
+                  {course.pricing.offline.list?.map((label, index) => (
+                    <li key={index}>{label}</li>
+                  ))}
+                </ul>
+                <button
+                  onClick={scrollIntoApplicationForm}
+                  className={styles.prices__card_button}
+                >
+                  {course.pricing.offline.button}
+                </button>
               </div>
-              <ul className={styles.prices__card_conditions}>
-                <h5>{course.pricing.offline.condition}: </h5>
-                {course.pricing.offline.list?.map((label, index) => (
-                  <li key={index}>{label}</li>
-                ))}
-              </ul>
-              <button
-                onClick={scrollIntoApplicationForm}
-                className={styles.prices__card_button}
-              >
-                {course.pricing.offline.button}
-              </button>
             </div>
           </div>
-        </div>
+        )}
 
-        <div className={styles.resume}>
-          <h2 className={styles.resume__title}>{course.resume.title}</h2>
-          <div className={styles.resume__cards}>
-            <div className={styles.resume__preview}>
-              <img
-                className={styles.resume__preview_img}
-                src="/images/resume/student.png"
-                alt="student-image"
-              />
-              <span>{course.resume.job.title}</span>
-              <h3 className={styles.resume__preview_job}>
-                {course.resume.job.subtitle}
-              </h3>
-            </div>
-            <div className={styles.resume__skills}>
-              <ul>
-                <h4>{course.resume.skills.title}</h4>
-                {course.resume.skills.items?.map((label, index) => (
-                  <li key={index}>{label}</li>
-                ))}
-              </ul>
-              {/* <ul>
+        {course.resume && (
+          <div className={styles.resume}>
+            <h2 className={styles.resume__title}>{course.resume.title}</h2>
+            <div className={styles.resume__cards}>
+              <div className={styles.resume__preview}>
+                <img
+                  className={styles.resume__preview_img}
+                  src="/images/resume/student.png"
+                  alt="student-image"
+                />
+                <span>{course.resume.job.title}</span>
+                <h3 className={styles.resume__preview_job}>
+                  {course.resume.job.subtitle}
+                </h3>
+              </div>
+              <div className={styles.resume__skills}>
+                <ul>
+                  <h4>{course.resume.skills.title}</h4>
+                  {course.resume.skills.items?.map((label, index) => (
+                    <li key={index}>{label}</li>
+                  ))}
+                </ul>
+                {/* <ul>
                 <h4>Владение Python и скриптовыми языками</h4>
                 <li>Написание собственных инструментов</li>
                 <li>Корректировка существующих инструментов под себя</li>
@@ -272,142 +273,164 @@ function Page() {
                 <li>Внимательность к деталям</li>
                 <li>Аналитические способности</li>
               </ul> */}
-            </div>
-            <div className={styles.resume__tools}>
-              <h4 className={styles.resume__tools_title}>
-                {course.resume.tools.title}
-              </h4>
-              <div className={styles.resume__tools_items}>
-                <div className={styles.resume__tools_item}>
-                  <img
-                    src="/icons/course/languages/powershell.png"
-                    alt="powershell"
-                  />
-                  <span>PowerShell</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/bash.png" alt="bash" />
-                  <span>Bash</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/python.png" alt="python" />
-                  <span>Python</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/sql.png" alt="sql" />
-                  <span>SQL</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img
-                    src="/icons/course/languages/powershell.png"
-                    alt="powershell"
-                  />
-                  <span>PowerShell</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/bash.png" alt="bash" />
-                  <span>Bash</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/python.png" alt="python" />
-                  <span>Python</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/sql.png" alt="sql" />
-                  <span>SQL</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img
-                    src="/icons/course/languages/powershell.png"
-                    alt="powershell"
-                  />
-                  <span>PowerShell</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/bash.png" alt="bash" />
-                  <span>Bash</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/python.png" alt="python" />
-                  <span>Python</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/sql.png" alt="sql" />
-                  <span>SQL</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img
-                    src="/icons/course/languages/powershell.png"
-                    alt="powershell"
-                  />
-                  <span>PowerShell</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/bash.png" alt="bash" />
-                  <span>Bash</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/python.png" alt="python" />
-                  <span>Python</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/sql.png" alt="sql" />
-                  <span>SQL</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/bash.png" alt="bash" />
-                  <span>Bash</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/python.png" alt="python" />
-                  <span>Python</span>
-                </div>
-                <div className={styles.resume__tools_item}>
-                  <img src="/icons/course/languages/sql.png" alt="sql" />
-                  <span>SQL</span>
+              </div>
+              <div className={styles.resume__tools}>
+                <h4 className={styles.resume__tools_title}>
+                  {course.resume.tools.title}
+                </h4>
+                <div className={styles.resume__tools_items}>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/powershell.png"
+                      alt="powershell"
+                    />
+                    <span>PowerShell</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/bash.png" alt="bash" />
+                    <span>Bash</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/python.png"
+                      alt="python"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/sql.png" alt="sql" />
+                    <span>SQL</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/powershell.png"
+                      alt="powershell"
+                    />
+                    <span>PowerShell</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/bash.png" alt="bash" />
+                    <span>Bash</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/python.png"
+                      alt="python"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/sql.png" alt="sql" />
+                    <span>SQL</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/powershell.png"
+                      alt="powershell"
+                    />
+                    <span>PowerShell</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/bash.png" alt="bash" />
+                    <span>Bash</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/python.png"
+                      alt="python"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/sql.png" alt="sql" />
+                    <span>SQL</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/powershell.png"
+                      alt="powershell"
+                    />
+                    <span>PowerShell</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/bash.png" alt="bash" />
+                    <span>Bash</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/python.png"
+                      alt="python"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/sql.png" alt="sql" />
+                    <span>SQL</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/bash.png" alt="bash" />
+                    <span>Bash</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img
+                      src="/icons/course/languages/python.png"
+                      alt="python"
+                    />
+                    <span>Python</span>
+                  </div>
+                  <div className={styles.resume__tools_item}>
+                    <img src="/icons/course/languages/sql.png" alt="sql" />
+                    <span>SQL</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.resume__add}>
-            <img src="/icons/course/plus.svg" alt="plus" />
-          </div>
-        </div>
-
-        <div className={styles.portfolio}>
-          <h2 className={styles.portfolio__title}>{course.portfolio.title}</h2>
-
-          <div className={styles.portfolio__cards}>
-            <div className={styles.portfolio__card}>
-              <div className={styles.portfolio__card_top}>
-                <h3 className={styles.portfolio__card_title}>
-                  {course.portfolio.first.title}
-                </h3>
-                <span className={styles.portfolio__card_index}>01</span>
-              </div>
-              <p className={styles.portfolio__card_text}>
-                {course.portfolio.first.text}
-              </p>
-            </div>
-            <div className={styles.portfolio__card}>
-              <div className={styles.portfolio__card_top}>
-                <h3 className={styles.portfolio__card_title}>
-                  {course.portfolio.second.title}
-                </h3>
-                <span className={styles.portfolio__card_index}>02</span>
-              </div>
-              <p className={styles.portfolio__card_text}>
-                {course.portfolio.second.text}
-              </p>
+            <div className={styles.resume__add}>
+              <img src="/icons/course/plus.svg" alt="plus" />
             </div>
           </div>
-        </div>
+        )}
 
-        {course.certificate_url && (
+        {course.portfolio && (
+          <div className={styles.portfolio}>
+            <h2 className={styles.portfolio__title}>
+              {course.portfolio.title}
+            </h2>
+
+            <div className={styles.portfolio__cards}>
+              <div className={styles.portfolio__card}>
+                <div className={styles.portfolio__card_top}>
+                  <h3 className={styles.portfolio__card_title}>
+                    {course.portfolio.first.title}
+                  </h3>
+                  <span className={styles.portfolio__card_index}>01</span>
+                </div>
+                <p className={styles.portfolio__card_text}>
+                  {course.portfolio.first.text}
+                </p>
+              </div>
+              <div className={styles.portfolio__card}>
+                <div className={styles.portfolio__card_top}>
+                  <h3 className={styles.portfolio__card_title}>
+                    {course.portfolio.second.title}
+                  </h3>
+                  <span className={styles.portfolio__card_index}>02</span>
+                </div>
+                <p className={styles.portfolio__card_text}>
+                  {course.portfolio.second.text}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {course.certificate && (
           <div className={styles.cetrificate}>
-            <div className={styles.cetrificate__img}>
-              <img src={course.certificate_url} alt="cetrificate__img" />
-            </div>
+            {course.certificate_url && (
+              <div className={styles.cetrificate__img}>
+                <img src={course.certificate_url} alt="cetrificate__img" />
+              </div>
+            )}
             <div className={styles.cetrificate__content}>
               <h2 className={styles.cetrificate__title}>
                 {course.certificate.title}

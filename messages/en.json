@@ -398,36 +398,111 @@
     "cooperative-courses": {
       "icon": "/images/courses/cooperative.png",
       "slug": "cooperative-courses",
-      "name": "Corporate <br /> courses",
-      "subtitle": "Индивидуальные программы под задачи вашей компании",
+      "name": "Corporate <br /> Courses",
+      "subtitle": "Customized programs tailored to your company's needs",
       "duration": "",
-      "desc": "Individual program selection tailored to the needs of your company. Sign up for a consultation, and we’ll offer a solution that fits your needs.",
-      "full_desc": "<strong>Корпоротивные курсы</strong> — это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами. это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами",
-      "course_aim": "<strong>Цель курса</strong> — Предоставить компаниям персонализированное обучение по кибербезопасности, которое соответствует их бизнес-процессам и реальным угрозам, повысить уровень защищенности персонала и сократить риски утечек данных.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "desc": "Personalized training programs designed to meet your company’s goals. Schedule a consultation, and we’ll offer a solution that fits your needs perfectly.",
+      "full_desc": "<strong>Corporate Courses</strong> are personalized training programs for companies that want to enhance their team’s cybersecurity skills. The content is tailored to your specific needs — from basic employee training (data protection, password management, phishing awareness) to advanced programs for IT departments (pentesting, incident response, DevSecOps). Training can be conducted online or offline with practical case studies adapted to your company’s real processes.",
+      "course_aim": "<strong>Course aim</strong> — to provide companies with customized cybersecurity training aligned with their business processes and real-world threats, enhancing employee awareness and reducing data breach risks.",
+      "education_format_title": "Training format",
+      "education_format": "Offline / Online",
+      "full_duration_title": "Duration",
+      "full_duration": "Customized",
+      "courses_number_title": "Number of sessions",
+      "courses_number": "Customized",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "Customized",
+      "pricing": {
+        "title": "Pricing and conditions",
+        "online": {
+          "title": "Online",
+          "condition": "Conditions",
+          "duration": "Customized",
+          "list": [
+            "Flexible schedule adapted to your team",
+            "24/7 access to the learning platform",
+            "Recorded lessons and materials available in your account",
+            "Support from instructors and mentors",
+            "Practical cases tailored to your business"
+          ],
+          "button": "ENROLL NOW"
+        },
+        "offline": {
+          "title": "Offline",
+          "condition": "Conditions",
+          "duration": "Customized",
+          "list": [
+            "In-person sessions with cybersecurity experts",
+            "Practice based on your company’s real environment",
+            "Access to learning materials and additional resources",
+            "Instructor and consultant support",
+            "Option to combine offline and online formats"
+          ],
+          "button": "ENROLL NOW"
+        }
+      },
+      "resume": {
+        "title": "Your company’s results after training",
+        "job": {
+          "title": "Outcome",
+          "subtitle": "A well-prepared team capable of defending against modern cyber threats"
+        },
+        "skills": {
+          "title": "Employee skills after training",
+          "items": [
+            "Awareness of key information security principles",
+            "Recognition of phishing attacks and social engineering techniques",
+            "Proper handling of corporate data and passwords",
+            "Understanding of infrastructure protection fundamentals",
+            "Incident response skills",
+            "Knowledge of basic cybersecurity tools"
+          ]
+        },
+        "tools": {
+          "title": "Tools used",
+          "items": [
+            "SIEM systems (on demand)",
+            "Enterprise-grade antivirus solutions",
+            "Monitoring and response tools (EDR, IDS)",
+            "Traffic and log analysis instruments"
+          ]
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio additions",
+        "first": {
+          "title": "Individual projects",
+          "text": "Each company receives a personalized educational project focused on solving specific cybersecurity challenges. This allows teams to apply their knowledge directly in practice."
+        },
+        "second": {
+          "title": "Certificate of completion",
+          "text": "Upon completion of the program, the team receives a certificate confirming successful corporate cybersecurity training and employee skill improvement."
+        }
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "",
-      "more_info": " Learn more"
+      "more_info": "Learn more"
     },
     "forensics": {
       "icon": "/images/courses/forensics.png",
       "slug": "forensics",
-      "name": "Forensics",
-      "subtitle": "Раскрывай цифровые преступления и находи следы атак",
+      "name": "Forensics (Digital Forensics)",
+      "subtitle": "Uncover digital crimes and trace cyberattacks",
       "duration": "9 months",
-      "desc": "In this course, you will learn to work with pre built modules for vulnerability scanning, exploit generation, and network attacks. PySploit speeds up the practice of ethical hacking and helps automate penetration testing tasks.",
-      "full_desc": "<strong>Курс по Forensics</strong> — практико-ориентированный курс по цифровой криминалистике и расследованию инцидентов. На реальных кейсах вы научитесь корректно изымать и сохранять цифровые доказательства (chain of custody), восстанавливать удалённые данные, строить таймлайны событий, анализировать образы дисков и дампы памяти, разбирать сетевой трафик и оформлять результаты в виде понятного отчёта для бизнеса и юристов. ",
-      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "desc": "The Forensics course is a practice-oriented program in digital forensics and incident investigation. Through real cases, you will learn how to properly collect and preserve digital evidence (chain of custody), recover deleted data, build event timelines, analyze disk images and memory dumps, examine network traffic, and prepare reports for business and legal teams.",
+      "full_desc": "<strong>Forensics Course</strong> — a hands-on program focused on digital forensics and cybersecurity incident response. Using real-world examples, you will learn how to properly handle and preserve digital evidence (chain of custody), recover deleted files, reconstruct event timelines, analyze disk and memory images, inspect network traffic, and present findings in professional reports for business or legal use.",
+      "course_aim": "<strong>Course aim</strong> — to teach students how to use Python as a key tool in ethical hacking and cybersecurity, develop custom utilities, and adapt existing tools for company or pentest tasks.",
+      "education_format": "Offline / Online",
+      "full_duration": "20 modules / 9 months",
+      "courses_number": "110 lessons",
+      "portfolio_info": "2 projects in portfolio",
+      "education_format_title": "Training format",
+      "full_duration_title": "Duration",
+      "courses_number_title": "Number of classes",
+      "portfolio_info_title": "Portfolio",
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Forensics.png",
-      "more_info": " Learn more"
+      "more_info": "More details"
     }
   },
   "Courses-Page": {

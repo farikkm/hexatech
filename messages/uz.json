@@ -399,15 +399,86 @@
       "icon": "/images/courses/cooperative.png",
       "slug": "cooperative-courses",
       "name": "Korporativ <br /> kurslar",
-      "subtitle": "Индивидуальные программы под задачи вашей компании",
+      "subtitle": "Kompaniyangiz ehtiyojlariga moslashtirilgan dasturlar",
       "duration": "",
-      "desc": "Sizning kompaniyangizning vazifalariga mos dasturlarni shaxsiy tanlash. Maslahatga yoziling — va biz aynan sizga mos keladigan yechimni taklif qilamiz.",
-      "full_desc": "<strong>Корпоротивные курсы</strong> — это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами. это индивидуальные программы обучения для компаний, которые хотят повысить уровень кибербезопасности своей команды. Содержание подбирается под запрос: от базового обучения сотрудников (основы защиты данных, работа с паролями, фишинг) до продвинутых курсов для IT-отдела (пентест, реагирование на инциденты, DevSecOps). Обучение может проходить онлайн или офлайн с практическими кейсами",
-      "course_aim": "<strong>Цель курса</strong> — Предоставить компаниям персонализированное обучение по кибербезопасности, которое соответствует их бизнес-процессам и реальным угрозам, повысить уровень защищенности персонала и сократить риски утечек данных.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "desc": "Kompaniyangiz maqsadlariga mos o‘quv dasturlari. Maslahatlashing — biz aynan sizga mos yechimni taklif qilamiz.",
+      "full_desc": "<strong>Korporativ kurslar</strong> — bu o‘z jamoasining kiberxavfsizlik darajasini oshirmoqchi bo‘lgan kompaniyalar uchun maxsus tayyorlangan o‘quv dasturlari. Kurs mazmuni sizning so‘rovingizga qarab shakllantiriladi: xodimlar uchun asosiy bilimlardan (ma’lumotlarni himoya qilish, parollar bilan ishlash, fishingdan himoyalanish) tortib, IT-bo‘lim uchun ilg‘or kurslargacha (pentest, hodisalarga javob berish, DevSecOps). O‘qish onlayn yoki oflayn tarzda, amaliy misollar bilan o‘tkaziladi.",
+      "course_aim": "<strong>Kurs maqsadi</strong> — kompaniyalarga o‘z biznes jarayonlariga va real tahdidlarga moslashtirilgan kiberxavfsizlik bo‘yicha individual o‘quv dasturini taqdim etish, xodimlarning xavfsizlik darajasini oshirish va ma’lumotlar sizib chiqish xavfini kamaytirish.",
+      "education_format_title": "Ta’lim formati",
+      "education_format": "Oflayn / Onlayn",
+      "full_duration_title": "Davomiyligi",
+      "full_duration": "Individual",
+      "courses_number_title": "Darslar soni",
+      "courses_number": "Individual",
+      "portfolio_info_title": "Portfolio",
+      "portfolio_info": "Individual",
+      "pricing": {
+        "title": "Narx va shartlar",
+        "online": {
+          "title": "Onlayn",
+          "condition": "Shartlar",
+          "duration": "Individual",
+          "list": [
+            "Jamoangiz uchun moslashtirilgan moslashuvchan jadval",
+            "24/7 o‘quv platformasiga kirish imkoniyati",
+            "Yozib olingan darslar va materiallar shaxsiy kabinetda",
+            "O‘qituvchilar va kuratorlarning qo‘llab-quvvatlovi",
+            "Sizning biznesingizga mos amaliy misollar"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        },
+        "offline": {
+          "title": "Oflayn",
+          "condition": "Shartlar",
+          "duration": "Individual",
+          "list": [
+            "Kiberxavfsizlik bo‘yicha ekspertlar bilan jonli mashg‘ulotlar",
+            "Sizning kompaniyangiz misollarida amaliyot",
+            "Materiallar va qo‘shimcha resurslarga kirish",
+            "O‘qituvchilar va maslahatchilar yordami",
+            "Oflayn va onlayn formatlarni birlashtirish imkoniyati"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        }
+      },
+      "resume": {
+        "title": "Kompaniyangiz uchun natijalar",
+        "job": {
+          "title": "Natija",
+          "subtitle": "Zamonaviy kiberxavflarga qarshi tura oladigan tayyor jamoa"
+        },
+        "skills": {
+          "title": "Xodimlar egallaydigan ko‘nikmalar",
+          "items": [
+            "Axborot xavfsizligiga ongli munosabat",
+            "Fishing va ijtimoiy muhandislik hujumlarini tanish",
+            "Korporativ ma’lumotlar va parollar bilan to‘g‘ri ishlash",
+            "Infratuzilmani himoya qilish asoslarini tushunish",
+            "Hodisalarga javob berish ko‘nikmalari",
+            "Kiberxavfsizlik bo‘yicha asosiy vositalarni bilish"
+          ]
+        },
+        "tools": {
+          "title": "Foydalaniladigan vositalar",
+          "items": [
+            "SIEM tizimlari (so‘rov bo‘yicha)",
+            "Korporativ darajadagi antivirus yechimlari",
+            "Monitoring va javob berish vositalari (EDR, IDS)",
+            "Trafik va loglarni tahlil qilish vositalari"
+          ]
+        }
+      },
+      "portfolio": {
+        "title": "Portfolio uchun qo‘shimcha imkoniyatlar",
+        "first": {
+          "title": "Individual loyihalar",
+          "text": "Har bir kompaniya kiberxavfsizlik sohasidagi aniq muammolarni hal qilishga qaratilgan individual o‘quv loyihasini oladi. Bu jamoaga o‘z bilimlarini darhol amaliyotda qo‘llash imkonini beradi."
+        },
+        "second": {
+          "title": "Ishtirok sertifikati",
+          "text": "Kurs yakunlangach, jamoa kiberxavfsizlik bo‘yicha korporativ o‘qishni muvaffaqiyatli tamomlaganlikni tasdiqlovchi sertifikatga ega bo‘ladi."
+        }
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "",
       "more_info": "Batafsil"
@@ -416,15 +487,19 @@
       "icon": "/images/courses/forensics.png",
       "slug": "forensics",
       "name": "Raqamli Kriminalistika (Forenzika)",
-      "subtitle": "Раскрывай цифровые преступления и находи следы атак",
+      "subtitle": "Raqamli jinoyatlarni fosh et va hujum izlarini top",
       "duration": "9 oy",
-      "desc": "Kurs davomida siz tayyor modullar bilan zaifliklarni aniqlashni, eksploitlar yaratishni va tarmoq hujumlarini amalga oshirishni o'rganasiz. PySploit etik xakerni amaliyotini tezlashtiradi va pentester vazifalarini avtomatlashtirishga yordam beradi.",
-      "full_desc": "<strong>Курс по Forensics</strong> — практико-ориентированный курс по цифровой криминалистике и расследованию инцидентов. На реальных кейсах вы научитесь корректно изымать и сохранять цифровые доказательства (chain of custody), восстанавливать удалённые данные, строить таймлайны событий, анализировать образы дисков и дампы памяти, разбирать сетевой трафик и оформлять результаты в виде понятного отчёта для бизнеса и юристов. ",
-      "course_aim": "<strong>Цель курса</strong> — Научить студентов использовать Python как основной инструмент в этичном хакинге и кибербезопасности, уметь писать собственные утилиты и адаптировать готовые решения под задачи компании или пентеста.",
-      "education_format": "Офлайн / Онлайн",
-      "full_duration": "22 модуля/10 месяцев",
-      "courses_number": "120 занятий / 120  практических задач",
-      "portfolio_info": "2 проекта в портфолио ",
+      "desc": "Forenzika kursi — bu raqamli kriminalistika va hodisalarni tergov qilish bo‘yicha amaliy kurs. Siz real voqealar asosida raqamli dalillarni to‘g‘ri yig‘ish va saqlashni (chain of custody), o‘chirilgan ma’lumotlarni tiklashni, voqealar vaqt chizig‘ini tuzishni, disk tasvirlari va xotira dumplarini tahlil qilishni, tarmoq trafigini ajratib o‘rganishni va biznes hamda yuristlar uchun tushunarli hisobot tayyorlashni o‘rganasiz.",
+      "full_desc": "<strong>Forenzika kursi</strong> — raqamli kriminalistika va kiberhodisalarni tergov qilish bo‘yicha amaliy yo‘nalishdagi o‘quv dasturi. Siz real holatlar asosida raqamli dalillarni to‘g‘ri yig‘ish va saqlash (chain of custody), o‘chirilgan ma’lumotlarni qayta tiklash, voqealar vaqt chizig‘ini tuzish, disk va xotira tasvirlarini tahlil qilish, tarmoq trafigini o‘rganish va natijalarni biznes hamda yuristlar uchun tushunarli shaklda hisobot ko‘rinishida taqdim etishni o‘rganasiz.",
+      "course_aim": "<strong>Kurs maqsadi</strong> — talabalarni Python-ni etik xakerlik va kiberxavfsizlik sohasida asosiy vosita sifatida qo‘llay olishga, o‘z utilitalarini yozishga va mavjud yechimlarni kompaniya yoki pentest vazifalariga moslashtirishga o‘rgatish.",
+      "education_format": "Oflayn / Onlayn",
+      "full_duration": "20 modul / 9 oy",
+      "courses_number": "110 ta dars",
+      "portfolio_info": "2 ta loyiha portfolioda",
+      "education_format_title": "Ta'lim formati",
+      "full_duration_title": "Davomiyligi",
+      "courses_number_title": "Darslar soni",
+      "portfolio_info_title": "Portfolio",
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Forensics.png",
       "more_info": "Batafsil"
