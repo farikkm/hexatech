@@ -262,17 +262,6 @@ function Page() {
                     <li key={index}>{label}</li>
                   ))}
                 </ul>
-                {/* <ul>
-                <h4>Владение Python и скриптовыми языками</h4>
-                <li>Написание собственных инструментов</li>
-                <li>Корректировка существующих инструментов под себя</li>
-              </ul>
-              <ul>
-                <h4>Гибкие навыки</h4>
-                <li>Многозадачность</li>
-                <li>Внимательность к деталям</li>
-                <li>Аналитические способности</li>
-              </ul> */}
               </div>
               <div className={styles.resume__tools}>
                 <h4 className={styles.resume__tools_title}>
@@ -305,28 +294,32 @@ function Page() {
             </h2>
 
             <div className={styles.portfolio__cards}>
-              <div className={styles.portfolio__card}>
-                <div className={styles.portfolio__card_top}>
-                  <h3 className={styles.portfolio__card_title}>
-                    {course.portfolio.first.title}
-                  </h3>
-                  <span className={styles.portfolio__card_index}>01</span>
+              {course.portfolio.first && (
+                <div className={styles.portfolio__card}>
+                  <div className={styles.portfolio__card_top}>
+                    <h3 className={styles.portfolio__card_title}>
+                      {course.portfolio.first.title}
+                    </h3>
+                    <span className={styles.portfolio__card_index}>01</span>
+                  </div>
+                  <p className={styles.portfolio__card_text}>
+                    {course.portfolio.first.text}
+                  </p>
                 </div>
-                <p className={styles.portfolio__card_text}>
-                  {course.portfolio.first.text}
-                </p>
-              </div>
-              <div className={styles.portfolio__card}>
-                <div className={styles.portfolio__card_top}>
-                  <h3 className={styles.portfolio__card_title}>
-                    {course.portfolio.second.title}
-                  </h3>
-                  <span className={styles.portfolio__card_index}>02</span>
+              )}
+              {course.portfolio.second && (
+                <div className={styles.portfolio__card}>
+                  <div className={styles.portfolio__card_top}>
+                    <h3 className={styles.portfolio__card_title}>
+                      {course.portfolio.second.title}
+                    </h3>
+                    <span className={styles.portfolio__card_index}>02</span>
+                  </div>
+                  <p className={styles.portfolio__card_text}>
+                    {course.portfolio.second.text}
+                  </p>
                 </div>
-                <p className={styles.portfolio__card_text}>
-                  {course.portfolio.second.text}
-                </p>
-              </div>
+              )}
             </div>
           </div>
         )}
