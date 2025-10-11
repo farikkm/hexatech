@@ -13,12 +13,33 @@ import {
   getStaticPropsWithMessages,
   withMessages,
 } from "@/shared/libs/withMessages";
+import { useEffect, useState } from "react";
 
 function Page() {
   const t = useTranslations("Home-Page");
   const advantages = t.raw("sections.advantages");
   const translator = useTranslations("");
   const coursesValues = translator.raw("Courses");
+
+  const [videoUrl, setVideoUrl] = useState("/videos/main.webm");
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth > 1264) {
+        setVideoUrl("/videos/main.webm");
+      } else {
+        setVideoUrl("/videos/main-mobile.webm");
+      }
+    };
+
+    handleWindowResize();
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <>
@@ -42,12 +63,8 @@ function Page() {
                 </button>
               </div>
               <div className={styles.hero__media}>
-                <video autoPlay loop muted playsInline>
-                  <source src="/videos/main.webm" media="(min-width: 1280px)" />
-                  <source
-                    src="/videos/main-mobile.webm"
-                    media="(max-width: 1279px)"
-                  />
+                <video key={videoUrl} autoPlay loop muted playsInline>
+                  <source src={videoUrl} />
                 </video>
               </div>
             </div>
