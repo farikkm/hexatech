@@ -24,27 +24,39 @@ function Page() {
                 <img src="/icons/contacts/telephone.svg" alt="telephone" />
               </div>
 
-              <span>+998 77 494 11 88</span>
+              <a href="tel:+998774941188">+998 77 494 11 88</a>
             </li>
             <li className={styles.email}>
               <div className={styles.list__item_img}>
                 <img src="/icons/contacts/email.svg" alt="email" />
               </div>
-              <span>{EMAIL}</span>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
             <li className={styles.telegram}>
               <div className={styles.list__item_img}>
                 <img src="/icons/contacts/telegram.svg" alt="telegram" />
               </div>
 
-              <span>@{TG}</span>
+              <a
+                href={`https://t.me/${TG}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @{TG}
+              </a>
             </li>
             <li className={styles.instagram}>
               <div className={styles.list__item_img}>
                 <img src="/icons/contacts/instagram.svg" alt="instagram" />
               </div>
 
-              <span>{INSTAGRAM}</span>
+              <a
+                href={`https://instagram.com/${INSTAGRAM}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {INSTAGRAM}
+              </a>
             </li>
             {/* <li className={styles.youtube}>
               <div className={styles.list__item_img}>
