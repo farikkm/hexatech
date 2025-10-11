@@ -184,7 +184,32 @@
           ]
         },
         "tools": {
-          "title": "Инструменты"
+          "title": "Инструменты",
+          "items": [
+            { "label": "Bash", "icon_url": "/icons/course/tools/bash.svg" },
+            { "label": "Python", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "SQL", "icon_url": "/icons/course/tools/sql.svg" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Cryptography", "icon_url": "" },
+            { "label": "Scapy", "icon_url": "" },
+            {
+              "label": "python-nmap",
+              "icon_url": "/icons/course/tools/python.svg"
+            },
+            { "label": "ChainMap", "icon_url": "" },
+            { "label": "Sphinx", "icon_url": "" },
+            { "label": "UNIX", "icon_url": "" },
+            { "label": "ZIP", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            {
+              "label": "Kali Linux",
+              "icon_url": "/icons/course/tools/linux.svg"
+            },
+            { "label": "Metasploitable", "icon_url": "" },
+            { "label": "JSON", "icon_url": "" },
+            { "label": "Pynput", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "Brute-force", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -276,7 +301,43 @@
           ]
         },
         "tools": {
-          "title": "Инструменты"
+          "title": "Инструменты",
+          "items": [
+            { "label": "Nmap", "icon_url": "" },
+            { "label": "theHarvester", "icon_url": "" },
+            { "label": "Amass", "icon_url": "" },
+            { "label": "dnsrecon", "icon_url": "" },
+            { "label": "Burp Suite", "icon_url": "" },
+            { "label": "ffuf", "icon_url": "" },
+            { "label": "Gobuster", "icon_url": "" },
+            { "label": "dirsearch", "icon_url": "" },
+            { "label": "SQLmap", "icon_url": "" },
+            { "label": "Metasploit", "icon_url": "" },
+            { "label": "msfvenom", "icon_url": "" },
+            { "label": "Meterpreter", "icon_url": "" },
+            { "label": "SearchSploit", "icon_url": "" },
+            { "label": "Exploit-DB", "icon_url": "" },
+            { "label": "Netcat", "icon_url": "" },
+            { "label": "Socat", "icon_url": "" },
+            { "label": "SSH", "icon_url": "" },
+            { "label": "Chisel", "icon_url": "" },
+            { "label": "dnscat2", "icon_url": "" },
+            { "label": "ligolo", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "LinPEAS", "icon_url": "" },
+            { "label": "LinEnum", "icon_url": "" },
+            { "label": "pspy", "icon_url": "" },
+            { "label": "WinPEAS", "icon_url": "" },
+            { "label": "Hashcat", "icon_url": "" },
+            { "label": "John the Ripper", "icon_url": "" },
+            { "label": "Hydra", "icon_url": "" },
+            { "label": "Ncrack", "icon_url": "" },
+            { "label": "CrackMapExec", "icon_url": "" },
+            { "label": "Postman", "icon_url": "" },
+            { "label": "OpenSSL", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "Cisco Packet Tracer", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -373,7 +434,30 @@
           ]
         },
         "tools": {
-          "title": "Инструменты"
+          "title": "Инструменты",
+          "items": [
+            { "label": "Splunk", "icon_url": "" },
+            { "label": "ELK (Elastic)", "icon_url": "" },
+            { "label": "QRadar", "icon_url": "" },
+            { "label": "ArcSight", "icon_url": "" },
+            { "label": "TheHive", "icon_url": "" },
+            { "label": "Cortex", "icon_url": "" },
+            { "label": "Splunk SOAR", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Suricata", "icon_url": "" },
+            { "label": "MISP", "icon_url": "" },
+            { "label": "OpenCTI", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -500,6 +584,99 @@
       "full_duration_title": "Длительность",
       "courses_number_title": "Количество занятий",
       "portfolio_info_title": "Портфолио",
+      "pricing": {
+        "title": "Стоимость и условия",
+        "online": {
+          "title": "Онлайн",
+          "condition": "Условия",
+          "duration": "10 месяцев",
+          "list": [
+            "Доступ к платформе 24/7",
+            "Записи занятий и материалы в личном кабинете",
+            "Возможность учиться из любой точки мира",
+            "Поддержка в чате и регулярные консультации",
+            "Гибкий график — занимайся в удобное время"
+          ],
+          "button": "ЗАПИСАТЬСЯ"
+        },
+        "offline": {
+          "title": "Офлайн",
+          "condition": "Условия",
+          "duration": "10 месяцев",
+          "list": [
+            "Доступ к платформе 24/7",
+            "Записи занятий и материалы в личном кабинете",
+            "Возможность учиться из любой точки мира",
+            "Поддержка в чате и регулярные консультации",
+            "Гибкий график — занимайся в удобное время"
+          ],
+          "button": "ЗАПИСАТЬСЯ"
+        }
+      },
+      "resume": {
+        "title": "Твое резюме после окончания курса",
+        "job": {
+          "title": "Должность",
+          "subtitle": "Специалист по кибербезопасности"
+        },
+        "skills": {
+          "title": "Навыки",
+          "items": [
+            "Понимание типов накопителей информации",
+            "Создавать загрузочные носители для запуска криминалистических расследований",
+            "Анализ процессов загрузки системы для выявления потенциальных точек компрометации",
+            "Понимание видов и методов киберпреступлений",
+            "Понимание ветвей цифровой криминалистики (компьютерную, мобильную и сетевую)",
+            "Понимание функций и важность сетевых протоколов в цифровой коммуникации",
+            "Умение поиска и анализа цифровых улик",
+            "Анализ и извлечение доказательств с мобильных устройств",
+            "Анализ баз данных",
+            "Анализ архитектуры и преимуществ твердотельных накопителей",
+            "Составление отчетов о киберугрозах на основе расследований"
+          ]
+        },
+        "tools": {
+          "title": "Инструменты",
+          "items": [
+            { "label": "FTK Imager", "icon_url": "" },
+            { "label": "Autopsy", "icon_url": "" },
+            { "label": "EnCase", "icon_url": "" },
+            { "label": "Volatility", "icon_url": "" },
+            { "label": "KAPE", "icon_url": "" },
+            { "label": "Cellebrite UFED", "icon_url": "" },
+            { "label": "Oxygen Forensic Detective", "icon_url": "" },
+            { "label": "Ghidra", "icon_url": "" },
+            { "label": "IDA Pro", "icon_url": "" },
+            { "label": "x64dbg", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
+        }
+      },
+      "portfolio": {
+        "title": "Дополнение к портфолио",
+        "first": {
+          "title": "Инцидент с мобильными устройствами",
+          "text": "Данный модуль посвящён расследованию инцидентов, связанных с мобильными устройствами. Изучаются методы получения, анализа и восстановления данных с телефонов, планшетов и других носимых гаджетов, а также техники извлечения цифровых улик для последующего судебного анализа."
+        },
+        "second": {
+          "title": "Анализ вредоносного ПО",
+          "text": "В этом разделе рассматриваются подходы к анализу вредоносных программ, включая статический и динамический анализ. Участники узнают, как выявлять поведение малвари, исследовать процессы заражения и определять источники атак для построения эффективных мер защиты."
+        }
+      },
+      "certificate": {
+        "title": "Сертификат после окончания курса",
+        "text": "После завершения курса каждый участник получает именной сертификат, подтверждающий его знания и практические навыки в области кибербезопасности. Документ можно использовать при устройстве на работу, добавлять в портфолио и резюме, а также прикладывать к профессиональным профилям в LinkedIn и других платформах. Сертификат служит доказательством того, что ты не только освоил теоретический материал, но и выполнил реальные практические задания и кейсы."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Forensics.png",
       "more_info": "Подробнее"

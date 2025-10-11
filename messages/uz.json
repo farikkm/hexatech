@@ -184,7 +184,32 @@
           ]
         },
         "tools": {
-          "title": "Pysploit Asboblari"
+          "title": "Asboblar",
+          "items": [
+            { "label": "Bash", "icon_url": "/icons/course/tools/bash.svg" },
+            { "label": "Python", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "SQL", "icon_url": "/icons/course/tools/sql.svg" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Cryptography", "icon_url": "" },
+            { "label": "Scapy", "icon_url": "" },
+            {
+              "label": "python-nmap",
+              "icon_url": "/icons/course/tools/python.svg"
+            },
+            { "label": "ChainMap", "icon_url": "" },
+            { "label": "Sphinx", "icon_url": "" },
+            { "label": "UNIX", "icon_url": "" },
+            { "label": "ZIP", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            {
+              "label": "Kali Linux",
+              "icon_url": "/icons/course/tools/linux.svg"
+            },
+            { "label": "Metasploitable", "icon_url": "" },
+            { "label": "JSON", "icon_url": "" },
+            { "label": "Pynput", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "Brute-force", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -276,7 +301,43 @@
           ]
         },
         "tools": {
-          "title": "Vositalar"
+          "title": "Asboblar",
+          "items": [
+            { "label": "Nmap", "icon_url": "" },
+            { "label": "theHarvester", "icon_url": "" },
+            { "label": "Amass", "icon_url": "" },
+            { "label": "dnsrecon", "icon_url": "" },
+            { "label": "Burp Suite", "icon_url": "" },
+            { "label": "ffuf", "icon_url": "" },
+            { "label": "Gobuster", "icon_url": "" },
+            { "label": "dirsearch", "icon_url": "" },
+            { "label": "SQLmap", "icon_url": "" },
+            { "label": "Metasploit", "icon_url": "" },
+            { "label": "msfvenom", "icon_url": "" },
+            { "label": "Meterpreter", "icon_url": "" },
+            { "label": "SearchSploit", "icon_url": "" },
+            { "label": "Exploit-DB", "icon_url": "" },
+            { "label": "Netcat", "icon_url": "" },
+            { "label": "Socat", "icon_url": "" },
+            { "label": "SSH", "icon_url": "" },
+            { "label": "Chisel", "icon_url": "" },
+            { "label": "dnscat2", "icon_url": "" },
+            { "label": "ligolo", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "LinPEAS", "icon_url": "" },
+            { "label": "LinEnum", "icon_url": "" },
+            { "label": "pspy", "icon_url": "" },
+            { "label": "WinPEAS", "icon_url": "" },
+            { "label": "Hashcat", "icon_url": "" },
+            { "label": "John the Ripper", "icon_url": "" },
+            { "label": "Hydra", "icon_url": "" },
+            { "label": "Ncrack", "icon_url": "" },
+            { "label": "CrackMapExec", "icon_url": "" },
+            { "label": "Postman", "icon_url": "" },
+            { "label": "OpenSSL", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "Cisco Packet Tracer", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -373,7 +434,30 @@
           ]
         },
         "tools": {
-          "title": "Asboblar"
+          "title": "Asboblar",
+          "items": [
+            { "label": "Splunk", "icon_url": "" },
+            { "label": "ELK (Elastic)", "icon_url": "" },
+            { "label": "QRadar", "icon_url": "" },
+            { "label": "ArcSight", "icon_url": "" },
+            { "label": "TheHive", "icon_url": "" },
+            { "label": "Cortex", "icon_url": "" },
+            { "label": "Splunk SOAR", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Suricata", "icon_url": "" },
+            { "label": "MISP", "icon_url": "" },
+            { "label": "OpenCTI", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -500,6 +584,99 @@
       "full_duration_title": "Davomiyligi",
       "courses_number_title": "Darslar soni",
       "portfolio_info_title": "Portfolio",
+      "pricing": {
+        "title": "Narx va shartlar",
+        "online": {
+          "title": "Onlayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        },
+        "offline": {
+          "title": "Oflayn",
+          "condition": "Shartlar",
+          "duration": "10 oy",
+          "list": [
+            "Platformaga 24/7 kirish",
+            "Darslar va materiallar shaxsiy kabinetda mavjud",
+            "Istalgan joydan o‘qish imkoniyati",
+            "Chat orqali yordam va muntazam maslahatlar",
+            "Moslashuvchan jadval — o‘zingizga qulay vaqtda o‘qing"
+          ],
+          "button": "RO‘YXATDAN O‘TISH"
+        }
+      },
+      "resume": {
+        "title": "Kursdan keyingi rezyumeingiz",
+        "job": {
+          "title": "Lavozimi",
+          "subtitle": "Kiberxavfsizlik bo‘yicha mutaxassis (SOC-analitik)"
+        },
+        "skills": {
+          "title": "Ko‘nikmalar",
+          "items": [
+            "Ma'lumot saqlash qurilmalari turlarini tushunish",
+            "Sud-tibbiy tekshiruvlarni boshlash uchun yuklab olinadigan tashuvchilarni yaratish",
+            "Potensial buzilish nuqtalarini anqlash uchun tizim yuklash jarayonlarini tahlil qilish",
+            "Kiberjinoyat turlari va usullarini tushunish",
+            "Raqamli sud-tibbiy ekspertiza tarmoqlarini (kompyuter, mobil va tarmoq) tushunish",
+            "Tarmoq protokollarining funktsiyalari va raqamli kommunikatsiyadagi ahamiyatini tushunish",
+            "Raqamli dalillarni qidirish va tahlil qilish ko'nikmasi",
+            "Mobil qurilmalardan dalillarni tahlil qilish va olish",
+            "Ma'lumotlar bazalarini tahlil qilish",
+            "Qattiq disklarning (SSD) arxitekturasi va afzalliklarini tahlil qilish",
+            "Tekshiruvlar asosida kibertahdidlar hisobotlarini tuzish"
+          ]
+        },
+        "tools": {
+          "title": "Asboblar",
+          "items": [
+            { "label": "FTK Imager", "icon_url": "" },
+            { "label": "Autopsy", "icon_url": "" },
+            { "label": "EnCase", "icon_url": "" },
+            { "label": "Volatility", "icon_url": "" },
+            { "label": "KAPE", "icon_url": "" },
+            { "label": "Cellebrite UFED", "icon_url": "" },
+            { "label": "Oxygen Forensic Detective", "icon_url": "" },
+            { "label": "Ghidra", "icon_url": "" },
+            { "label": "IDA Pro", "icon_url": "" },
+            { "label": "x64dbg", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
+        }
+      },
+      "portfolio": {
+        "title": "Portfolioga qo‘shimcha",
+        "first": {
+          "title": "Mobil qurilmalar bilan bog‘liq hodisalar",
+          "text": "Ushbu modul mobil qurilmalar bilan bog‘liq hodisalarni tekshirishga bag‘ishlangan. Unda telefonlar, planshetlar va boshqa gadjetlardan ma’lumotlarni olish, tahlil qilish va tiklash usullari, shuningdek raqamli dalillarni sud ekspertizasi uchun ajratib olish texnikalari o‘rganiladi."
+        },
+        "second": {
+          "title": "Zararli dasturlarni tahlil qilish",
+          "text": "Ushbu bo‘limda zararli dasturlarni tahlil qilish usullari, jumladan statik va dinamik tahlil yondashuvlari ko‘rib chiqiladi. Ishtirokchilar zararli dastur xatti-harakatlarini aniqlash, infektsiya jarayonlarini o‘rganish va hujum manbalarini aniqlash orqali samarali himoya choralarini ishlab chiqishni o‘rganadilar."
+        }
+      },
+      "certificate": {
+        "title": "Kursni tugatganingizdan so‘ng sertifikat",
+        "text": "Kursni tamomlagan har bir ishtirokchi kiberxavfsizlik sohasidagi bilimlarini va amaliy ko‘nikmalarini tasdiqlovchi imzoli sertifikat oladi. Ushbu hujjatni ishga joylashishda, portfolio va rezyumega qo‘shishda, shuningdek LinkedIn va boshqa platformalardagi professional profillarga ilova qilish mumkin. Sertifikat, nafaqat nazariy materialni o‘zlashtirganingizni, balki haqiqiy amaliy vazifalar va ishlarni bajarganingizni isbotlaydi."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Forensics.png",
       "more_info": "Batafsil"

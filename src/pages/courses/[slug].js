@@ -278,111 +278,18 @@ function Page() {
                 <h4 className={styles.resume__tools_title}>
                   {course.resume.tools.title}
                 </h4>
-                <div className={styles.resume__tools_items}>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/powershell.png"
-                      alt="powershell"
-                    />
-                    <span>PowerShell</span>
+                {course.resume.tools.items && (
+                  <div className={styles.resume__tools_items}>
+                    {course.resume.tools.items.map((item, index) => (
+                      <div key={index} className={styles.resume__tools_item}>
+                        {item.icon_url && (
+                          <img src={item.icon_url} alt="tools-icon" />
+                        )}
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/bash.png" alt="bash" />
-                    <span>Bash</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/python.png"
-                      alt="python"
-                    />
-                    <span>Python</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/sql.png" alt="sql" />
-                    <span>SQL</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/powershell.png"
-                      alt="powershell"
-                    />
-                    <span>PowerShell</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/bash.png" alt="bash" />
-                    <span>Bash</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/python.png"
-                      alt="python"
-                    />
-                    <span>Python</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/sql.png" alt="sql" />
-                    <span>SQL</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/powershell.png"
-                      alt="powershell"
-                    />
-                    <span>PowerShell</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/bash.png" alt="bash" />
-                    <span>Bash</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/python.png"
-                      alt="python"
-                    />
-                    <span>Python</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/sql.png" alt="sql" />
-                    <span>SQL</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/powershell.png"
-                      alt="powershell"
-                    />
-                    <span>PowerShell</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/bash.png" alt="bash" />
-                    <span>Bash</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/python.png"
-                      alt="python"
-                    />
-                    <span>Python</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/sql.png" alt="sql" />
-                    <span>SQL</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/bash.png" alt="bash" />
-                    <span>Bash</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img
-                      src="/icons/course/languages/python.png"
-                      alt="python"
-                    />
-                    <span>Python</span>
-                  </div>
-                  <div className={styles.resume__tools_item}>
-                    <img src="/icons/course/languages/sql.png" alt="sql" />
-                    <span>SQL</span>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
             <div className={styles.resume__add}>

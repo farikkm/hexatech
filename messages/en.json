@@ -184,7 +184,32 @@
           ]
         },
         "tools": {
-          "title": "Tools"
+          "title": "Tools",
+          "items": [
+            { "label": "Bash", "icon_url": "/icons/course/tools/bash.svg" },
+            { "label": "Python", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "SQL", "icon_url": "/icons/course/tools/sql.svg" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Cryptography", "icon_url": "" },
+            { "label": "Scapy", "icon_url": "" },
+            {
+              "label": "python-nmap",
+              "icon_url": "/icons/course/tools/python.svg"
+            },
+            { "label": "ChainMap", "icon_url": "" },
+            { "label": "Sphinx", "icon_url": "" },
+            { "label": "UNIX", "icon_url": "" },
+            { "label": "ZIP", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            {
+              "label": "Kali Linux",
+              "icon_url": "/icons/course/tools/linux.svg"
+            },
+            { "label": "Metasploitable", "icon_url": "" },
+            { "label": "JSON", "icon_url": "" },
+            { "label": "Pynput", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "Brute-force", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -276,7 +301,43 @@
           ]
         },
         "tools": {
-          "title": "Tools"
+          "title": "Tools",
+          "items": [
+            { "label": "Nmap", "icon_url": "" },
+            { "label": "theHarvester", "icon_url": "" },
+            { "label": "Amass", "icon_url": "" },
+            { "label": "dnsrecon", "icon_url": "" },
+            { "label": "Burp Suite", "icon_url": "" },
+            { "label": "ffuf", "icon_url": "" },
+            { "label": "Gobuster", "icon_url": "" },
+            { "label": "dirsearch", "icon_url": "" },
+            { "label": "SQLmap", "icon_url": "" },
+            { "label": "Metasploit", "icon_url": "" },
+            { "label": "msfvenom", "icon_url": "" },
+            { "label": "Meterpreter", "icon_url": "" },
+            { "label": "SearchSploit", "icon_url": "" },
+            { "label": "Exploit-DB", "icon_url": "" },
+            { "label": "Netcat", "icon_url": "" },
+            { "label": "Socat", "icon_url": "" },
+            { "label": "SSH", "icon_url": "" },
+            { "label": "Chisel", "icon_url": "" },
+            { "label": "dnscat2", "icon_url": "" },
+            { "label": "ligolo", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "LinPEAS", "icon_url": "" },
+            { "label": "LinEnum", "icon_url": "" },
+            { "label": "pspy", "icon_url": "" },
+            { "label": "WinPEAS", "icon_url": "" },
+            { "label": "Hashcat", "icon_url": "" },
+            { "label": "John the Ripper", "icon_url": "" },
+            { "label": "Hydra", "icon_url": "" },
+            { "label": "Ncrack", "icon_url": "" },
+            { "label": "CrackMapExec", "icon_url": "" },
+            { "label": "Postman", "icon_url": "" },
+            { "label": "OpenSSL", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "Cisco Packet Tracer", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -373,7 +434,30 @@
           ]
         },
         "tools": {
-          "title": "Tools"
+          "title": "Tools",
+          "items": [
+            { "label": "Splunk", "icon_url": "" },
+            { "label": "ELK (Elastic)", "icon_url": "" },
+            { "label": "QRadar", "icon_url": "" },
+            { "label": "ArcSight", "icon_url": "" },
+            { "label": "TheHive", "icon_url": "" },
+            { "label": "Cortex", "icon_url": "" },
+            { "label": "Splunk SOAR", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Suricata", "icon_url": "" },
+            { "label": "MISP", "icon_url": "" },
+            { "label": "OpenCTI", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
         }
       },
       "portfolio": {
@@ -500,6 +584,99 @@
       "full_duration_title": "Duration",
       "courses_number_title": "Number of classes",
       "portfolio_info_title": "Portfolio",
+      "pricing": {
+        "title": "Pricing and conditions",
+        "online": {
+          "title": "Online",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Lesson recordings and materials in your personal account",
+            "Ability to study from anywhere in the world",
+            "Chat support and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "SIGN UP"
+        },
+        "offline": {
+          "title": "Offline",
+          "condition": "Conditions",
+          "duration": "10 months",
+          "list": [
+            "24/7 access to the platform",
+            "Lesson recordings and materials in your personal account",
+            "Ability to study from anywhere in the world",
+            "Chat support and regular consultations",
+            "Flexible schedule — study at a convenient time"
+          ],
+          "button": "SIGN UP"
+        }
+      },
+      "resume": {
+        "title": "Your CV after completing the course",
+        "job": {
+          "title": "Position",
+          "subtitle": "Cybersecurity Specialist (SOC Analyst)"
+        },
+        "skills": {
+          "title": "Skills",
+          "items": [
+            "Understanding storage media types",
+            "Creating bootable media to launch forensic investigations",
+            "Analyzing system boot processes to identify potential points of compromise",
+            "Understanding the types and methods of cybercrime",
+            "Understanding the branches of digital forensics (computer, mobile, and network)",
+            "Understanding the functions and importance of network protocols in digital communications",
+            "Ability to search and analyze digital evidence",
+            "Analyzing and extracting evidence from mobile devices",
+            "Database analysis",
+            "Analyzing the architecture and advantages of solid-state drives",
+            "Generating cyber threat reports based on investigations"
+          ]
+        },
+        "tools": {
+          "title": "Tools",
+          "items": [
+            { "label": "FTK Imager", "icon_url": "" },
+            { "label": "Autopsy", "icon_url": "" },
+            { "label": "EnCase", "icon_url": "" },
+            { "label": "Volatility", "icon_url": "" },
+            { "label": "KAPE", "icon_url": "" },
+            { "label": "Cellebrite UFED", "icon_url": "" },
+            { "label": "Oxygen Forensic Detective", "icon_url": "" },
+            { "label": "Ghidra", "icon_url": "" },
+            { "label": "IDA Pro", "icon_url": "" },
+            { "label": "x64dbg", "icon_url": "" },
+            { "label": "Wireshark", "icon_url": "" },
+            { "label": "Zeek", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "PowerShell", "icon_url": "" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Windows", "icon_url": "" },
+            { "label": "Linux", "icon_url": "" },
+            { "label": "TCP/IP", "icon_url": "" },
+            { "label": "DNS", "icon_url": "" },
+            { "label": "HTTP/S", "icon_url": "" },
+            { "label": "SMTP", "icon_url": "" }
+          ]
+        }
+      },
+      "portfolio": {
+        "title": "Addition to the portfolio",
+        "first": {
+          "title": "Mobile Device Incidents",
+          "text": "This module focuses on investigating incidents related to mobile devices. It covers methods for acquiring, analyzing, and recovering data from phones, tablets, and other gadgets, as well as techniques for extracting digital evidence for forensic examination."
+        },
+        "second": {
+          "title": "Malware Analysis",
+          "text": "This section explores approaches to malware analysis, including static and dynamic techniques. Participants will learn how to identify malware behavior, study infection processes, and trace attack sources to develop effective defense measures."
+        }
+      },
+      "certificate": {
+        "title": "Certificate upon course completion",
+        "text": "Upon completion of the course, each participant receives a personalized certificate confirming their knowledge and practical skills in cybersecurity. The document can be used for job applications, added to a portfolio and resume, and attached to professional profiles on LinkedIn and other platforms. The certificate proves that you have not only mastered theoretical material but also completed real-world practical tasks and cases."
+      },
       "background_url": "/images/course/background.png",
       "certificate_url": "/certificates/Forensics.png",
       "more_info": "Learn more"
