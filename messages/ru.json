@@ -184,17 +184,17 @@
           ]
         },
         "tools": {
-          "title": "Инструменты",
+          "title": "Tools",
           "items": [
-            { "label": "Bash", "icon_url": "/icons/course/tools/bash.svg" },
-            { "label": "Python", "icon_url": "/icons/course/tools/python.svg" },
-            { "label": "SQL", "icon_url": "/icons/course/tools/sql.svg" },
+            { "label": "Bash", "icon_url": "" },
+            { "label": "Python", "icon_url": "" },
+            { "label": "SQL", "icon_url": "" },
             { "label": "PowerShell", "icon_url": "" },
             { "label": "Cryptography", "icon_url": "" },
             { "label": "Scapy", "icon_url": "" },
             {
               "label": "python-nmap",
-              "icon_url": "/icons/course/tools/python.svg"
+              "icon_url": ""
             },
             { "label": "ChainMap", "icon_url": "" },
             { "label": "Sphinx", "icon_url": "" },
@@ -203,11 +203,11 @@
             { "label": "Windows", "icon_url": "" },
             {
               "label": "Kali Linux",
-              "icon_url": "/icons/course/tools/linux.svg"
+              "icon_url": ""
             },
             { "label": "Metasploitable", "icon_url": "" },
             { "label": "JSON", "icon_url": "" },
-            { "label": "Pynput", "icon_url": "/icons/course/tools/python.svg" },
+            { "label": "Pynput", "icon_url": "" },
             { "label": "Brute-force", "icon_url": "" }
           ]
         }
